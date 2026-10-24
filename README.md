@@ -43,3 +43,15 @@ Antworten werden ohne Serverübertragung im Browser verarbeitet; dauerhafte Ger�
 ## Gestaltung und Erstellung
 
 Erstellt von **Andreas und Ricarda**. Das Weidenherz mit handförmigem Busch ist als Logo in allen App-Bereichen eingebunden und dient auch als Browser- und Startbildschirmsymbol. Die Originalgrafik mit Transparenz liegt in `assets/weidenherz-logo.png` und wird beim Build nach `dist/assets/` kopiert.
+
+## Erweiterungen für Ausfüllen und Vorbereitung
+
+- Jedes der 64 Kriterien hat eine Unsicher-Markierung und konkrete Alltagsbeispiele für seine Antwortmöglichkeiten. Ausgewählte Antworten bleiben erhalten; bei markierten Unsicherheiten wird keine Pflegegradzuordnung ausgegeben.
+- Rechner-Sicherungen als JSON enthalten auch unfertige Antworten, Unsicher-Markierungen, Rahmenangaben und das zuletzt geöffnete Modul. Vor dem Ersetzen vorhandener Eingaben wird eine Vorschau angezeigt.
+- Bei freiwillig aktivierter Gerätespeicherung wird das zuletzt verwendete Rechnermodul wieder geöffnet. Bestehende gespeicherte Antworten aus Version 1 bleiben lesbar.
+- Unter „Pflegetagebuch & Checkliste“ im Rechner können eigene Einträge erstellt, bearbeitet, gefiltert und gedruckt werden. Entfernte Einträge lassen sich unmittelbar rückgängig machen. Die Checkliste enthält zwölf Punkte, eine Terminnotiz und eigene Fragen.
+- Die Vorbereitung hat eine eigene freiwillige Gerätespeicherung sowie separate JSON-Sicherung und Wiederherstellung. Sie verändert weder Rechnerantworten noch eigene Einträge im Fallbeispiel.
+
+Direkt zur Vorbereitung: https://adrakir.github.io/Pflegegrad-Fragen/pflegegradrechner.html#vorbereitung
+
+`calculator-session.js` verwaltet Rechner-Sicherungen, `preparation-engine.js` prüft Tagebuchdaten, `preparation.js` steuert die Oberfläche. Die Vorbereitung wird aus `preparation.html.inc` und `preparation.css` in den Rechner eingebaut. Nach `python3 build.py` prüfen: `node verify.cjs`, `node verify-care.cjs`, `node verify-improvements.cjs` und `node verify-preparation.cjs`. Die Verbesserungsprüfung enthält auch die bisherigen Rechnerprüfungen. Alle Eingaben werden im Browser verarbeitet; Sicherungsdateien können persönliche Gesundheitsdaten enthalten.

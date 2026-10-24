@@ -1,0 +1,19 @@
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const {boot,blank,data,E}=require('./verify-calculator.cjs'),S=require('./calculator-session.js');
+(async()=>{
+let a=blank();a['3.10']={choice:'5',uncertain:true};let r=E.calculate(data,a);assert.equal(r.complete,true);assert.equal(r.confirmed,false);assert.equal(r.total,11.25);assert.equal(r.grade,null);assert.equal(r.modules[2].uncertain,1);assert.equal(r.uncertain,1);delete a['3.10'].uncertain;assert.equal(E.calculate(data,a).grade,0);
+let state={answers:{'1.1':{choice:'1',uncertain:true},'2.2':{uncertain:true},'5.1':{choice:'help',count:'',unit:'day'},'5.2':{choice:'help',count:'-1',unit:'week'}},settings:{duration:'yes',special:'no'},step:5};
+let b=S.backup(data,state),restored=S.read(data,JSON.parse(JSON.stringify(b)));assert.deepEqual(restored,state);assert.equal(E.calculate(data,restored.answers).answered,1);assert.equal(E.calculate(data,restored.answers).uncertain,2);
+assert.throws(()=>S.read(data,{app:'anderes-programm',schemaVersion:2,data:state}),/keine Sicherung/);assert.throws(()=>S.read(data,{...b,schemaVersion:99}),/nicht unterstützt/);assert.throws(()=>S.read(data,{...b,data:{answers:[]}}),/unvollständig/);
+assert.deepEqual(S.stored(data,{version:1,enabled:true,answers:{'1.1':{choice:'1'}},duration:'yes',special:'no'}),{answers:{'1.1':{choice:'1'}},settings:{duration:'yes',special:'no'},step:0});
+assert.equal(S.stored(data,{version:2,enabled:false,...state}),null);assert.equal(S.normalize(data,{...state,step:999}).step,0);
+const malicious=JSON.parse('{"__proto__":{"polluted":true},"answers":{"1.1":{"choice":"1","uncertain":true,"extra":"<img onerror=alert(1)>"},"9.9":{"choice":"3"}}}');const clean=S.normalize(data,malicious);assert.equal({}.polluted,undefined);assert.deepEqual(clean.answers,{'1.1':{choice:'1',uncertain:true}});
+let ui=boot();ui.run(`answers=${JSON.stringify(blank())};answers['3.10']={choice:'5',uncertain:true};settings={duration:'yes',special:'no'};go(7)`);assert.match(ui.q('#calcScreen').innerHTML,/Vorläufige Punkte/);assert.doesNotMatch(ui.q('#calcScreen').innerHTML,/Nach Punkten:/);assert.match(ui.q('#calcScreen').innerHTML,/data-review="3.10"/);assert.match(ui.q('#progressText').textContent,/1 unsicher/);ui.q('#reviewUncertain').onclick();assert.equal(ui.run('step'),3);
+ui.run('remember=true;go(5)');let ui2=boot(ui.store);assert.equal(ui2.run('step'),5);assert.equal(ui2.run("answers['3.10'].uncertain"),true);assert.match(ui2.q('#resumeStatus').textContent,/Modul 5/);
+ui=boot();await ui.run(`readBackupFile({size:100,text:async()=>${JSON.stringify(JSON.stringify(b))}})`);assert.equal(ui.run('E.calculate(DATA,answers).answered'),0);assert.equal(ui.q('#calcImportPreview').hidden,false);ui.q('#cancelCalcImport').onclick();assert.equal(ui.run('E.calculate(DATA,answers).answered'),0);
+await ui.run(`readBackupFile({size:100,text:async()=>${JSON.stringify(JSON.stringify(b))}})`);ui.q('#confirmCalcImport').onclick();assert.equal(ui.run('step'),5);assert.equal(ui.run("answers['1.1'].uncertain"),true);assert.equal(ui.run('remember'),false);assert.equal(ui.store['pflegegrad-rechner-v1'],undefined);
+await ui.run(`readBackupFile({size:100,text:async()=>'broken'})`);assert.match(ui.q('#backupStatus').textContent,/kein gültiges JSON/);assert.equal(ui.run('step'),5);assert.equal(ui.run('E.calculate(DATA,answers).answered'),1);
+await ui.run(`readBackupFile({size:3*1024*1024,text:async()=>''})`);assert.match(ui.q('#backupStatus').textContent,/zu groß/);
+ui.q('#printResult').onclick();assert.match(ui.q('#printSummary').innerHTML,/UNSICHER/);
+console.log('PASS: uncertain flags preserve choices and block grade assignment; exact backup roundtrip with drafts, legacy migration, invalid/oversized files, safe import preview/cancel/replace, privacy opt-in, last-module resume, prototype filtering and printed review markers.');
+})().catch(err=>{console.error(err);process.exitCode=1;});

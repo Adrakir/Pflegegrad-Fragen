@@ -1,4 +1,5 @@
 import json
+import hashlib
 import shutil
 from pathlib import Path
 
@@ -23,10 +24,13 @@ print('Pflegegrad-Fragen: 100 Fragen plus Pflegegrade & Leistungen 2026 erstellt
 
 calculator=json.loads((root/'calculator-data.json').read_text())
 assert sum(len(m['items']) for m in calculator['modules'])==64
-calc=(root/'calculator-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__CALCULATOR_DATA__',json.dumps(calculator,ensure_ascii=False).replace('</','<\\/')).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+calc=(root/'calculator-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__PREPARATION_CSS__',(root/'preparation.css').read_text()).replace('__PREPARATION_HTML__',(root/'preparation.html.inc').read_text()).replace('__CALCULATOR_DATA__',json.dumps(calculator,ensure_ascii=False).replace('</','<\\/')).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+for script in ['calculator-engine.js','calculator-session.js','calculator.js','preparation-engine.js','preparation.js']:
+ digest=hashlib.sha256((root/script).read_bytes()).hexdigest()[:12]
+ calc=calc.replace('src="./'+script+'"','src="./'+script+'?v='+digest+'"')
 (root/'pflegegradrechner.html').write_text(calc)
 (root/'dist/pflegegradrechner.html').write_text(calc)
-for asset in ['calculator-engine.js','calculator.js']:
+for asset in ['calculator-engine.js','calculator-session.js','calculator.js','preparation-engine.js','preparation.js']:
  (root/'dist'/asset).write_text((root/asset).read_text())
 print('Pflegegradrechner: 64 Kriterien und sechs Module erstellt.')
 
