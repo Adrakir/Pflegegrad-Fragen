@@ -1,5 +1,5 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const html=fs.readFileSync('dist/index.html','utf8');
+const html=fs.readFileSync('dist/fallbeispiel.html','utf8');
 const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
 new vm.Script(script);
 const elements=new Map();
@@ -32,5 +32,5 @@ assert.equal(run("Object.keys(cleanData({answers:{'1':'ok','101':'bad'}}).answer
 run('persist()');assert.equal(JSON.parse(storage.get('pflegegrad-fragen-v1')).answers[1],'<img src=x onerror=alert(1)>');
 run('printSelection()');assert.equal(printed,true);assert.equal((elements.get('#printArea').innerHTML.match(/<article>/g)||[]).length,100);
 blocked=true;run('persist()');assert.equal(run('storageOK'),false);assert.match(elements.get('#toast').textContent,/Speicherung ist gesperrt/);
-assert.equal(fs.readFileSync('index.html','utf8'),html);
+assert.equal(fs.readFileSync('fallbeispiel.html','utf8'),html);
 console.log('PASS: 100 unique questions and answers, 10 topics, all pages, search/filter, bookmarks, practice coverage, input escaping, import sanitization, persistence, print coverage, storage failure.');

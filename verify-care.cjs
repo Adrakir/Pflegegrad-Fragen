@@ -29,7 +29,9 @@ assert.equal(run("sharedBudget('abc',0).valid"),false);assert.equal(run('sharedB
 elements.get('#respiteSpent').value='3000';elements.get('#shortSpent').value='700';run('renderBudget()');assert.equal(elements.get('#budgetError').hidden,false);assert.match(elements.get('#budgetError').textContent,/161,00/);
 run("prefs.large=true;savePrefs()");assert.equal(JSON.parse(persisted).answers['1'],original.answers['1']);assert.equal(JSON.parse(persisted).saved[0],1);
 run("$('#printCare').onclick()");assert.equal(printed,true);
-assert.match(fs.readFileSync('dist/index.html','utf8'),/href="\.\/pflegewissen\.html"/);
+assert.equal(fs.readFileSync('dist/index.html','utf8'),html);
+assert.equal(fs.readFileSync('index.html','utf8'),html);
+assert.match(html,/href="\.\/fallbeispiel\.html"/);
 assert.equal((elements.get('#benefitRows').innerHTML.match(/<tr /g)||[]).length,5);
 assert.equal(fs.readFileSync('pflegewissen.html','utf8'),html);
 assert.doesNotMatch(html,/__[A-Z_]+__/);

@@ -1,9 +1,9 @@
 # Pflegegrad-Fragen
 
-100 mögliche Fragen mit vollständig ausformulierten Antworten für ein Fallbeispiel.
+Start mit Pflegegraden und Leistungen, anschließend Fallbeispiel mit 100 vollständig ausformulierten Antworten und Pflegegradrechner.
 
 
-[App öffnen](https://adrakir.github.io/Pflegegrad-Fragen/) · [Pflegegrade & Leistungen](https://adrakir.github.io/Pflegegrad-Fragen/pflegewissen.html)
+[App öffnen](https://adrakir.github.io/Pflegegrad-Fragen/) · [Fallbeispiel](https://adrakir.github.io/Pflegegrad-Fragen/fallbeispiel.html)
 
 ## Fallbeispiel
 
@@ -15,11 +15,11 @@ Neuer Bereich mit Pflegegraden 1 bis 5, monatlichen Beträgen 2026, zweckgebunde
 
 ## Nutzen
 
-`index.html` im Browser öffnen. Keine Installation und keine externen Bibliotheken erforderlich. Enthalten sind Suche, zehn Themenfilter, Vormerkliste, Gesprächsmodus, eigene Antworten, große Schrift, hoher Kontrast, Sicherung, Wiederherstellung und Druckansicht. Eigene Einträge bleiben lokal im Browser. Eine Sicherung kann persönliche Angaben enthalten.
+`index.html` öffnet Pflegegrade und Leistungen. Die Navigation führt danach zum Fallbeispiel (`fallbeispiel.html`) und zum Pflegegradrechner. `pflegewissen.html` bleibt als Direktlink zur Leistungsübersicht erreichbar. Keine Installation und keine externen Bibliotheken erforderlich. Enthalten sind Suche, zehn Themenfilter, Vormerkliste, Gesprächsmodus, eigene Antworten, große Schrift, hoher Kontrast, Sicherung, Wiederherstellung und Druckansicht. Eigene Einträge bleiben lokal im Browser. Eine Sicherung kann persönliche Angaben enthalten.
 
 ## Entwickeln
 
-Fragen und Antworten in `questions.json`, Oberfläche in `template.html`. Leistungsbeträge in `care-benefits.json`, Informationsseite in `care-template.html`. `python3 build.py` erzeugt `index.html`, `pflegewissen.html` und deren Kopien in `dist/`. Danach `node verify.cjs` und `node verify-care.cjs` ausführen. GitHub Pages veröffentlicht aus `main` / Hauptverzeichnis; der lokale Vorschauserver nutzt `dist`.
+Fragen und Antworten in `questions.json`, Oberfläche in `template.html`. Leistungsbeträge in `care-benefits.json`, Informationsseite in `care-template.html`. `python3 build.py` erzeugt `index.html`, `pflegewissen.html`, `fallbeispiel.html`, `pflegegradrechner.html` und deren Kopien in `dist/`. Danach `node verify.cjs` und `node verify-care.cjs` ausführen. GitHub Pages veröffentlicht aus `main` / Hauptverzeichnis; der lokale Vorschauserver nutzt `dist`.
 
 
 ## Fachliche Orientierung
