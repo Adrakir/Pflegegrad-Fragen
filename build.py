@@ -15,7 +15,10 @@ html=template.replace('__QUESTIONS__',data)
 care=json.loads((root/'care-benefits.json').read_text())
 assert [g['grade'] for g in care['grades']]==[1,2,3,4,5]
 base_css=template.split('<style>',1)[1].split('</style>',1)[0]
-guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__REASSESSMENT_HTML__',(root/'reassessment.html.inc').read_text()).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__REASSESSMENT_HTML__',(root/'reassessment.html.inc').read_text()).replace('__FAQ_HTML__',(root/'faq.html.inc').read_text()).replace('__FAQ_CSS__',(root/'faq.css').read_text()).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+faq_digest=hashlib.sha256((root/'faq.js').read_bytes()).hexdigest()[:12]
+guide=guide.replace('src="./faq.js"','src="./faq.js?v='+faq_digest+'"')
+(root/'dist/faq.js').write_text((root/'faq.js').read_text())
 (root/'pflegewissen.html').write_text(guide)
 (root/'dist/pflegewissen.html').write_text(guide)
 (root/'index.html').write_text(guide)
