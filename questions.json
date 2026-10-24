@@ -1,0 +1,502 @@
+[
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Warum beantragen Sie einen Pflegegrad?",
+    "a": "Ich brauche regelmäßig Unterstützung, damit ich meinen Alltag bewältigen kann. Meine Partnerin hilft mir beim Organisieren, erinnert mich und unterstützt mich bei belastenden Aufgaben."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Welche gesundheitlichen Beschwerden beeinträchtigen Sie im Alltag?",
+    "a": "Mich belasten Antriebsschwierigkeiten, Ängste, Konzentrationsprobleme, Erschöpfung und nicht erholsamer Schlaf. Ich möchte erklären, welche konkreten Hilfen dadurch nötig werden."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Seit wann benötigen Sie regelmäßig Unterstützung?",
+    "a": "Seit ungefähr [Monat und Jahr] brauche ich regelmäßig Hilfe bei [Tätigkeiten]. Vorher konnte ich [konkretes Beispiel] noch allein erledigen. Den zeitlichen Verlauf ergänze ich anhand meiner Unterlagen."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Wie hat sich Ihr Hilfebedarf in den letzten Monaten verändert?",
+    "a": "In den letzten Monaten hat sich vor allem [Bereich] verändert. Früher genügte [frühere Hilfe], inzwischen brauche ich [heutige Hilfe]. Falls sich nichts verändert hat, beschreibe ich den gleichbleibenden Bedarf."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Welche Behandlungen finden derzeit statt?",
+    "a": "Ich werde von [Praxis oder Fachrichtung] behandelt. Termine finden ungefähr [Häufigkeit] statt. Ich bringe aktuelle Befunde und meinen überprüften Medikamentenplan mit."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Was können Sie weiterhin zuverlässig allein erledigen?",
+    "a": "[Tätigkeit] gelingt mir ohne personelle Hilfe. Bei [anderer Tätigkeit] brauche ich dagegen [konkrete Hilfe]. Ich unterscheide zwischen regelmäßigem Gelingen und einzelnen Ausnahmen."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Wie unterscheiden sich bessere und schlechtere Tage?",
+    "a": "An besseren Tagen gelingt mir zeitweise mehr. An belastenden Tagen schaffe ich zusammengefasste Alltagsbereiche nicht ausreichend. Wie oft welche Tagesform vorkommt, ergänze ich für eine typische Woche."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Ist die dokumentierte Woche typisch für Ihren Alltag?",
+    "a": "Ich erkläre anhand meiner tatsächlichen Aufzeichnungen, ob die dokumentierte Woche typisch war. Unterschiede zu besseren oder schlechteren Wochen und Veränderungen meines aktuellen Zustands beschreibe ich ausdrücklich."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Welche Unterlagen können Ihre Angaben veranschaulichen?",
+    "a": "Ich kann [vorhandene Befunde], meinen aktuellen Medikamentenplan und [tatsächlich geführte Aufzeichnungen] vorlegen. Meine Partnerin kann ihre selbst geleisteten Hilfen erläutern."
+  },
+  {
+    "c": "Gespräch und Verlauf",
+    "q": "Was sollen wir über Ihre Situation unbedingt noch wissen?",
+    "a": "Nach außen kann ich mich für einzelne Situationen zusammennehmen. Danach bin ich häufig stark erschöpft. Bitte berücksichtigen Sie auch, welche Unterstützung ich vor und nach einem Termin brauche."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Wie gelingt Ihnen der Start in den Morgen?",
+    "a": "Der Beginn des Tages fällt mir schwer. Ich muss mich zum Aufstehen stark überwinden. Ob und wie meine Partnerin dabei aktiv helfen muss, beschreibe ich mit einem tatsächlichen Morgenbeispiel."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Brauchen Sie eine Erinnerung, um mit einer Aufgabe anzufangen?",
+    "a": "Bei [Tätigkeit] brauche ich [eine oder mehrere] Erinnerungen. Die andere Person sagt oder tut dabei konkret [Hilfe]. Ohne diese Unterstützung bleibt üblicherweise [tatsächliche Folge] aus."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Reicht eine einmalige Aufforderung aus?",
+    "a": "Bei [Tätigkeit] reicht eine Erinnerung. Bei [anderer Tätigkeit] muss die andere Person wiederholt auffordern oder einzelne Schritte erklären. Das kommt ungefähr [Häufigkeit] vor."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Was passiert, wenn Sie bei einer begonnenen Aufgabe den Faden verlieren?",
+    "a": "Ich verliere bei Aufgaben den Faden und habe Schwierigkeiten mit mehreren Schritten. Meine Partnerin unterstützt die Organisation und einzelne Schritte. Ein konkretes Beispiel und die Häufigkeit ergänze ich."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Können Sie die Reihenfolge notwendiger Tagesaufgaben selbst planen?",
+    "a": "Bei [Tagesaufgaben] brauche ich Hilfe beim Ordnen. Gemeinsam legen wir fest, was zuerst nötig ist. Bei [anderen Aufgaben] gelingt mir die Planung allein."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Können Sie Ihren Tagesplan an eine Veränderung anpassen?",
+    "a": "Wenn sich beispielsweise ein Termin verschiebt, brauche ich [konkrete Unterstützung oder keine Hilfe], um den Rest des Tages neu zu ordnen. Ein tatsächliches Beispiel ist [Situation]."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Wer sorgt dafür, dass wichtige Aufgaben nicht liegen bleiben?",
+    "a": "Meine Partnerin unterstützt mich bei Organisation und Erinnerungen und übernimmt erforderlichenfalls Aufgaben. Welche Aufgaben sie regelmäßig auffangen muss, ergänze ich mit konkreten Beispielen."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Benötigen Sie jemanden, der während einer Tätigkeit dabeibleibt?",
+    "a": "Bei [Tätigkeit] brauche ich [aktive Anleitung oder keine Begleitung]. Wenn jemand dabeibleiben muss, beschreibe ich, was diese Person währenddessen tatsächlich tut und weshalb ihre Hilfe nötig ist."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Können Sie sich selbst eine Beschäftigung aussuchen und beginnen?",
+    "a": "Ich kann [Beschäftigung] allein auswählen und beginnen. Bei [anderer Beschäftigung] brauche ich Anregung oder Unterstützung beim Start. Das kommt [Häufigkeit] vor."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Wie lange können Sie eine Tätigkeit durchhalten?",
+    "a": "Bei [konkreter Tätigkeit] lässt meine Konzentration nach ungefähr [tatsächlicher Dauer] nach. Dann brauche ich [Pause oder konkrete Hilfe]. Andere Tätigkeiten gelingen mir [Beschreibung]."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Was bedeutet Ihr beschriebener Funktionsmodus?",
+    "a": "Für einzelne Aufgaben oder Termine kann ich mich kurzfristig zusammennehmen. Das verbraucht viel Energie. Danach bin ich oft stark erschöpft und schaffe weitere Aufgaben nicht mehr."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Welche Hilfe brauchen Sie nach einer anstrengenden Aktivität?",
+    "a": "Nach [Aktivität] brauche ich ungefähr [tatsächliche Erholungszeit]. Währenddessen übernimmt oder unterstützt die andere Person [konkrete Aufgabe]. Wenn nur Ruhe nötig ist, beschreibe ich das ebenfalls."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Können Sie für die nächsten Tage selbst planen?",
+    "a": "Bei [anstehenden Aufgaben] brauche ich Unterstützung, um Termine, nötige Schritte und Erholung zu berücksichtigen. [Andere Planungen] erledige ich weiterhin allein."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Wie gestalten Sie Ihren Abend und den Übergang zur Nachtruhe?",
+    "a": "Abends gelingt mir [Tätigkeit] allein. Für [anderen Schritt] brauche ich [konkrete Hilfe oder keine Hilfe]. Ich beschreibe dabei die tatsächlich notwendige Unterstützung und nicht nur meine Schlafqualität."
+  },
+  {
+    "c": "Antrieb und Tagesablauf",
+    "q": "Was gelingt an einem Tag ohne Unterstützung?",
+    "a": "Ohne Unterstützung gelingt mir [Tätigkeit] zuverlässig. Bei [anderer Tätigkeit] passiert üblicherweise [konkrete Folge]. Ich nenne tatsächliche Erfahrungen statt Vermutungen."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Welche Situationen lösen bei Ihnen starke Ängste aus?",
+    "a": "Besonders Termine und soziale Situationen belasten mich. Ich habe Sorge, Fehler zu machen, etwas zu vergessen oder negativ beurteilt zu werden."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Wie häufig führen Ängste dazu, dass Sie aktive Hilfe brauchen?",
+    "a": "In einer typischen Woche brauche ich an ungefähr [Zahl] Tagen aktive Hilfe wegen Ängsten. Die andere Person muss dann [konkrete Handlung]. Bei Angst ohne Hilfebedarf gebe ich das ebenfalls an."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Was tut Ihre Partnerin während einer Panikattacke konkret?",
+    "a": "Bei der letzten entsprechenden Situation half sie durch [tatsächlich erfolgte Handlung]. Die Unterstützung dauerte ungefähr [Zeit]. Falls ich die Attacke allein bewältigt habe, sage ich das ausdrücklich."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Genügt es, wenn jemand in Ihrer Nähe ist?",
+    "a": "Bei [Situation] reicht die Anwesenheit aus. Bei [anderer Situation] muss die Person aktiv [beruhigen, anleiten oder andere tatsächliche Hilfe]. Ich trenne beide Situationen."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Können Sie sich bei Angst selbst beruhigen?",
+    "a": "Bei [Situation] gelingt mir das allein durch [eigene Strategie]. Wenn das nicht ausreicht, brauche ich [konkrete Hilfe]. Das passiert ungefähr [Häufigkeit]."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Brauchen Sie schon vor einem Termin Unterstützung wegen Angst?",
+    "a": "Vor [Terminart] brauche ich [konkrete Vorbereitung oder keine Hilfe]. Die andere Person unterstützt mich durch [Handlung]. Ich ergänze, wie oft das erforderlich ist."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Welche Unterstützung ist während eines belastenden Termins notwendig?",
+    "a": "Während [Termin] brauche ich [tatsächliche Hilfe], etwa damit ich Informationen aufnehmen oder mein Anliegen vorbringen kann. Bei anderen Terminen komme ich allein zurecht."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Brauchen Sie nach einer belastenden sozialen Situation Hilfe?",
+    "a": "Nach [Situation] brauche ich [konkrete Hilfe oder nur Erholung]. Die andere Person muss dann [tatsächliche Handlung]. Wie lange und wie oft das nötig ist, ergänze ich."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Sagen Sie wegen Ihrer Ängste Termine oder Treffen ab?",
+    "a": "Im letzten [Zeitraum] habe ich [tatsächliche Termine oder keine Termine] abgesagt. Wenn Unterstützung eine Teilnahme ermöglicht, beschreibe ich diese Hilfe und das Ergebnis."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Wie zeigt sich Ihre depressive Antriebsschwierigkeit?",
+    "a": "Ich fühle mich häufig niedergeschlagen, innerlich leer und antriebslos. Schon der Beginn alltäglicher Aufgaben erfordert große Überwindung. Welche aktive Motivation ich brauche, ergänze ich konkret."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Wie aufwendig muss eine andere Person Sie motivieren?",
+    "a": "Für [Tätigkeit] muss die andere Person ungefähr [Ablauf der tatsächlichen Motivation] leisten. Das ist [Häufigkeit] nötig. Wenn eine kurze Erinnerung genügt, beschreibe ich genau das."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Treten nachts Angstzustände auf, bei denen jemand helfen muss?",
+    "a": "Nachts brauche ich wegen [konkreter Situation] ungefähr [Häufigkeit] Hilfe durch [aktive Handlung]. Falls ich nachts trotz Schlafproblemen keine personelle Hilfe brauche, sage ich das."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Gibt es belastende Gedanken an Sterben oder Tod?",
+    "a": "Ich beschreibe genau, was ich tatsächlich erlebe. Gedanken über Sterben und Tod, ein eigener Sterbewunsch und konkrete Suizidgedanken unterscheide ich bei meiner Antwort. Wenn das alles nicht zutrifft, sage ich das."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Gibt es Unruhe, Abwehr oder andere Verhaltensweisen mit Hilfebedarf?",
+    "a": "[Konkretes Verhalten] kommt ungefähr [Häufigkeit] vor und erfordert [tatsächliche Hilfe]. Wenn diese Verhaltensweisen nicht auftreten, lautet meine Antwort: Nein, das ist bei mir nicht der Fall."
+  },
+  {
+    "c": "Ängste und Belastung",
+    "q": "Woran erkennt eine andere Person, dass Sie überfordert sind?",
+    "a": "Bei Überforderung zeigt sich bei mir [beobachtbares Zeichen]. Dann brauche ich [konkrete Hilfe oder keine personelle Hilfe]. Meine Partnerin ergänzt dazu ihre tatsächlich gemachten Beobachtungen."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Erkennen Sie vertraute Menschen zuverlässig?",
+    "a": "Ich erkenne vertraute Menschen [zuverlässig oder mit den tatsächlich bestehenden Schwierigkeiten]. Falls Probleme auftreten, nenne ich eine konkrete Situation und die benötigte Hilfe."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Finden Sie sich in Ihrer Wohnung selbstständig zurecht?",
+    "a": "In meiner Wohnung finde ich [alle Räume oder bestimmte Wege] selbstständig. Falls Orientierungshilfe nötig ist, beschreibe ich wo, wann und welche Hinweise ich brauche."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Können Sie sich auf bekannten Wegen orientieren?",
+    "a": "Auf [bekanntem Weg] finde ich mich allein zurecht. Bei [anderem Weg] brauche ich [konkrete Orientierungshilfe]. Ich nenne eine tatsächliche Situation und wie häufig diese Unterstützung erforderlich ist."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Wissen Sie, welcher Tag und welche Tageszeit gerade sind?",
+    "a": "Den Tag und die Tageszeit kann ich [selbstständig oder mit tatsächlicher Hilfe] einordnen. Wenn ich Hilfsmittel nutze, erkläre ich, ob ich sie allein anwenden kann."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Erinnern Sie sich an wichtige Absprachen und Ereignisse?",
+    "a": "Bei [wichtiger Absprache] vergesse ich [konkreten Inhalt] und brauche [Hilfe]. Andere Absprachen kann ich selbst behalten. Ich nenne ein Beispiel und die tatsächliche Häufigkeit."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Können Sie eine Tätigkeit mit mehreren Schritten steuern?",
+    "a": "Bei [alltäglicher Tätigkeit] verliere ich nach [Schritt] den Faden. Die andere Person hilft durch [Anleitung]. Bei [anderer Tätigkeit] kann ich alle Schritte allein durchführen."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Können Sie Entscheidungen im Alltag allein treffen?",
+    "a": "Über [Alltagsentscheidung] entscheide ich selbst. Bei [anderer Entscheidung] brauche ich [Erklären, Eingrenzen oder andere tatsächliche Unterstützung], damit ich eine Entscheidung treffen kann."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Verstehen Sie wichtige Informationen und Zusammenhänge?",
+    "a": "Bei [Information] brauche ich eine erneute oder einfachere Erklärung. Anschließend kann ich [tatsächliches Ergebnis]. Andere Informationen verstehe ich ohne Hilfe."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Erkennen Sie alltägliche Risiken und Gefahren?",
+    "a": "Bei [konkreter Gefahr] erkenne ich das Risiko [selbstständig oder mit Hilfe]. Ein einzelnes Vergessen beschreibe ich genau, ohne daraus eine allgemeine Gefahrenblindheit abzuleiten."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Können Sie Bedürfnisse wie Hunger, Durst oder Schmerzen mitteilen?",
+    "a": "Ich kann [Bedürfnisse] selbst mitteilen. Bei [tatsächlicher Schwierigkeit] muss die andere Person gezielt nachfragen oder auf [beobachtbare Zeichen] achten. Wenn keine Schwierigkeit besteht, sage ich das."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Verstehen Sie einfache Aufforderungen?",
+    "a": "Einfache Aufforderungen verstehe ich [zuverlässig oder mit tatsächlicher Unterstützung]. Ich unterscheide dabei, ob ich die Aufforderung nicht verstehe oder sie wegen fehlenden Antriebs nicht umsetzen kann."
+  },
+  {
+    "c": "Gedächtnis und Orientierung",
+    "q": "Können Sie einem Gespräch folgen und sich beteiligen?",
+    "a": "Im Gespräch gelingt mir [Situation] allein. Bei [anderer Situation] verliere ich den Faden und brauche [Wiederholung oder tatsächliche Hilfe]. Ich beschreibe, wie oft und mit wem das auftritt."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie Ihren vorderen Oberkörper selbst waschen?",
+    "a": "Die Bewegungen gelingen mir [allein oder mit tatsächlicher körperlicher Hilfe]. Damit ich das Waschen beginne und zu Ende führe, brauche ich [konkrete Hilfe oder keine Hilfe]. Das betrifft [Häufigkeit]."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie Gesicht und Hände selbst pflegen?",
+    "a": "Gesicht und Hände pflege ich [selbstständig oder mit Hilfe]. Nötig ist dabei [tatsächliche Erinnerung, Anleitung oder Übernahme]. Ich beschreibe, welche Schritte allein gelingen."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie Ihre Zähne regelmäßig selbst putzen?",
+    "a": "Beim Zähneputzen brauche ich [keine Hilfe oder konkrete Hilfe]. Die Unterstützung betrifft [Beginnen, Durchführung oder Abschluss] und ist [Häufigkeit] nötig."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Gelingt die Pflege von Haaren beziehungsweise Bart selbstständig?",
+    "a": "[Kämmen, Rasieren oder andere tatsächlich notwendige Pflege] gelingt mir [allein oder mit Hilfe]. Die andere Person muss dabei [konkrete Handlung]. Nicht benötigte Pflegeschritte lasse ich weg."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie den Intimbereich selbst waschen?",
+    "a": "Die Intimpflege gelingt mir [selbstständig oder mit konkreter Hilfe]. Wenn Hilfe nötig ist, benenne ich diskret die erforderlichen Schritte und deren Häufigkeit."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie selbstständig duschen oder baden?",
+    "a": "Beim Duschen beziehungsweise Baden brauche ich [keine Hilfe oder konkrete Hilfe]. Ich unterscheide Einstieg, Waschen, Haarewaschen, Abtrocknen sowie notwendige Erinnerung oder Anleitung."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie Ihren Oberkörper selbst an- und auskleiden?",
+    "a": "Oberteile ziehe ich [allein oder mit tatsächlicher Hilfe] an und aus. Unterstützung ist bei [konkretem Schritt] nötig. Die andere Person muss [Handlung] übernehmen oder anleiten."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie Ihren Unterkörper selbst an- und auskleiden?",
+    "a": "Hose, Unterwäsche, Strümpfe und Schuhe bewältige ich [allein oder mit Hilfe]. Ich benenne die tatsächlich schwierigen Teile und welche Unterstützung jeweils erforderlich ist."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Brauchen Sie Hilfe beim rechtzeitigen Wechsel verschmutzter Kleidung?",
+    "a": "Ich wechsle Kleidung [eigenständig oder nach konkreter Unterstützung]. Wenn Erinnerungen nötig sind, beschreibe ich, wie oft und was ohne diese Erinnerungen tatsächlich geschieht."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Was geschieht mit der Körperpflege an besonders belastenden Tagen?",
+    "a": "An [Anzahl] Tagen in einer typischen Woche bleibt [konkreter Pflegeschritt] ohne [tatsächliche Hilfe] aus oder unvollständig. Einzelne trotzdem gelungene Handlungen beschreibe ich ebenfalls."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Können Sie die Toilette einschließlich der nötigen Handgriffe selbst benutzen?",
+    "a": "Toilettengang, Kleidung und anschließende Hygiene gelingen mir [allein oder mit konkreter Hilfe]. Ich benenne nur die Schritte, bei denen tatsächlich Unterstützung nötig ist."
+  },
+  {
+    "c": "Körperpflege und Anziehen",
+    "q": "Benötigen Sie Unterstützung wegen Inkontinenz oder eines Katheters?",
+    "a": "Wenn das nicht zutrifft: Ich brauche dafür keine Hilfe. Falls es zutrifft, beschreibe ich [Versorgung], die notwendigen Handgriffe einer anderen Person und deren Häufigkeit."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Können Sie Lebensmittel mundgerecht vorbereiten?",
+    "a": "Brot bestreichen oder feste Nahrung zerteilen gelingt mir [selbstständig oder mit konkreter Hilfe]. Ich beschreibe diese Handgriffe getrennt vom Einkaufen und Kochen."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Können Sie sich Getränke selbst eingießen?",
+    "a": "Ein Getränk eingießen gelingt mir [allein oder mit Hilfe]. Falls Unterstützung nötig ist, betrifft sie [konkreten Handgriff oder Anleitung] und ist [Häufigkeit] erforderlich."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Können Sie eine bereitgestellte Mahlzeit selbst essen?",
+    "a": "Eine bereitgestellte Mahlzeit esse ich [selbstständig oder mit tatsächlicher Unterstützung]. Nötige Hilfe beim Beginnen, Weiteressen oder Führen des Bestecks beschreibe ich einzeln."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Müssen Sie zum Essen aufgefordert oder währenddessen angeleitet werden?",
+    "a": "Zum Essen brauche ich [keine oder konkrete] Aufforderungen. Die andere Person muss [tatsächliche Handlung] ungefähr [Häufigkeit] leisten. Verminderten Appetit unterscheide ich von personellem Hilfebedarf."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Können Sie ein bereitgestelltes Getränk selbst trinken?",
+    "a": "Das Trinken gelingt mir [selbstständig oder mit konkreter Hilfe]. Falls Hilfe nötig ist, beschreibe ich [Erinnerung, Reichen, Halten oder andere tatsächliche Unterstützung]."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Brauchen Sie Erinnerungen, damit Sie über den Tag verteilt trinken?",
+    "a": "An [Anzahl] Tagen brauche ich ungefähr [Häufigkeit] Erinnerungen zum Trinken. Ohne sie passiert üblicherweise [beobachtete Folge]. Wenn ich allein ausreichend trinke, lautet meine Antwort entsprechend."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Gibt es beim Kauen oder Schlucken Probleme, die Hilfe erfordern?",
+    "a": "Wenn keine Probleme bestehen: Ich habe dabei keinen Hilfebedarf. Andernfalls benenne ich [tatsächliches Problem], die dazu ärztlich empfohlenen Maßnahmen und die konkret erforderliche Unterstützung."
+  },
+  {
+    "c": "Essen und Trinken",
+    "q": "Was geschieht mit Essen und Trinken an einem besonders schweren Tag?",
+    "a": "An einem tatsächlich erlebten schweren Tag gelang [Einzelhandlung], während [anderer Schritt] ausblieb. Hilfe war bei [konkretem Schritt] nötig. Ich unterscheide Essen, Trinken und Kochen."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Welche Medikamente nehmen Sie derzeit tatsächlich ein?",
+    "a": "Ich nenne ausschließlich die aktuell bestätigten Medikamente mit Stärke und Einnahmezeiten. Abgesetzte Mittel kennzeichne ich als abgesetzt. Ungeklärte Neuverordnungen gleiche ich mit der Praxis oder Apotheke ab."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Wer stellt Ihre Medikamente für die Einnahme bereit?",
+    "a": "Die Medikamente stelle ich [selbst oder mit Hilfe] bereit. Wenn eine andere Person das übernimmt, geschieht das [Häufigkeit], weil [tatsächlicher Grund]."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Brauchen Sie Erinnerungen an die Medikamenteneinnahme?",
+    "a": "Bei [Einnahmezeit] brauche ich [konkrete Erinnerung oder keine Hilfe]. Das ist ungefähr [Häufigkeit] nötig. Ich beschreibe die Hilfe getrennt von der bloßen Anzahl meiner Medikamente."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Muss jemand die Einnahme kontrollieren oder Medikamente direkt reichen?",
+    "a": "Bei der Einnahme ist [keine Kontrolle oder tatsächliche Hilfe] erforderlich. Die andere Person tut konkret [Handlung]. Das betrifft [Einnahmen pro Tag oder Woche]."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Können Sie Änderungen des Medikamentenplans selbst umsetzen?",
+    "a": "Eine Änderung kann ich [allein oder mit konkreter Erklärung und Unterstützung] umsetzen. Ich beschreibe anhand der letzten bestätigten Änderung, welche Hilfe ich tatsächlich gebraucht habe."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Welche Beschwerden oder Nebenwirkungen sind unter der Behandlung aufgetreten?",
+    "a": "Ich habe [tatsächlich beobachtete Beschwerden] bemerkt und [Praxis oder Apotheke] darüber informiert. Welche Ursache ärztlich bestätigt ist, unterscheide ich von meiner eigenen Beobachtung."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Welche Unterstützung benötigen Sie bei Arztbesuchen?",
+    "a": "Bei [Arztbesuch] brauche ich [Begleitung oder keine Hilfe]. Die Begleitperson muss [konkrete Unterstützung] leisten. Solche Besuche finden ungefähr [Häufigkeit] statt."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Welche Hilfe brauchen Sie bei Therapie- oder Behandlungsterminen?",
+    "a": "Für [Therapie] brauche ich [konkrete Hilfe oder keine Unterstützung]. Dazu gehören tatsächlich [Wegbegleitung, Unterstützung im Termin oder andere Hilfe]. Die Termine finden [Häufigkeit] statt."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Sind zu Hause verordnete Maßnahmen durchzuführen?",
+    "a": "Falls keine verordneten Maßnahmen bestehen, sage ich das. Andernfalls nenne ich [Maßnahme], die ärztliche Vorgabe, die Häufigkeit und die tatsächlich nötige personelle Hilfe."
+  },
+  {
+    "c": "Behandlung und Medikamente",
+    "q": "Können Sie ärztliche Verhaltensvorgaben selbst einhalten?",
+    "a": "Die Vorgabe [konkrete ärztliche Anweisung] kann ich [allein oder mit Hilfe] umsetzen. Die andere Person unterstützt mich durch [tatsächliche Handlung] in [Häufigkeit]. Ohne solche Vorgabe gebe ich das an."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Können Sie Ihre Lage im Bett selbst verändern?",
+    "a": "Drehen und Lageveränderungen im Bett gelingen mir [selbstständig oder mit konkreter körperlicher Hilfe]. Ich beschreibe nur die tatsächlich notwendige Unterstützung."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Können Sie ohne personelle Unterstützung stabil sitzen?",
+    "a": "Ich kann [stabil allein sitzen oder brauche tatsächliche Hilfe]. Falls Hilfe nötig ist, benenne ich die Unterstützung beim Halten der Sitzposition."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Können Sie vom Bett oder Stuhl aufstehen und sich umsetzen?",
+    "a": "Die körperlichen Bewegungen gelingen mir [allein oder mit Hilfe]. Fehlenden Antrieb zum Aufstehen beschreibe ich zusätzlich getrennt von einer körperlich notwendigen Unterstützung."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Können Sie sich innerhalb Ihrer Wohnung fortbewegen?",
+    "a": "Innerhalb der Wohnung gehe ich [allein, mit selbstständig genutztem Hilfsmittel oder mit personeller Hilfe]. Falls eine Person helfen muss, beschreibe ich wo und wie."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Können Sie Treppen ohne Hilfe einer anderen Person bewältigen?",
+    "a": "Treppen bewältige ich [allein oder mit tatsächlicher personeller Unterstützung]. Ich erkläre, ob Geländer oder Hilfsmittel allein ausreichen und welche Hilfe gegebenenfalls nötig ist."
+  },
+  {
+    "c": "Mobilität und Sicherheit",
+    "q": "Gab es Stürze oder konkrete Situationen mit notwendiger Sicherung?",
+    "a": "Im Zeitraum [Zeitraum] gab es [tatsächliche Ereignisse oder keine Stürze]. Falls Sicherung nötig ist, beschreibe ich die konkrete Situation und die Hilfe einer anderen Person."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Können Sie Kontakte zu anderen Menschen selbst aufrechterhalten?",
+    "a": "Bei [Kontakt] gelingt mir das allein. Bei [anderem Kontakt] brauche ich [Anregung, Vorbereitung oder tatsächliche Unterstützung]. Ich ergänze die Häufigkeit und ein Beispiel."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Welche Hilfe benötigen Sie bei Telefonaten?",
+    "a": "Telefonate mit [Person oder Stelle] führe ich [allein oder mit Hilfe]. Die andere Person muss dabei [vorbereiten, erklären, begleiten oder tatsächlich übernehmen]. Andere Telefonate gelingen mir selbst."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Können Sie Besuch empfangen oder an einem Treffen teilnehmen?",
+    "a": "Bei [Treffen] brauche ich [konkrete Unterstützung oder keine Hilfe]. Ich beschreibe Vorbereitung, Teilnahme und Folgen der Belastung getrennt und nenne die typische Häufigkeit."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Können Sie Post und behördliche Schreiben selbst bearbeiten?",
+    "a": "Bei Post, Briefen und Anträgen brauche ich meistens Hilfe. Nur selten gelingt mir die Bearbeitung allein. Meine Partnerin hilft beim Ordnen und Bearbeiten und übernimmt erforderlichenfalls Aufgaben."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Welche Unterstützung brauchen Sie bei Rechnungen und Geldangelegenheiten?",
+    "a": "Dabei benötige ich meistens Unterstützung; selbstständige Erledigung gelingt nur selten. Ich ergänze ein aktuelles Beispiel und erkläre, welche Schritte meine Partnerin übernimmt."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Können Sie Einkäufe selbst planen und erledigen?",
+    "a": "Bei [Einkaufsschritt] brauche ich [konkrete Hilfe oder keine Unterstützung]. Planung, Weg, Auswahl und Bezahlung beschreibe ich getrennt, damit deutlich wird, wobei tatsächlich Hilfe nötig ist."
+  },
+  {
+    "c": "Kontakte und Organisation",
+    "q": "Welche Haushaltsaufgaben können Sie allein durchführen?",
+    "a": "[Haushaltsaufgabe] gelingt mir allein. Bei [anderer Aufgabe] brauche ich [konkrete Hilfe]. Ich unterscheide notwendige Unterstützung von einer üblichen freiwilligen Aufgabenteilung."
+  },
+  {
+    "c": "Unterstützung und Rückfragen",
+    "q": "Wer unterstützt Sie regelmäßig und wobei?",
+    "a": "Meine Partnerin hilft bei Organisation, Erinnerungen, Post und Rechnungen sowie belastenden Terminen oder Wegen. Welche Aufgaben weitere Personen tatsächlich übernehmen, ergänze ich gesondert."
+  },
+  {
+    "c": "Unterstützung und Rückfragen",
+    "q": "Wie setzt sich die angegebene tägliche Unterstützungszeit zusammen?",
+    "a": "Ich benötige ungefähr [tatsächlicher Umfang] Unterstützung am Tag. Das setzt sich zusammen aus [konkreten Hilfen mit Häufigkeit und aktiver Zeit]. Überschneidungen zähle ich nicht doppelt; reine Anwesenheit beschreibe ich getrennt."
+  },
+  {
+    "c": "Unterstützung und Rückfragen",
+    "q": "Wie lange können Sie allein bleiben und was gelingt in dieser Zeit?",
+    "a": "Ich bleibe gewöhnlich [tatsächliche Dauer] allein. Dabei gelingt [Tätigkeit]. Für [andere Tätigkeit] ist [konkrete Hilfe oder Erreichbarkeit] nötig. Wenn ich problemlos allein bleiben kann, sage ich das."
+  },
+  {
+    "c": "Unterstützung und Rückfragen",
+    "q": "Was bedeutet die Tagebuchangabe nicht geschafft genau?",
+    "a": "Damit beschrieb ich eine insgesamt unzureichende Bewältigung zusammengefasster Bereiche an besonders belastenden Tagen. Einzelne kurze Handlungen können trotzdem gelungen sein. Ich erläutere deshalb jeden betroffenen Schritt genauer."
+  },
+  {
+    "c": "Unterstützung und Rückfragen",
+    "q": "Möchten Sie oder Ihre Begleitperson etwas ergänzen oder richtigstellen?",
+    "a": "Ich möchte ergänzen, dass [tatsächlicher offener Punkt]. Meine Begleitperson kann dazu [selbst beobachtete Situation] beschreiben. Eine missverständliche frühere Angabe erkläre ich anhand dessen, was tatsächlich gemeint war."
+  }
+]
