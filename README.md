@@ -31,3 +31,11 @@ Die Fragen sind selbst formuliert. Keine offizielle Fragenliste und kein Pflegeg
 - https://md-bund.de/themen/pflegebeduerftigkeit-und-pflegebegutachtung/begutachtungs-richtlinien.html
 
 Stand: 24.10.2026.
+
+## Pflegegradrechner
+
+[Rechner öffnen](https://adrakir.github.io/Pflegegrad-Fragen/pflegegradrechner.html). Orientierungsrechner ausschließlich für Erwachsene: 64 Kriterien mit auswählbaren Antworten, Häufigkeitseingaben in Modul 5, Vollständigkeitsprüfung, Einzel- und gewichtete Punkte, höhere Wertung aus Modul 2/3, Dauerprüfung und Hinweis auf die besondere Bedarfskonstellation. Keine Begutachtung oder Leistungszusage.
+
+Regeln nach § 15 SGB XI, Anlagen 1/2 und Begutachtungs-Richtlinien ab 01.10.2026, Kapitel 5.9 und 5.10.1. Bewertungsdaten in `calculator-data.json`, Rechenlogik in `calculator-engine.js`, Oberfläche in `calculator-template.html` und `calculator.js`. Nach dem Build zusätzlich `node verify-calculator.cjs` ausführen.
+
+Antworten werden ohne Serverübertragung im Browser verarbeitet; dauerhafte Gerätespeicherung ist freiwillig und standardmäßig ausgeschaltet. Drucken umfasst Punkteübersicht und ausgewählte Antworten. Der Rechner übernimmt keine Antworten aus dem fiktiven Übungsfall.

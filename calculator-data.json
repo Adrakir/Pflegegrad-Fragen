@@ -1,0 +1,461 @@
+{
+  "version": 1,
+  "checked": "24.10.2026",
+  "modules": [
+    {
+      "id": 1,
+      "title": "Mobilität",
+      "intro": "Hier geht es um körperliche Bewegungsfähigkeit. Ein selbstständig genutztes Hilfsmittel ist erlaubt. Probleme allein beim Planen oder Verstehen gehören in die anderen Module.",
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Im Bett die Position wechseln",
+          "hint": "Zum Beispiel sich drehen oder aus dem Liegen aufrichten.",
+          "kind": "independence"
+        },
+        {
+          "id": "1.2",
+          "label": "Sicher sitzen",
+          "hint": "Eine aufrechte Sitzposition halten, auch ohne Rücken- oder Seitenstütze.",
+          "kind": "independence"
+        },
+        {
+          "id": "1.3",
+          "label": "Aufstehen und sich umsetzen",
+          "hint": "Zum Beispiel vom Bett auf einen Stuhl wechseln.",
+          "kind": "independence"
+        },
+        {
+          "id": "1.4",
+          "label": "Sich in der Wohnung bewegen",
+          "hint": "Die üblichen Wege im Wohnbereich zurücklegen; gegebenenfalls mit Rollator oder selbst bedientem Rollstuhl.",
+          "kind": "independence"
+        },
+        {
+          "id": "1.5",
+          "label": "Treppen zwischen zwei Etagen bewältigen",
+          "hint": "Die Fähigkeit beurteilen, auch wenn es zu Hause keine Treppe gibt.",
+          "kind": "independence"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Denken und Kommunikation",
+      "intro": "Bewertet werden geistige und kommunikative Fähigkeiten. Bei den Fragen 2.1 bis 2.8 geht es um Denken und Verstehen, nicht um die körperliche Umsetzung.",
+      "items": [
+        {
+          "id": "2.1",
+          "label": "Vertraute Menschen erkennen",
+          "hint": "Menschen aus dem nahen persönlichen Umfeld wiedererkennen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.2",
+          "label": "Sich örtlich orientieren",
+          "hint": "Zum Beispiel die Räume der eigenen Wohnung und bekannte Wege zuordnen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.3",
+          "label": "Sich zeitlich orientieren",
+          "hint": "Tageszeit, Wochentag oder Jahreszeit einordnen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.4",
+          "label": "Wichtige Ereignisse im Gedächtnis behalten",
+          "hint": "Sich an relevante Erlebnisse oder Beobachtungen erinnern.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.5",
+          "label": "Mehrere Handlungsschritte steuern",
+          "hint": "Die Reihenfolge alltäglicher Abläufe verstehen und im Kopf organisieren.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.6",
+          "label": "Alltagsentscheidungen treffen",
+          "hint": "Zum Beispiel zwischen passenden Möglichkeiten wählen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.7",
+          "label": "Informationen und Zusammenhänge verstehen",
+          "hint": "Alltägliche Sachverhalte erfassen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.8",
+          "label": "Gefahren erkennen",
+          "hint": "Zum Beispiel Risiken im Haushalt richtig einschätzen.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.9",
+          "label": "Grundbedürfnisse mitteilen",
+          "hint": "Hunger, Durst, Schmerzen oder andere grundlegende Bedürfnisse ausdrücken; auch nonverbal.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.10",
+          "label": "Aufforderungen verstehen",
+          "hint": "Verstehen, was eine andere Person von einem möchte.",
+          "kind": "cognition"
+        },
+        {
+          "id": "2.11",
+          "label": "Sich an Gesprächen beteiligen",
+          "hint": "Gesprächen folgen und sich verständlich einbringen; Hör- und Sprachprobleme können hier mitwirken.",
+          "kind": "cognition"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Verhalten und psychische Belastungen",
+      "intro": "Wählen Sie, wie häufig wegen des jeweiligen Verhaltens aktive Unterstützung durch andere nötig ist. Eine Diagnose oder bloße Anwesenheit allein reicht nicht. Dasselbe Ereignis nicht in mehreren Kriterien dieses Moduls doppelt zählen.",
+      "items": [
+        {
+          "id": "3.1",
+          "label": "Unruhe mit Bewegungsdrang",
+          "hint": "Zum Beispiel wiederholtes zielloses Umhergehen, bei dem jemand eingreifen oder begleiten muss.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.2",
+          "label": "Nächtliche Unruhe",
+          "hint": "Nächtliche Aktivität, die aktive Hilfe erfordert; reine Einschlafprobleme zählen hier nicht automatisch.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.3",
+          "label": "Sich selbst verletzen",
+          "hint": "Selbstschädigende Handlungen, bei denen andere schützen oder eingreifen müssen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.4",
+          "label": "Dinge beschädigen",
+          "hint": "Verhalten, bei dem Gegenstände beschädigt werden und Hilfe nötig ist.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.5",
+          "label": "Körperlich gegen andere vorgehen",
+          "hint": "Zum Beispiel schlagen, treten oder andere verletzen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.6",
+          "label": "Andere beschimpfen oder bedrohen",
+          "hint": "Verbale Aggression mit notwendigem Eingreifen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.7",
+          "label": "Auffälliges Rufen oder andere Lautäußerungen",
+          "hint": "Zum Beispiel anhaltendes Schreien oder ständiges Wiederholen mit Unterstützungsbedarf.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.8",
+          "label": "Notwendige Unterstützung abwehren",
+          "hint": "Krankheitsbedingte Abwehr von Pflege oder Behandlung. Eine selbstbestimmte Ablehnung allein ist nicht gemeint.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.9",
+          "label": "Wahnvorstellungen",
+          "hint": "Realitätsferne Überzeugungen, die aktive Hilfe erforderlich machen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.10",
+          "label": "Ausgeprägte Ängste",
+          "hint": "Wiederkehrende, belastende Angst, die nicht selbst bewältigt wird und aktive Hilfe erfordert. Nur dabeizusitzen genügt nicht.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.11",
+          "label": "Antriebslosigkeit bei depressiver Stimmung",
+          "hint": "Wenn wiederholt jemand aktiv motivieren oder anleiten muss, damit notwendige Aktivitäten beginnen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.12",
+          "label": "Im sozialen Kontakt unangemessen handeln",
+          "hint": "Zum Beispiel krankheitsbedingte Grenzüberschreitungen, die Eingreifen nötig machen.",
+          "kind": "behavior"
+        },
+        {
+          "id": "3.13",
+          "label": "Andere pflegerelevante unangemessene Handlungen",
+          "hint": "Sonstige Handlungen mit aktivem Hilfebedarf, die oben noch nicht erfasst wurden.",
+          "kind": "behavior"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Selbstversorgung",
+      "intro": "Bewerten Sie die tatsächlich nötige persönliche Hilfe, auch notwendige Aufforderung oder Anleitung. Langsamkeit allein bedeutet noch keine Unselbstständigkeit. Die Antwortstufen sind eine Orientierung; die genaue Zuordnung hängt von der Tätigkeit ab.",
+      "items": [
+        {
+          "id": "4.1",
+          "label": "Den vorderen Oberkörper waschen",
+          "hint": "Waschen und Abtrocknen von Armen, Brust und Bauch.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.2",
+          "label": "Kopf, Haare und Zähne pflegen",
+          "hint": "Zum Beispiel kämmen, Zähne oder Zahnprothese reinigen und rasieren.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.3",
+          "label": "Den Intimbereich waschen",
+          "hint": "Waschen und Abtrocknen des Intimbereichs.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.4",
+          "label": "Duschen oder baden und Haare waschen",
+          "hint": "Auch Ein- und Aussteigen sowie erforderliche Hilfe dabei berücksichtigen.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.5",
+          "label": "Den Oberkörper an- und auskleiden",
+          "hint": "Zum Beispiel Unterhemd, Hemd oder Pullover handhaben.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.6",
+          "label": "Den Unterkörper an- und auskleiden",
+          "hint": "Zum Beispiel Hose, Strümpfe und Schuhe handhaben.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.7",
+          "label": "Essen mundgerecht vorbereiten und Getränke eingießen",
+          "hint": "Zum Beispiel Nahrung zerkleinern oder eine Flasche öffnen. Kochen ist damit nicht gemeint.",
+          "kind": "independence",
+          "factor": 1
+        },
+        {
+          "id": "4.8",
+          "label": "Essen aufnehmen",
+          "hint": "Bereitgestellte Nahrung zum Mund führen, kauen und schlucken. Dieses Kriterium zählt dreifach.",
+          "kind": "independence",
+          "factor": 3
+        },
+        {
+          "id": "4.9",
+          "label": "Trinken",
+          "hint": "Bereitgestellte Getränke aufnehmen. Dieses Kriterium zählt doppelt.",
+          "kind": "independence",
+          "factor": 2
+        },
+        {
+          "id": "4.10",
+          "label": "Toilette oder Toilettenstuhl benutzen",
+          "hint": "Auch Kleidung, Hinsetzen, Aufstehen und Intimhygiene. Dieses Kriterium zählt doppelt.",
+          "kind": "independence",
+          "factor": 2
+        },
+        {
+          "id": "4.11",
+          "label": "Harninkontinenz, Dauerkatheter oder Urostoma versorgen",
+          "hint": "Nur bewerten bei überwiegender/kompletter Harninkontinenz oder künstlicher Harnableitung. Zum Beispiel Vorlagen wechseln oder Beutel entleeren. Bei sonstiger Kontinenz „Trifft nicht zu“ wählen.",
+          "kind": "continence",
+          "factor": 1
+        },
+        {
+          "id": "4.12",
+          "label": "Stuhlinkontinenz oder Darmstoma versorgen",
+          "hint": "Nur bewerten bei überwiegender/kompletter Stuhlinkontinenz oder künstlicher Stuhlableitung. Zum Beispiel Material wechseln oder Beutel entleeren. Sonst „Trifft nicht zu“ wählen.",
+          "kind": "continence",
+          "factor": 1
+        },
+        {
+          "id": "4.13",
+          "label": "Ernährung über Sonde oder venösen Zugang",
+          "hint": "Nur dauerhaft notwendige künstliche Ernährung mit Hilfe anderer bewerten. Wer die Versorgung selbstständig durchführt, erhält hier 0 Punkte. Tägliche Zusatzernährung und nahezu ausschließliche künstliche Ernährung haben unterschiedliche Punkte.",
+          "kind": "tube",
+          "factor": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Behandlung und Therapie",
+      "intro": "Nur medizinisch notwendige, auf Dauer erforderliche Maßnahmen zählen, bei denen andere helfen müssen. Bei selbstständig bewältigten Maßnahmen „Entfällt / selbstständig“ wählen. Bei benötigter Hilfe Häufigkeit und Zeitraum angeben. Gleichartige Maßnahmen nicht doppelt erfassen.",
+      "items": [
+        {
+          "id": "5.1",
+          "label": "Medikamente handhaben",
+          "hint": "Zum Beispiel an die Einnahme erinnern, Tropfen geben oder Medikamente richten. Tabletten zur gleichen Einnahmezeit am gleichen Verabreichungsort nicht einzeln zählen. Wird die Gabe gezählt, das vorherige Richten nicht noch zusätzlich zählen.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.2",
+          "label": "Spritzen oder subkutane Infusionen",
+          "hint": "Zum Beispiel notwendige Hilfe bei Insulininjektionen.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.3",
+          "label": "Venöse Zugänge versorgen",
+          "hint": "Zum Beispiel Portpflege oder Medikamentengabe über einen venösen Zugang. Künstliche Ernährung gehört zu 4.13.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.4",
+          "label": "Absaugen oder Sauerstoff anwenden",
+          "hint": "Auch notwendige Hilfe beim An- und Ablegen entsprechender Atemmasken; die jeweilige Hilfehäufigkeit angeben.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.5",
+          "label": "Verordnete Einreibungen, Wärme oder Kälte",
+          "hint": "Ärztlich angeordnete Anwendungen, nicht allgemeine Hautpflege.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.6",
+          "label": "Körperwerte messen und richtig einordnen",
+          "hint": "Zum Beispiel ärztlich verordnetes Blutzuckermessen und erforderliche Reaktion auf die Werte.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.7",
+          "label": "Körpernahe Hilfsmittel handhaben",
+          "hint": "Zum Beispiel Hörgeräte, Prothesen oder Kompressionsstrümpfe an- und ablegen. Ein Paar zählt pro An- oder Ablegen als eine Maßnahme. Zahnprothesen gehören zu 4.2.",
+          "kind": "frequency",
+          "group": "A"
+        },
+        {
+          "id": "5.8",
+          "label": "Verbände wechseln und chronische Wunden versorgen",
+          "hint": "Dauerhaft erforderliche Versorgung chronischer oder wiederkehrender Wunden.",
+          "kind": "frequency",
+          "group": "B"
+        },
+        {
+          "id": "5.9",
+          "label": "Stoma oder künstliche Körperöffnung pflegen",
+          "hint": "Zum Beispiel Einstichstelle reinigen oder Basisplatte wechseln. Einfaches Beutelentleeren gehört in Modul 4.",
+          "kind": "frequency",
+          "group": "B"
+        },
+        {
+          "id": "5.10",
+          "label": "Einmalkatheterisierung oder besondere Abführmethoden",
+          "hint": "Zum Beispiel Katheterisieren oder Einläufe. Die bloße Gabe von Abführmedikamenten gehört zu 5.1.",
+          "kind": "frequency",
+          "group": "B"
+        },
+        {
+          "id": "5.11",
+          "label": "Verordnete Therapie zu Hause durchführen",
+          "hint": "Zum Beispiel angeleitete Eigenübungen mit notwendiger Hilfe. Der Hausbesuch eines Therapeuten selbst wird hier nicht gezählt.",
+          "kind": "frequency",
+          "group": "B"
+        },
+        {
+          "id": "5.12",
+          "label": "Zeit- und technikintensive Behandlung zu Hause",
+          "hint": "Spezielle Maßnahmen mit durchgehender Überwachung durch geschulte Personen, etwa invasive Beatmung. Nicht allein wegen hohen Zeitaufwands auswählen. Bei täglicher Durchführung „täglich“ wählen.",
+          "kind": "frequency",
+          "group": "C"
+        },
+        {
+          "id": "5.13",
+          "label": "Arzttermine mit notwendiger Begleitung wahrnehmen",
+          "hint": "Regelmäßige Besuche in Praxen; Hilfe auf dem Weg oder beim Termin. Ärztliche Hausbesuche nicht zählen.",
+          "kind": "frequency",
+          "group": "C"
+        },
+        {
+          "id": "5.14",
+          "label": "Andere Therapieeinrichtungen bis zu drei Stunden besuchen",
+          "hint": "Zum Beispiel Physio- oder Psychotherapie mit notwendiger Begleitung. Gesamtzeit der helfenden Person einschließlich Fahrten bis zu drei Stunden.",
+          "kind": "frequency",
+          "group": "C"
+        },
+        {
+          "id": "5.15",
+          "label": "Andere Therapieeinrichtungen länger als drei Stunden besuchen",
+          "hint": "Notwendige Begleitung bei solchen Terminen, wenn die Gesamtzeit einschließlich Fahrten mehr als drei Stunden beträgt. Den Termin nicht zugleich unter 5.14 zählen.",
+          "kind": "frequency",
+          "group": "C"
+        },
+        {
+          "id": "5.16",
+          "label": "Medizinische Ernährungs- und Verhaltensregeln einhalten",
+          "hint": "Einsicht in notwendige ärztlich angeordnete Diäten oder Regeln zu lebenswichtigen Körperfunktionen, etwa Atmung oder Kreislauf. Allgemeine Empfehlungen zu gesundem Leben reichen nicht.",
+          "kind": "independence",
+          "group": "D"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Alltag und soziale Kontakte",
+      "intro": "Hier geht es um das selbstständige Gestalten des Alltags. Auch notwendige Erinnerung, Motivation, Anleitung und Organisation durch andere können eine Rolle spielen.",
+      "items": [
+        {
+          "id": "6.1",
+          "label": "Tagesablauf gestalten und auf Änderungen reagieren",
+          "hint": "Den Tag passend einteilen und mit Abweichungen umgehen.",
+          "kind": "independence"
+        },
+        {
+          "id": "6.2",
+          "label": "Ruhen und schlafen",
+          "hint": "Einen angemessenen Schlaf- und Ruherhythmus gestalten und dabei notwendige Hilfe berücksichtigen.",
+          "kind": "independence"
+        },
+        {
+          "id": "6.3",
+          "label": "Sich beschäftigen",
+          "hint": "Eine passende Tätigkeit auswählen, beginnen und durchführen.",
+          "kind": "independence"
+        },
+        {
+          "id": "6.4",
+          "label": "Zukünftige Vorhaben planen",
+          "hint": "Über den Tag hinaus planen und nötige Schritte organisieren.",
+          "kind": "independence"
+        },
+        {
+          "id": "6.5",
+          "label": "Mit anwesenden Menschen in Kontakt treten",
+          "hint": "Direkten Austausch beginnen und aufrechterhalten.",
+          "kind": "independence"
+        },
+        {
+          "id": "6.6",
+          "label": "Kontakte außerhalb des direkten Umfelds pflegen",
+          "hint": "Zum Beispiel telefonieren, schreiben oder Treffen vereinbaren; erforderliche Hilfe beim Organisieren berücksichtigen.",
+          "kind": "independence"
+        }
+      ]
+    }
+  ]
+}

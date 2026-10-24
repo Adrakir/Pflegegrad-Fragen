@@ -17,3 +17,12 @@ guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).r
 (root/'pflegewissen.html').write_text(guide)
 (root/'dist/pflegewissen.html').write_text(guide)
 print('Pflegegrad-Fragen: 100 Fragen plus Pflegegrade & Leistungen 2026 erstellt.')
+
+calculator=json.loads((root/'calculator-data.json').read_text())
+assert sum(len(m['items']) for m in calculator['modules'])==64
+calc=(root/'calculator-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__CALCULATOR_DATA__',json.dumps(calculator,ensure_ascii=False).replace('</','<\\/')).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+(root/'pflegegradrechner.html').write_text(calc)
+(root/'dist/pflegegradrechner.html').write_text(calc)
+for asset in ['calculator-engine.js','calculator.js']:
+ (root/'dist'/asset).write_text((root/asset).read_text())
+print('Pflegegradrechner: 64 Kriterien und sechs Module erstellt.')
