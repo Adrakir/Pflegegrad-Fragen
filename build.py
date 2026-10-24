@@ -15,7 +15,7 @@ html=template.replace('__QUESTIONS__',data)
 care=json.loads((root/'care-benefits.json').read_text())
 assert [g['grade'] for g in care['grades']]==[1,2,3,4,5]
 base_css=template.split('<style>',1)[1].split('</style>',1)[0]
-guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__REASSESSMENT_HTML__',(root/'reassessment.html.inc').read_text()).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
 (root/'pflegewissen.html').write_text(guide)
 (root/'dist/pflegewissen.html').write_text(guide)
 (root/'index.html').write_text(guide)

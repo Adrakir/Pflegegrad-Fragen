@@ -54,4 +54,10 @@ Erstellt von **Andreas und Ricarda**. Das Weidenherz mit handförmigem Busch ist
 
 Direkt zur Vorbereitung: https://adrakir.github.io/Pflegegrad-Fragen/pflegegradrechner.html#vorbereitung
 
+## Neubegutachtung und Höherstufung
+
+Im Wissensbereich unter `#hoeherstufung`: Anlässe für erneute Begutachtung, Höherstufung bei erhöhtem Hilfebedarf, Wiederholungsbegutachtung, neuer Antrag nach Ablehnung und Abgrenzung zum Widerspruch. Mit fünf Vorbereitungsschritten, einem ausdrücklich fiktiven Vorher-/Heute-Beispiel, anpassbaren Mustertexten für Höherstufungsantrag und fristwahrenden Widerspruch sowie Antworten zu Dauerprognose, möglichen Ergebnissen, Leistungsbeginn und privater Versicherung. Die Texte senden keine Anträge oder Widersprüche ab.
+
+Inhalte in `reassessment.html.inc`; `build.py` fügt sie in Startseite und `pflegewissen.html` ein. Die vorhandene Vorbereitung verlinkt den Wissensabschnitt und ergänzt die zwölf Checklistenpunkte um Veränderungen, vorheriges Gutachten und Fristen. Schlüssel und Datenformat bestehender Sicherungen bleiben erhalten. Quellenstand 24.10.2026: MD-Bund-Richtlinien ab 01.10.2026, § 84 SGG, §§ 18c/33 SGB XI und § 48 SGB X; Links stehen direkt in der App.
+
 `calculator-session.js` verwaltet Rechner-Sicherungen, `preparation-engine.js` prüft Tagebuchdaten, `preparation.js` steuert die Oberfläche. Die Vorbereitung wird aus `preparation.html.inc` und `preparation.css` in den Rechner eingebaut. Nach `python3 build.py` prüfen: `node verify.cjs`, `node verify-care.cjs`, `node verify-improvements.cjs` und `node verify-preparation.cjs`. Die Verbesserungsprüfung enthält auch die bisherigen Rechnerprüfungen. Alle Eingaben werden im Browser verarbeitet; Sicherungsdateien können persönliche Gesundheitsdaten enthalten.
