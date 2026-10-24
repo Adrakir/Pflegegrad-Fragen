@@ -39,3 +39,7 @@ Stand: 24.10.2026.
 Regeln nach § 15 SGB XI, Anlagen 1/2 und Begutachtungs-Richtlinien ab 01.10.2026, Kapitel 5.9 und 5.10.1. Bewertungsdaten in `calculator-data.json`, Rechenlogik in `calculator-engine.js`, Oberfläche in `calculator-template.html` und `calculator.js`. Nach dem Build zusätzlich `node verify-calculator.cjs` ausführen.
 
 Antworten werden ohne Serverübertragung im Browser verarbeitet; dauerhafte Gerätespeicherung ist freiwillig und standardmäßig ausgeschaltet. Drucken umfasst Punkteübersicht und ausgewählte Antworten. Der Rechner übernimmt keine Antworten aus dem fiktiven Übungsfall.
+
+## Gestaltung und Erstellung
+
+Erstellt von **Andreas und Ricarda**. Das Weidenherz mit handförmigem Busch ist als Logo in allen App-Bereichen eingebunden und dient auch als Browser- und Startbildschirmsymbol. Die Originalgrafik mit Transparenz liegt in `assets/weidenherz-logo.png` und wird beim Build nach `dist/assets/` kopiert.

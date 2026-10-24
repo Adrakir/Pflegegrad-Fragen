@@ -1,4 +1,5 @@
 import json
+import shutil
 from pathlib import Path
 
 root=Path(__file__).parent
@@ -26,3 +27,6 @@ calc=(root/'calculator-template.html').read_text().replace('__BASE_CSS__',base_c
 for asset in ['calculator-engine.js','calculator.js']:
  (root/'dist'/asset).write_text((root/asset).read_text())
 print('Pflegegradrechner: 64 Kriterien und sechs Module erstellt.')
+
+(root/'dist/assets').mkdir(exist_ok=True)
+shutil.copy2(root/'assets/weidenherz-logo.png',root/'dist/assets/weidenherz-logo.png')
