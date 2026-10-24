@@ -10,4 +10,10 @@ html=template.replace('__QUESTIONS__',data)
 (root/'dist').mkdir(exist_ok=True)
 (root/'dist/index.html').write_text(html)
 (root/'index.html').write_text(html)
-print('Pflegegrad-Fragen: 100 Fragen und Antworten, eigenständige HTML-App erstellt.')
+care=json.loads((root/'care-benefits.json').read_text())
+assert [g['grade'] for g in care['grades']]==[1,2,3,4,5]
+base_css=template.split('<style>',1)[1].split('</style>',1)[0]
+guide=(root/'care-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+(root/'pflegewissen.html').write_text(guide)
+(root/'dist/pflegewissen.html').write_text(guide)
+print('Pflegegrad-Fragen: 100 Fragen plus Pflegegrade & Leistungen 2026 erstellt.')
