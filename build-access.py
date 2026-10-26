@@ -57,7 +57,8 @@ for module in json.loads((ROOT/'calculator-data.json').read_text())['modules']:
   add('criterion-'+item['id'],'Rechner: '+item['label'],item['hint']+' Fiktive Beispiele: '+' '.join(x['text'] for x in item.get('examples',[])),'./pflegegradrechner.html?kriterium='+item['id']+'#rechner','Rechner',module['title'])
 add('calculator','Pflegegradrechner','Unverbindliche Selbsteinschätzung für Erwachsene mit 64 Kriterien in sechs Modulen. Antworten selbst auswählen, Unsicherheiten markieren und persönliche Angaben nur auf Wunsch im Browser speichern. Es wird kein Pflegegrad festgestellt.','./pflegegradrechner.html','Rechner','Punkte berechnen Pflegegrad Test')
 add('planner','Abrechnung vorbereiten','Leistung, Pflegegrad, Pflegekasse und Zahlungsweg wählen. Passende Unterlagen, PDF-Bogen und offizielle Einreichungswege zusammenstellen. Keine Erstattungszusage.','./abrechnung.html#abrechnung-plan','Abrechnung','Checkliste Antrag Belege Formulare')
-release={'version':'2026.10.26.4','date':'26.10.2026','changes':[
+release={'version':'2026.10.27.1','date':'27.10.2026','changes':[
+{'title':'Vorlesen verbessert','items':['Zusammenhängende Sätze statt Trennung mitten im Satz.','Deutsche Gerätestimmen bevorzugt, Stimmenprobe mit erhaltener Lesestelle.','Pause und Fortsetzen, sichtbare Lesepassage und Vor-/Zurückspringen.','Stimme und Tempo ändern, ohne den ganzen Abschnitt neu beginnen zu müssen.']},
 {'title':'Schneller zum passenden Inhalt','items':['Appweite Suche in Erklärungen, FAQ, 100 fiktiven Fragen und Kassenanträgen.','Feste Navigation für die vier Hauptbereiche auf schmalen Bildschirmen.','Abrechnungsvorbereitung mit Belegliste, PDF-Bogen und Einreichungsweg.']},
 {'title':'Lesen und Hören','items':['Vorlesen öffentlicher Abschnitte mit Stimmenprobe, Geschwindigkeit, Pause und Stopp.','Eigene Antworten und Tagebucheinträge werden nicht für Suche oder Vorlesen verwendet.']},
 {'title':'Offline und Zugänglichkeit','items':['Optionales Offline-Lesen öffentlicher Inhalte und PDF-Bögen.','Installationshilfe für den Startbildschirm.','Verbesserte Fokusführung, Formularbeschriftungen und Tastaturbedienung.']},
@@ -68,11 +69,12 @@ for size in [192,512]:
  im=Image.open(ROOT/'assets/weidenherz-logo.png').convert('RGB');im.thumbnail((size-24,size-24));canvas=Image.new('RGB',(size,size),'#f7f6f1');canvas.paste(im,((size-im.width)//2,(size-im.height)//2));canvas.save(ROOT/f'assets/app-icon-{size}.png')
 manifest={'id':'./','name':'Pflegegrad-Fragen · Andreas und Ricarda','short_name':'Pflegegrad','lang':'de','start_url':'./','scope':'./','display':'standalone','background_color':'#f7f6f1','theme_color':'#504260','icons':[{'src':f'./assets/app-icon-{s}.png','sizes':f'{s}x{s}','type':'image/png','purpose':'any'} for s in [192,512]]}
 (ROOT/'manifest.webmanifest').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-for asset in ['app-access.js','app-access.css','app-public.json','manifest.webmanifest','assets/app-icon-192.png','assets/app-icon-512.png']:
+for asset in ['care-reader.js','app-access.js','app-access.css','app-public.json','manifest.webmanifest','assets/app-icon-192.png','assets/app-icon-512.png']:
  shutil.copy2(ROOT/asset,ROOT/'dist'/asset)
+reader_js=hashlib.sha256((ROOT/'care-reader.js').read_bytes()).hexdigest()[:12]
 js=hashlib.sha256((ROOT/'app-access.js').read_bytes()).hexdigest()[:12];css=hashlib.sha256((ROOT/'app-access.css').read_bytes()).hexdigest()[:12]
 for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
- html=(ROOT/page).read_text().replace('</head>',f'<link rel="stylesheet" href="./app-access.css?v={css}"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./assets/app-icon-192.png"></head>').replace('</body>',f'<script src="./app-access.js?v={js}"></script></body>')
+ html=(ROOT/page).read_text().replace('</head>',f'<link rel="stylesheet" href="./app-access.css?v={css}"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./assets/app-icon-192.png"></head>').replace('</body>',f'<script src="./care-reader.js?v={reader_js}"></script><script src="./app-access.js?v={js}"></script></body>')
  (ROOT/page).write_text(html);(ROOT/'dist'/page).write_text(html)
 # Cache only an explicit public allowlist; never cache arbitrary requests or runtime form state.
 pages=['./','./index.html','./pflegewissen.html','./fallbeispiel.html','./pflegegradrechner.html','./abrechnung.html']
