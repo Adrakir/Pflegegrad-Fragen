@@ -21,6 +21,16 @@ for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegeg
  const h=fs.readFileSync(page,'utf8');assert.match(h,/app-usability\.css\?v=/);assert.match(h,/app-usability\.js\?v=/);assert.doesNotMatch(h,/__[A-Z_]+__/);
 }
 const faq=fs.readFileSync('faq.html.inc','utf8');assert.match(faq,/Nachbarschaftshilfe in Niedersachsen ab/);assert.match(faq,/data-topic="abrechnung"/);
-const bill=fs.readFileSync('abrechnung-template.html','utf8');assert.match(bill,/id="contrast"/);assert.match(bill,/Animation starten/);
+const bill=fs.readFileSync('abrechnung-template.html','utf8');assert.match(bill,/id="contrast"/);assert.match(bill,/Beleganimation starten/);
 const weight=fs.readFileSync('weighting.html.inc','utf8');assert.equal([...weight.matchAll(/width:(\d+)%/g)].reduce((n,m)=>n+Number(m[1]),0),100);
 console.log('PASS: single-question navigation, exact review target, unchanged answers/frequencies across view switches, module/result boundaries, shared assets, billing FAQ, opt-in animation and 100% weighting graphic.');
+const vm=require('node:vm'),shared=fs.readFileSync('app-usability.js','utf8');
+const matchSource=shared.slice(shared.indexOf('function matchTerm('),shared.indexOf('const aliases='));
+const termContext=vm.createContext({});vm.runInContext(matchSource,termContext);
+const term=(text,name)=>vm.runInContext('matchTerm('+JSON.stringify(text)+','+JSON.stringify(name)+')',termContext);
+assert.equal(term('Eigenanteile','Eigenanteil'),null);
+assert.equal(term('Pflegesachleistungen','Sachleistungen'),null);
+assert.equal(term('Die Eigenanteile bleiben.','Eigenanteile').text,'Eigenanteile');
+assert.equal(term('Teilstationär versorgt.','teilstationär').text,'Teilstationär');
+assert.equal(term('€ Eigenanteil,','Eigenanteil').index,2);
+console.log('PASS: glossary matches complete German words and preserves plural/capitalized wording.');

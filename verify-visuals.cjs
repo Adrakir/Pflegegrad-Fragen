@@ -12,3 +12,8 @@ for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegeg
  const h=fs.readFileSync(page,'utf8');assert.match(h,/care-visuals\.css\?v=/);assert.match(h,/care-visuals\.js\?v=/);assert.equal(h,fs.readFileSync('dist/'+page,'utf8'));
 }
 console.log('PASS: six module pictures, accessible SVG scenes, finite opt-in flow definitions and result graphic counts modules 2/3 only once.');
+for(const id of ['vp','eb','kp','tp','np']){
+ assert.equal(V.flows[id].length,4);assert.equal((V.flowHTML(id).match(/data-flow-step=/g)||[]).length,4);
+}
+assert.match(V.flows.tp[2][2],/Nachtpflege/);assert.match(V.flows.np[2][2],/Tagespflege/);
+console.log('PASS: every billing type has its own four-step flow; day/night flows explicitly share the month.');

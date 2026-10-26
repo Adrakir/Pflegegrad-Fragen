@@ -92,3 +92,11 @@ Gemeinsame Oberflächen-Dateien: `app-usability.js`, `app-usability.css`. Neue P
 Drei bebilderte Abläufe (Erstantrag, Höherstufung, Nachbarschaftshilfe) lassen sich einzeln durchschalten oder auf Wunsch einmal abspielen und pausieren. Automatische Durchläufe enden selbstständig; bei verborgenem Browserfenster werden sie gestoppt. Reduzierte Bewegung wird berücksichtigt. Das Ergebnisdiagramm nutzt eine gemeinsame 100-Punkte-Skala und zählt aus Modul 2/3 ausschließlich den höheren gewichteten Wert. Grafiken und Bilder ersetzen weder den erklärenden Text noch die Begutachtung.
 
 `node verify-visuals.cjs` prüft die zugänglichen SVG-Texte, Ablaufschritte, Einbindung und korrekte gemeinsame Berücksichtigung von Modul 2/3 im Ergebnisbild.
+
+### Ergänzende Abrechnungsabläufe und Bedienkorrekturen
+
+Jede der fünf Leistungsarten besitzt zusätzlich einen eigenen aufklappbaren Ablauf mit vier beschrifteten Bildschritten. Die zugehörige Animation pausiert beim Zuklappen; beim Wechsel der Leistungsart werden laufende Bildfolgen beendet. Der Schalter für die separate Beleggrafik ist ausdrücklich als „Beleganimation“ benannt. Große Schrift nutzt auf schmalen Bildschirmen eine einspaltige Bildfolge.
+
+Die Begriffshilfe berücksichtigt auch neu gerenderte Leistungs- und Rechnerinhalte. Sie verändert nur vollständige Wörter, erhält die angezeigte Schreibweise und zerlegt etwa „Eigenanteile“ oder „Pflegesachleistungen“ nicht mehr in Wortteile. Eingabefelder und Statusmeldungen werden dabei nicht verändert.
+
+Bei großer Schrift werden außerdem lange Begriffe und Kostenarten in den Abrechnungsbeispielen umgebrochen. Die Balkenbeschriftung auf schmalen Bildschirmen steht vollständig in der Legende unterhalb der Grafik; der Alternativtext nennt weiterhin die genauen Beträge.

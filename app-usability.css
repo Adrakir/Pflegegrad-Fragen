@@ -2,3 +2,7 @@
 .billing .hero{display:block;grid-template-columns:none;gap:0}
 .example-note{margin-top:10px;line-height:1.65}.example-note summary{cursor:pointer;font-weight:650;min-height:40px}.example-note p{margin:10px 0 0}
 @media(max-width:680px){.topbar .top-actions #printCare{flex-basis:auto;min-height:44px;padding:9px 12px}}
+.term-button{white-space:normal;max-width:100%;overflow-wrap:anywhere;hyphens:auto}
+.billing .grid2>*{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+.billing #servicePanel .card{overflow-wrap:anywhere;hyphens:auto}.billing .section-title>div{min-width:0}.billing .section-title h2{overflow-wrap:anywhere;hyphens:auto}
+@media(max-width:640px){.billing .cost-chart>span{font-size:0}}
