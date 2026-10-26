@@ -5,7 +5,7 @@ new vm.Script(script);
 const elements=new Map();
 function el(){return {innerHTML:'',textContent:'',value:'',hidden:false,style:{},dataset:{},classList:{toggle(){}},setAttribute(){},addEventListener(){},focus(){},scrollIntoView(){}};}
 const storage=new Map();let blocked=false,printed=false;
-const context=vm.createContext({console,setTimeout(){return 1},clearTimeout(){},Blob,URL,confirm:()=>true,localStorage:{getItem:k=>storage.get(k)||null,setItem(k,v){if(blocked)throw Error('blocked');storage.set(k,v)}},document:{documentElement:el(),querySelector(s){if(!elements.has(s))elements.set(s,el());return elements.get(s)},addEventListener(){},createElement(){return {click(){}}}},window:{addEventListener(){},print(){printed=true}}});
+const context=vm.createContext({console,setTimeout(){return 1},clearTimeout(){},Blob,URL,URLSearchParams,location:{search:""},confirm:()=>true,localStorage:{getItem:k=>storage.get(k)||null,setItem(k,v){if(blocked)throw Error('blocked');storage.set(k,v)}},document:{documentElement:el(),querySelector(s){if(!elements.has(s))elements.set(s,el());return elements.get(s)},addEventListener(){},createElement(){return {click(){}}}},window:{addEventListener(){},print(){printed=true}}});
 vm.runInContext(script,context);
 const run=s=>vm.runInContext(s,context);
 assert.equal(run('QUESTIONS.length'),100);
@@ -34,3 +34,5 @@ run('printSelection()');assert.equal(printed,true);assert.equal((elements.get('#
 blocked=true;run('persist()');assert.equal(run('storageOK'),false);assert.match(elements.get('#toast').textContent,/Speicherung ist gesperrt/);
 assert.equal(fs.readFileSync('fallbeispiel.html','utf8'),html);
 console.log('PASS: 100 unique questions and answers, 10 topics, all pages, search/filter, bookmarks, practice coverage, input escaping, import sanitization, persistence, print coverage, storage failure.');
+
+run("openPublicQuestion(97)");assert.equal(run("state.page"),9);assert.equal(run("state.open.has(97)"),true);assert.match(elements.get("#questionList").innerHTML,/id="q-97"/);

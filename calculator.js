@@ -72,3 +72,5 @@ function applyPrefs(){document.documentElement.classList.toggle('large',prefs.la
 function savePrefs(){try{const p=JSON.parse(localStorage.getItem('pflegegrad-fragen-v1')||'{}');localStorage.setItem('pflegegrad-fragen-v1',JSON.stringify({...p,...prefs}));}catch{}}
 $('#fontSize').onclick=()=>{prefs.large=!prefs.large;applyPrefs();savePrefs();};$('#contrast').onclick=()=>{prefs.contrast=!prefs.contrast;applyPrefs();savePrefs();};
 applyPrefs();if(step>0&&step<7)questionIndex=firstOpenQuestion(DATA.modules[step-1]);persist();renderScreen();if(remember&&step>0){$('#resumeStatus').hidden=false;$('#resumeStatus').textContent='Gespeicherte Sitzung fortgesetzt: '+(step===7?'Auswertung':'Modul '+step)+'.';}
+
+window.addEventListener('pflege:open-criterion',e=>{const id=String(e.detail);if(itemById[id]){document.getElementById('calculatorAreaTab')?.click();reviewQuestion(id);}});

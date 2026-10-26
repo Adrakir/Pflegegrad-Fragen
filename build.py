@@ -107,3 +107,7 @@ for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrec
  (root/page).write_text(html)
  (root/'dist'/page).write_text(html)
 print('Gekoppelte Balken, Zeitstrahlen, Guthabenkalender, Tagesform, Antwortvergleiche und Antragsrollen eingebunden.')
+
+# Shared public index, application comfort controls, and optional offline bundle.
+import runpy
+runpy.run_path(str(root/'build-access.py'))
