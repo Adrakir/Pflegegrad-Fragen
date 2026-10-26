@@ -65,3 +65,11 @@ Inhalte in `reassessment.html.inc`; `build.py` fügt sie in Startseite und `pfle
 ## Zentrale FAQ
 
 24 Antworten in fünf Themenbereichen unter `#faq`, mit lokaler Volltextsuche (alle Suchwörter), Themenfilter, Trefferzahl, Zurücksetzen und Öffnen/Schließen der Treffer. Ohne JavaScript bleiben alle Fragen und Antworten über native Aufklappfelder erreichbar. Beim Drucken werden auch ausgefilterte FAQ ausgegeben. Links aus Rechner und Fallbeispiel führen zur FAQ; die drei Hauptbereiche bleiben unverändert. Dateien: `faq.html.inc`, `faq.css`, `faq.js`; Einbindung und Cache-Versionierung durch `build.py`.
+
+## Abrechnung und Nachbarschaftshilfe Niedersachsen (26.10.2026)
+
+`abrechnung.html` erklärt fünf Leistungsarten und die niedersächsische Nachbarschaftshilfe mit sechs fiktiven Rechenfällen. Drei Budgetgrafiken, ein schrittweiser Zahlungsweg, pausierbare Animationen, acht Kassenkontaktkarten mit Ortsfilter sowie sechs PDF-Downloads sind integriert. Die Kontaktsammlung ist eine regionale Auswahl mit Verweis auf die vollständige GKV-Liste. Besucher- und zentrale Postanschriften sind getrennt.
+
+Quellen: Gesetzestexte, BMG/gesund.bund.de, Land Niedersachsen sowie offizielle Kassenseiten, jeweils auf der Seite verlinkt. Jahresbudget Verhinderung/Kurzzeit und Monatsbudget Tag/Nacht werden jeweils gemeinsam betrachtet. Kein Versand und keine Speicherung persönlicher Abrechnungsdaten durch den neuen Bereich. PDF-Muster sind editierbar, rechnen jedoch nicht automatisch.
+
+Quellen: `abrechnung-template.html`, `abrechnung.js`, `abrechnung.css`, `billing-data.json`; PDF-Generator: `generate-billing-forms.py`; Prüfung: `node verify-billing.cjs`. `python3 build.py` erstellt die Seite und kopiert alle Formulare nach `dist/`.

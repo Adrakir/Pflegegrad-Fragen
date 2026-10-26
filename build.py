@@ -39,3 +39,13 @@ print('Pflegegradrechner: 64 Kriterien und sechs Module erstellt.')
 
 (root/'dist/assets').mkdir(exist_ok=True)
 shutil.copy2(root/'assets/weidenherz-logo.png',root/'dist/assets/weidenherz-logo.png')
+
+billing=(root/'abrechnung-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__BILLING_DATA__',json.dumps(json.loads((root/'billing-data.json').read_text()),ensure_ascii=False).replace('</','<\\/'))
+for asset in ['abrechnung.css','abrechnung.js']:
+ digest=hashlib.sha256((root/asset).read_bytes()).hexdigest()[:12]
+ billing=billing.replace('./'+asset+'"','./'+asset+'?v='+digest+'"')
+ shutil.copy2(root/asset,root/'dist'/asset)
+(root/'abrechnung.html').write_text(billing)
+(root/'dist/abrechnung.html').write_text(billing)
+shutil.copytree(root/'formulare',root/'dist/formulare',dirs_exist_ok=True)
+print('Abrechnung Niedersachsen: fünf Leistungsarten, Nachbarschaftshilfe, sechs PDF-Bögen und acht Kassenkontakte erstellt.')
