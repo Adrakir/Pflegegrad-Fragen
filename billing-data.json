@@ -50,7 +50,8 @@
           ],
           "source": "https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897"
         }
-      ]
+      ],
+      "onlineId": "aok"
     },
     {
       "name": "Techniker Krankenkasse (TK)",
@@ -100,7 +101,8 @@
           "source": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/angebote-unterstuetzung-alltag-entlastung-pflege/abrechnung-entlastungsleistungen-2008556",
           "note": "Für Pflegebelege gilt 20902 Hamburg. Die allgemeine Filialpostanschrift 20915 Hamburg ist dafür nicht die hier genannte Pflegeadresse."
         }
-      ]
+      ],
+      "onlineId": "tk"
     },
     {
       "name": "BARMER",
@@ -155,7 +157,8 @@
           ],
           "source": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032"
         }
-      ]
+      ],
+      "onlineId": "barmer"
     },
     {
       "name": "DAK-Gesundheit",
@@ -203,7 +206,8 @@
           ],
           "source": "https://www.dak.de/dak/servicezentren/osnabrueck_15802"
         }
-      ]
+      ],
+      "onlineId": "dak"
     },
     {
       "name": "hkk",
@@ -244,7 +248,8 @@
           ],
           "source": "https://www.hkk.de/kontakt/geschaeftsstellen"
         }
-      ]
+      ],
+      "onlineId": "hkk"
     },
     {
       "name": "IKK classic",
@@ -289,7 +294,8 @@
           ],
           "source": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck"
         }
-      ]
+      ],
+      "onlineId": "ikk"
     },
     {
       "name": "KKH Kaufmännische Krankenkasse",
@@ -335,7 +341,8 @@
           ],
           "source": "https://www.kkh.de/kontakt/servicestellen"
         }
-      ]
+      ],
+      "onlineId": "kkh"
     },
     {
       "name": "BKK firmus",
@@ -380,7 +387,8 @@
           ],
           "source": "https://www.bkk-firmus.de/leistungen/lexikon/a-z/pflegeversicherung"
         }
-      ]
+      ],
+      "onlineId": "firmus"
     }
   ]
 }

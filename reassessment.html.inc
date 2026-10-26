@@ -8,6 +8,7 @@
 <article class="info-card"><h3>Früher abgelehnt, inzwischen verändert</h3><p>Besteht noch kein Pflegegrad und ist inzwischen mehr Hilfe nötig, kommt ein neuer Antrag auf Pflegeleistungen infrage. Für Einwände gegen einen noch anfechtbaren Ablehnungsbescheid die Widerspruchsfrist sichern. Bei älteren Bescheiden die weiteren Möglichkeiten mit einer Beratungsstelle klären. <a class="source-link" href="#quellen">[3, 19, 21]</a></p></article>
 </div>
 
+<p><a class="subtle linkbutton" href="./abrechnung.html#online-antraege">Online-Anträge und Höherstufung nach Kasse finden</a></p>
 <h3 style="margin-top:24px">So bereiten Sie eine Höherstufung vor</h3>
 <div class="steps">
 <article class="step"><div><h3>Veränderungen mit Datum festhalten</h3><p>Letztes Gutachten und Bescheid bereitlegen. Für betroffene Tätigkeiten notieren: Was gelang früher selbstständig? Was gelingt heute? Seit wann ist welche Hilfe nötig, wie oft und durch wen? Auch Erinnerung, Anleitung und notwendige, bisher fehlende Hilfe beschreiben.</p></div></article>

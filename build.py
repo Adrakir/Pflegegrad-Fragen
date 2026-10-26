@@ -1,6 +1,7 @@
 import json
 import hashlib
 import shutil
+from html import escape
 from pathlib import Path
 
 root=Path(__file__).parent
@@ -40,7 +41,15 @@ print('Pflegegradrechner: 64 Kriterien und sechs Module erstellt.')
 (root/'dist/assets').mkdir(exist_ok=True)
 shutil.copy2(root/'assets/weidenherz-logo.png',root/'dist/assets/weidenherz-logo.png')
 
-billing=(root/'abrechnung-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__BILLING_DATA__',json.dumps(json.loads((root/'billing-data.json').read_text()),ensure_ascii=False).replace('</','<\\/'))
+# A static, accessible directory: browsing links never transmits app inputs.
+applications=json.loads((root/'online-applications.json').read_text())
+online_cards=[]
+for c in applications['insurers']:
+ links=''.join('<a href="'+escape(l['url'],quote=True)+'" target="_blank" rel="noopener"><span>'+escape(l['label'])+'</span><small>'+escape(l['note'])+'</small></a>' for l in c['links'])
+ online_cards.append('<article class="online-application-card" id="online-'+escape(c['id'])+'" data-online-insurer="'+escape(c['id'])+'"><span class="online-kind">'+escape(c['kind'])+'</span><h3>'+escape(c['name'])+'</h3><p>'+escape(c['info'])+'</p><div class="online-actions">'+links+'</div><p class="learning-note">Links geprüft: '+escape(applications['checked'])+' · öffnet die offizielle Kassenseite.</p></article>')
+options=''.join('<option value="'+escape(c['id'])+'">'+escape(c['name'])+'</option>' for c in applications['insurers'])
+online_html='<section id="online-antraege"><h2>Online-Anträge bei Ihrer Pflegekasse</h2><p>Für Versicherte in Niedersachsen: Wählen Sie Ihre eigene Kranken-/Pflegekasse. Die bundesweiten Portale gelten auch hier. Diese Auswahl umfasst die acht Kassen aus der Adressübersicht und ist keine vollständige Liste aller Kassen.</p><p><strong>Online-Antrag, Mitgliederportal und PDF-Upload sind verschieden.</strong> Am Link steht, welcher Weg angeboten wird. Ein Linkaufruf stellt noch keinen Antrag; Angaben erst auf der offiziellen Kassenseite eingeben und dort die Eingangsbestätigung sichern. Für eine Vertretung die Vorgaben zur Vollmacht beachten.</p><label class="online-chooser" for="onlineInsurer">Eigene Pflegekasse auswählen<select id="onlineInsurer"><option value="">Alle acht Kassen ansehen</option>'+options+'</select></label><p id="onlineCount" role="status">Alle acht Kassen angezeigt.</p><div class="online-application-grid">'+''.join(online_cards)+'</div><p>Ihre Kasse fehlt? Über die <a href="https://www.gkv-spitzenverband.de/service/krankenkassenliste/krankenkassen.jsp" target="_blank" rel="noopener">offizielle GKV-Kassenliste</a> die eigene Kasse öffnen und deren Pflegeanträge suchen. <a href="#kontakte">Zu Besuchs- und Postanschriften</a></p><p class="learning-note">Dies sind Wege für Anträge und Belege. Für einen Widerspruch die Rechtsbehelfsbelehrung und zulässige Form gesondert beachten; nicht jeder Upload ist dafür geeignet.</p></section>'
+billing=(root/'abrechnung-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__ONLINE_APPLICATIONS__',online_html).replace('__BILLING_DATA__',json.dumps(json.loads((root/'billing-data.json').read_text()),ensure_ascii=False).replace('</','<\\/'))
 for asset in ['abrechnung.css','abrechnung.js']:
  digest=hashlib.sha256((root/asset).read_bytes()).hexdigest()[:12]
  billing=billing.replace('./'+asset+'"','./'+asset+'?v='+digest+'"')
@@ -72,3 +81,16 @@ for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrec
  (root/page).write_text(html)
  (root/'dist'/page).write_text(html)
 print('Bereichsbilder, Gesprächsillustrationen, Bildauswahl, Punktediagramm und startbare Ablaufanimationen eingebunden.')
+
+# Contextual learning pictures and local-only interaction helpers.
+for asset in ['care-learning.js','care-learning.css']:
+ shutil.copy2(root/asset,root/'dist'/asset)
+learning_js=hashlib.sha256((root/'care-learning.js').read_bytes()).hexdigest()[:12]
+learning_css=hashlib.sha256((root/'care-learning.css').read_bytes()).hexdigest()[:12]
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+ html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-learning.css?v='+learning_css+'"></head>')
+ first_script=html.index('<script')
+ html=html[:first_script]+'<script src="./care-learning.js?v='+learning_js+'"></script>'+html[first_script:]
+ (root/page).write_text(html)
+ (root/'dist'/page).write_text(html)
+print('Sechs kontextbezogene Bildhilfen und offizielle Online-Antragswege eingebunden.')

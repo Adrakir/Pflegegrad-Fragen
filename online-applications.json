@@ -1,0 +1,154 @@
+{
+  "checked": "26.10.2026",
+  "insurers": [
+    {
+      "id": "aok",
+      "name": "AOK Niedersachsen",
+      "kind": "Antragsseite und Mitgliederportal",
+      "info": "Erstantrag, Höherstufung und Umstellung: Auf der AOK-Antragsseite zunächst AOK Niedersachsen auswählen. Je nach angezeigtem Verfahren Antrag beziehen oder im Portal einreichen. Meine AOK benötigt ein Benutzerkonto.",
+      "links": [
+        {
+          "label": "Pflegeantrag und Höherstufung auswählen",
+          "url": "https://www.aok.de/pk/formulare-antraege/leistungen-pflegeversicherung/",
+          "note": "Regionale Antragsseite · AOK Niedersachsen auswählen"
+        },
+        {
+          "label": "Meine AOK öffnen",
+          "url": "https://meine.aok.de/",
+          "note": "Mitgliederportal · Anmeldung erforderlich"
+        },
+        {
+          "label": "Weitere Formulare und Anträge",
+          "url": "https://www.aok.de/pk/formulare-antraege/",
+          "note": "Offizielle Übersicht · regionales Angebot beachten"
+        }
+      ]
+    },
+    {
+      "id": "tk",
+      "name": "Techniker Krankenkasse (TK)",
+      "kind": "Online-Formular und digitaler Belegweg",
+      "info": "Über die öffentliche Einstiegsseite den Pflege-Antrag starten. Für Verhinderungspflege und Entlastungsleistungen gibt es eigene Hinweise zum digitalen Einreichen über TK-App oder Meine TK. Zugang und Vertretung auf der Kassenseite klären.",
+      "links": [
+        {
+          "label": "Pflege-Antrag starten",
+          "url": "https://www.tk.de/service/form/2077146/pflegeantrag.form",
+          "note": "Online-Antrag · Schaltfläche „Pflege-Antrag stellen“ wählen"
+        },
+        {
+          "label": "Verhinderungspflege beantragen / Belege senden",
+          "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/ersatzpflege-verhinderungspflege/wie-stelle-ich-den-antrag-auf-verhinderungspflege-ersatzpflege-2008606",
+          "note": "Einreichung über TK-App / Meine TK · Anmeldung erforderlich"
+        },
+        {
+          "label": "Entlastungsbetrag und Nachbarschaftshilfe abrechnen",
+          "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/angebote-unterstuetzung-alltag-entlastung-pflege/abrechnung-entlastungsleistungen-2008556",
+          "note": "Offizieller Einreichungsweg · ergänzende Nachweise beachten"
+        }
+      ]
+    },
+    {
+      "id": "barmer",
+      "name": "BARMER",
+      "kind": "Online-Antrag mit Anmeldung",
+      "info": "Der Online-Pflegeantrag benötigt ein Konto bei Meine Barmer. Die öffentliche Antragsübersicht enthält außerdem Formulare für Höherstufung, Umstellung, Kurzzeit- und Verhinderungspflege. Dort den passenden Antrag oder digitalen Weg auswählen.",
+      "links": [
+        {
+          "label": "Online-Pflegeantrag, Höherstufung und weitere Formulare",
+          "url": "https://www.barmer.de/unsere-leistungen/pflege/antraege-auf-pflegeleistungen-1003510",
+          "note": "Öffentliche Auswahlseite · Online-Pflegeantrag mit Meine-Barmer-Anmeldung"
+        }
+      ]
+    },
+    {
+      "id": "dak",
+      "name": "DAK-Gesundheit",
+      "kind": "Online-Anträge nach Anliegen",
+      "info": "Eigene Einstiege für Erstantrag und Höherstufung. In der Übersicht stehen auch Verhinderungs- und Kurzzeitpflege, Entlastungsbetrag sowie Rechnungen. Die Kasse zeigt die jeweils nötigen Zugangs- und Versicherungsangaben im Verfahren.",
+      "links": [
+        {
+          "label": "Erstmalig Pflegeleistungen online beantragen",
+          "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflege-erstantrag_28390",
+          "note": "Online-Formular · Zugangshinweise auf der Kassenseite"
+        },
+        {
+          "label": "Höheren Pflegegrad online beantragen",
+          "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflegegrad-erhoehen_17184",
+          "note": "Online-Formular · Zugangshinweise auf der Kassenseite"
+        },
+        {
+          "label": "Weitere Pflegeanträge und Abrechnungen",
+          "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflegeantraege-online-stellen_24168",
+          "note": "Verhinderungs-/Kurzzeitpflege, Entlastungsbetrag und Rechnungen"
+        }
+      ]
+    },
+    {
+      "id": "hkk",
+      "name": "hkk",
+      "kind": "Online-Anträge mit Service-App-Zugang",
+      "info": "Erst- und Höherstufungsantrag, Verhinderungs- und Kurzzeitpflege sowie Umstellung der ambulanten Leistung sind in der offiziellen Übersicht verlinkt. Für die Online-Anträge mit den Zugangsdaten der hkk Service-App anmelden.",
+      "links": [
+        {
+          "label": "Erst-/Höherstufung und weitere Online-Anträge auswählen",
+          "url": "https://www.hkk.de/leistungen-und-services/hkk-leistungen/pflege/antraege-pflegeversicherung-verhinderungspflege",
+          "note": "Online-Anträge · Anmeldung mit Service-App-Zugangsdaten"
+        }
+      ]
+    },
+    {
+      "id": "ikk",
+      "name": "IKK classic",
+      "kind": "Online-Anträge und Online-Abrechnungen",
+      "info": "Die offizielle Auswahlseite verlinkt getrennt auf Erstantrag und Höherstufung. Weitere Online-Verfahren betreffen unter anderem Verhinderungs-/Kurzzeitpflege, Tagespflege und Kostenerstattung. Die Zugangshinweise stehen beim jeweiligen Verfahren.",
+      "links": [
+        {
+          "label": "Online-Anträge und Abrechnungen auswählen",
+          "url": "https://www.ikk-classic.de/pk/sp/kundenservice/pflegeleistung-beantragen",
+          "note": "Erstantrag, Höherstufung, weitere Leistungen und Kostenerstattung"
+        }
+      ]
+    },
+    {
+      "id": "kkh",
+      "name": "KKH Kaufmännische Krankenkasse",
+      "kind": "Formular plus Online-Upload",
+      "info": "Den passenden offiziellen Antrag für Erst-/Höherstufung oder einzelne Pflegeleistungen herunterladen und ausfüllen. Anschließend kann er über den Dokumenten-Upload in Meine KKH übermittelt werden. Ein PDF-Download allein stellt noch keinen Antrag.",
+      "links": [
+        {
+          "label": "Pflegeantrag und weitere Formulare herunterladen",
+          "url": "https://www.kkh.de/leistungen/pflege/antraege-formulare",
+          "note": "PDF-Formulare · Erst-/Höherstufung, Kurzzeit-, Tages-/Nachtpflege"
+        },
+        {
+          "label": "Antrag oder Rechnung online hochladen",
+          "url": "https://www.kkh.de/meine-kkh/dokumente-hochladen",
+          "note": "Dokumenten-Upload · Anmeldung bei Meine KKH erforderlich"
+        }
+      ]
+    },
+    {
+      "id": "firmus",
+      "name": "BKK firmus",
+      "kind": "Formular plus geschütztes Postfach",
+      "info": "Die Downloadseite bietet Pflegeantrag, Verhinderungspflege, Tagespflege und Umstellung. Ein öffentlich zugängliches spezielles Online-Pflegeformular wurde hier nicht bestätigt. Im OnlineService gibt es ein geschütztes Postfach; den passenden Einreichungsweg für den Pflegeantrag dort mit der Kasse abstimmen.",
+      "links": [
+        {
+          "label": "Offizielle Pflegeanträge herunterladen",
+          "url": "https://www.bkk-firmus.de/beratung-und-service/downloads",
+          "note": "PDF-Formulare · Abschnitt „Pflege“ öffnen"
+        },
+        {
+          "label": "OnlineService mit geschütztem Postfach",
+          "url": "https://kv365.bkk-firmus.de/index.php/loginpage/default/index",
+          "note": "Mitgliederportal · Anmeldung erforderlich"
+        },
+        {
+          "label": "Hinweise zum OnlineService",
+          "url": "https://www.bkk-firmus.de/beratung-und-service/online-tools/online-service-web-und-app",
+          "note": "Offizielle Beschreibung der digitalen Kontaktmöglichkeiten"
+        }
+      ]
+    }
+  ]
+}
