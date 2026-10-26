@@ -94,3 +94,16 @@ for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrec
  (root/page).write_text(html)
  (root/'dist'/page).write_text(html)
 print('Sechs kontextbezogene Bildhilfen und offizielle Online-Antragswege eingebunden.')
+
+# Interactive explanations inherit the app's existing controls and preferences.
+for asset in ['care-explain.js','care-explain.css']:
+ shutil.copy2(root/asset,root/'dist'/asset)
+explain_js=hashlib.sha256((root/'care-explain.js').read_bytes()).hexdigest()[:12]
+explain_css=hashlib.sha256((root/'care-explain.css').read_bytes()).hexdigest()[:12]
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+ html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-explain.css?v='+explain_css+'"></head>')
+ first_script=html.index('<script')
+ html=html[:first_script]+'<script src="./care-explain.js?v='+explain_js+'"></script>'+html[first_script:]
+ (root/page).write_text(html)
+ (root/'dist'/page).write_text(html)
+print('Gekoppelte Balken, Zeitstrahlen, Guthabenkalender, Tagesform, Antwortvergleiche und Antragsrollen eingebunden.')
