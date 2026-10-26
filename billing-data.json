@@ -1,13 +1,386 @@
 {
   "checked": "26.10.2026",
   "contacts": [
-    {"name":"AOK Niedersachsen", "os":"Niedersachsenstraße 10, 49074 Osnabrück", "ha":"Hans-Böckler-Allee 13, 30173 Hannover", "post":"AOK Niedersachsen – Pflegekasse, 30142 Hannover", "phone":"0511 2850", "links":[["Hannover und Postanschrift","https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897"],["Osnabrück","https://www.aok.de/pk/niedersachsen/region/osnabrueck/"],["Formulare","https://www.aok.de/pk/formulare-antraege/"]]},
-    {"name":"Techniker Krankenkasse (TK)", "os":"Jürgensort 10, 49074 Osnabrück", "ha":"Heiligerstr. 2, 30159 Hannover", "post":"Für Pflegeabrechnungen: Techniker Krankenkasse – Pflegeversicherung, 20902 Hamburg (abweichend von der allgemeinen Filialpostanschrift).", "phone":"040 460660", "links":[["Osnabrück","https://www.tk.de/service/app/2025434/filiale/detail.app"],["Hannover","https://www.tk.de/hannover"],["Pflege-Rechnungen einreichen / Postanschrift","https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/tagespflege-nachtpflege/was-zahlt-tk-pflegeversicherung-fuer-tages-oder-nachtpflege-2008562"]]},
-    {"name":"BARMER", "os":"Große Str. 66, 49074 Osnabrück", "ha":"Schmiedestr. 13, 30159 Hannover", "post":"BARMER – Pflegekasse, 73524 Schwäbisch Gmünd", "phone":"0202 5683331010", "links":[["Osnabrück und Postanschrift","https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/osnabrueck-1004528"],["Hannover City","https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032"]]},
-    {"name":"DAK-Gesundheit", "os":"Kollegienwall 3–4, 49074 Osnabrück", "ha":"Schillerstr. 29/30, 30159 Hannover", "post":"DAK-Gesundheit Postzentrum – Pflegekasse, 22788 Hamburg", "phone":"0541 4089920", "extra":"Hannover: 0511 8207670", "links":[["Osnabrück und Postanschrift","https://www.dak.de/dak/servicezentren/osnabrueck_15802"],["Hannover-Mitte","https://www.dak.de/dak/servicezentren/hannover-mitte_15762"]]},
-    {"name":"hkk", "os":"Neuer Graben 22, 49074 Osnabrück", "ha":"Schmiedestr. 18, 30159 Hannover", "post":"hkk Krankenkasse – Pflegekasse, 28185 Bremen", "phone":"0421 36550", "links":[["Geschäftsstellen und Postanschrift","https://www.hkk.de/kontakt/geschaeftsstellen"]]},
-    {"name":"IKK classic", "os":"Am Schölerberg 9, 49082 Osnabrück", "ha":"Rotenburger Str. 20, 30659 Hannover", "post":"IKK classic – Pflegekasse, 04063 Leipzig", "phone":"0800 4551111", "links":[["Osnabrück und Postanschrift","https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck"],["Hannover","https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/hannover"]]},
-    {"name":"KKH Kaufmännische Krankenkasse", "os":"Keine örtliche Anschrift in dieser Übersicht bestätigt. Zentraler Postweg und Online-Service sind auch aus Osnabrück nutzbar.", "ha":"Kleine Packhofstraße 16, 30159 Hannover", "post":"KKH Kaufmännische Krankenkasse – Pflegekasse, 30125 Hannover", "phone":"0800 5548640554", "links":[["Hannover","https://www.kkh.de/kontakt/servicestellen.ergebnis.30159.50"],["Kontakt und Postanschrift","https://www.kkh.de/kontakt"]]},
-    {"name":"BKK firmus", "os":"Knollstraße 16, 49074 Osnabrück", "ha":"Keine örtliche Anschrift in dieser Übersicht bestätigt. Online-Service oder Kontakt in Osnabrück nutzen.", "post":"Postweg bitte über die offizielle Kontaktseite oder den letzten Pflegekassenbescheid bestätigen. Die Besucheranschrift wird hier nicht automatisch als Abrechnungsanschrift übernommen.", "phone":"0541 331410", "links":[["Servicestellen","https://www.bkk-firmus.de/beratung-und-service/servicestellen"],["Kontakt / Online-Service","https://www.bkk-firmus.de/beratung-und-service/wir-sind-fuer-sie-da"]]}
+    {
+      "name": "AOK Niedersachsen",
+      "phone": "0511 2850",
+      "links": [
+        [
+          "Hannover und Postanschrift",
+          "https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897"
+        ],
+        [
+          "Osnabrück",
+          "https://www.aok.de/pk/niedersachsen/region/osnabrueck/"
+        ],
+        [
+          "Formulare",
+          "https://www.aok.de/pk/formulare-antraege/"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Niedersachsenstraße 10",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.aok.de/pk/niedersachsen/region/osnabrueck/",
+          "phone": "0541 348-0"
+        },
+        "ha": {
+          "lines": [
+            "Hans-Böckler-Allee 13",
+            "30173 Hannover"
+          ],
+          "source": "https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897",
+          "phone": "0511 285-0"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "AOK Niedersachsen",
+            "Pflegekasse",
+            "30142 Hannover"
+          ],
+          "source": "https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897"
+        }
+      ]
+    },
+    {
+      "name": "Techniker Krankenkasse (TK)",
+      "phone": "040 460660",
+      "links": [
+        [
+          "Osnabrück",
+          "https://www.tk.de/service/app/2025434/filiale/detail.app"
+        ],
+        [
+          "Hannover",
+          "https://www.tk.de/hannover"
+        ],
+        [
+          "Pflege-Rechnungen einreichen / Postanschrift",
+          "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/tagespflege-nachtpflege/was-zahlt-tk-pflegeversicherung-fuer-tages-oder-nachtpflege-2008562"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Jürgensort 10",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.tk.de/service/app/2025434/filiale/detail.app"
+        },
+        "ha": {
+          "lines": [
+            "Heiligerstr. 2",
+            "30159 Hannover"
+          ],
+          "source": "https://www.tk.de/hannover"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "Techniker Krankenkasse",
+            "Pflegeversicherung",
+            "20902 Hamburg"
+          ],
+          "source": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/angebote-unterstuetzung-alltag-entlastung-pflege/abrechnung-entlastungsleistungen-2008556",
+          "note": "Für Pflegebelege gilt 20902 Hamburg. Die allgemeine Filialpostanschrift 20915 Hamburg ist dafür nicht die hier genannte Pflegeadresse."
+        }
+      ]
+    },
+    {
+      "name": "BARMER",
+      "phone": "0202 5683331010",
+      "links": [
+        [
+          "Osnabrück und Postanschrift",
+          "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/osnabrueck-1004528"
+        ],
+        [
+          "Hannover City",
+          "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Große Str. 66",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/osnabrueck-1004528"
+        },
+        "ha": {
+          "lines": [
+            "Schmiedestr. 13",
+            "30159 Hannover"
+          ],
+          "source": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os"
+          ],
+          "lines": [
+            "BARMER",
+            "Pflegekasse",
+            "73524 Schwäbisch Gmünd"
+          ],
+          "source": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/osnabrueck-1004528"
+        },
+        {
+          "cities": [
+            "ha"
+          ],
+          "lines": [
+            "BARMER",
+            "Pflegekasse",
+            "42266 Wuppertal"
+          ],
+          "source": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032"
+        }
+      ]
+    },
+    {
+      "name": "DAK-Gesundheit",
+      "phone": "0541 4089920",
+      "links": [
+        [
+          "Osnabrück und Postanschrift",
+          "https://www.dak.de/dak/servicezentren/osnabrueck_15802"
+        ],
+        [
+          "Hannover-Mitte",
+          "https://www.dak.de/dak/servicezentren/hannover-mitte_15762"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Kollegienwall 3–4",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.dak.de/dak/servicezentren/osnabrueck_15802",
+          "phone": "0541 4089920"
+        },
+        "ha": {
+          "lines": [
+            "Schillerstr. 29/30",
+            "30159 Hannover"
+          ],
+          "source": "https://www.dak.de/dak/servicezentren/hannover-mitte_15762",
+          "phone": "0511 8207670"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "DAK-Gesundheit",
+            "Postzentrum",
+            "Pflegekasse",
+            "22788 Hamburg"
+          ],
+          "source": "https://www.dak.de/dak/servicezentren/osnabrueck_15802"
+        }
+      ]
+    },
+    {
+      "name": "hkk",
+      "phone": "0421 36550",
+      "links": [
+        [
+          "Geschäftsstellen und Postanschrift",
+          "https://www.hkk.de/kontakt/geschaeftsstellen"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Neuer Graben 22",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.hkk.de/kontakt/geschaeftsstellen"
+        },
+        "ha": {
+          "lines": [
+            "Schmiedestr. 18",
+            "30159 Hannover"
+          ],
+          "source": "https://www.hkk.de/kontakt/geschaeftsstellen"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "hkk Krankenkasse",
+            "Pflegekasse",
+            "28185 Bremen"
+          ],
+          "source": "https://www.hkk.de/kontakt/geschaeftsstellen"
+        }
+      ]
+    },
+    {
+      "name": "IKK classic",
+      "phone": "0800 4551111",
+      "links": [
+        [
+          "Osnabrück und Postanschrift",
+          "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck"
+        ],
+        [
+          "Hannover",
+          "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/hannover"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Am Schölerberg 9",
+            "49082 Osnabrück"
+          ],
+          "source": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck"
+        },
+        "ha": {
+          "lines": [
+            "Rotenburger Str. 20",
+            "30659 Hannover"
+          ],
+          "source": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/hannover"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "IKK classic",
+            "Pflegekasse",
+            "04063 Leipzig"
+          ],
+          "source": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck"
+        }
+      ]
+    },
+    {
+      "name": "KKH Kaufmännische Krankenkasse",
+      "phone": "0800 5548640554",
+      "links": [
+        [
+          "Servicestellensuche",
+          "https://www.kkh.de/kontakt/servicestellen"
+        ],
+        [
+          "Hannover",
+          "https://www.kkh.de/kontakt/servicestellen.ergebnis.30159.50"
+        ],
+        [
+          "Kontakt und Postanschrift",
+          "https://www.kkh.de/kontakt"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "note": "Für Osnabrück konnte keine aktuelle Besucheranschrift bestätigt werden. Vor einer Anfahrt bitte die offizielle Servicestellensuche nutzen.",
+          "source": "https://www.kkh.de/kontakt/servicestellen"
+        },
+        "ha": {
+          "lines": [
+            "Kleine Packhofstraße 16",
+            "30159 Hannover"
+          ],
+          "source": "https://www.kkh.de/kontakt/servicestellen.ergebnis.30159.50"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "KKH Kaufmännische Krankenkasse",
+            "Pflegekasse",
+            "30125 Hannover"
+          ],
+          "source": "https://www.kkh.de/kontakt/servicestellen"
+        }
+      ]
+    },
+    {
+      "name": "BKK firmus",
+      "phone": "0541 331410",
+      "links": [
+        [
+          "Servicestellen",
+          "https://www.bkk-firmus.de/beratung-und-service/servicestellen"
+        ],
+        [
+          "Kontakt / Online-Service",
+          "https://www.bkk-firmus.de/beratung-und-service/wir-sind-fuer-sie-da"
+        ],
+        [
+          "Pflegekasse und Postanschrift",
+          "https://www.bkk-firmus.de/leistungen/lexikon/a-z/pflegeversicherung"
+        ]
+      ],
+      "checked": "26.10.2026",
+      "visits": {
+        "os": {
+          "lines": [
+            "Knollstraße 16",
+            "49074 Osnabrück"
+          ],
+          "source": "https://www.bkk-firmus.de/beratung-und-service/servicestellen"
+        },
+        "ha": {
+          "note": "In der offiziellen Servicestellenliste ist kein Standort in Hannover aufgeführt. Beratung telefonisch oder über den Online-Service; Besuch zum Beispiel in Osnabrück möglich.",
+          "source": "https://www.bkk-firmus.de/beratung-und-service/servicestellen"
+        }
+      },
+      "posts": [
+        {
+          "cities": [
+            "os",
+            "ha"
+          ],
+          "lines": [
+            "BKK Pflegekasse firmus",
+            "28192 Bremen"
+          ],
+          "source": "https://www.bkk-firmus.de/leistungen/lexikon/a-z/pflegeversicherung"
+        }
+      ]
+    }
   ]
 }

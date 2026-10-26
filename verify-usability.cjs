@@ -21,7 +21,7 @@ for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegeg
  const h=fs.readFileSync(page,'utf8');assert.match(h,/app-usability\.css\?v=/);assert.match(h,/app-usability\.js\?v=/);assert.doesNotMatch(h,/__[A-Z_]+__/);
 }
 const faq=fs.readFileSync('faq.html.inc','utf8');assert.match(faq,/Nachbarschaftshilfe in Niedersachsen ab/);assert.match(faq,/data-topic="abrechnung"/);
-const bill=fs.readFileSync('abrechnung-template.html','utf8');assert.match(bill,/id="contrast"/);assert.match(bill,/Beleganimation starten/);
+const bill=fs.readFileSync('abrechnung-template.html','utf8');assert.match(bill,/id="contrast"/);assert.match(bill,/Belegweg in der Grafik zeigen/);
 const weight=fs.readFileSync('weighting.html.inc','utf8');assert.equal([...weight.matchAll(/width:(\d+)%/g)].reduce((n,m)=>n+Number(m[1]),0),100);
 console.log('PASS: single-question navigation, exact review target, unchanged answers/frequencies across view switches, module/result boundaries, shared assets, billing FAQ, opt-in animation and 100% weighting graphic.');
 const vm=require('node:vm'),shared=fs.readFileSync('app-usability.js','utf8');

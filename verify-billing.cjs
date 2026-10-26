@@ -27,3 +27,20 @@ for(const match of html.matchAll(/(?:href|src)="\.\/([^"?#]+)(?:[?#][^"]*)?"/g))
 for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html'])assert.match(fs.readFileSync(page,'utf8'),/href="\.\/abrechnung.html"/);
 assert.equal(fs.readFileSync('dist/abrechnung.html','utf8'),html);
 console.log('PASS: five billing examples, independent budgets, cent arithmetic, PG1 zero budget, overflow/invalid inputs, eight contacts, six PDF links and existing-app navigation.');
+
+// The city filter must route the actual letter address, independently of branch visits.
+const contacts=JSON.parse(data).contacts;
+for(const c of contacts){
+ for(const city of ['os','ha']){
+  const visit=c.visits[city];assert.ok(visit.lines||visit.note,c.name+city);assert.match(visit.source,/^https:\/\//);
+  const posts=run('contactPosts('+JSON.stringify(c)+','+JSON.stringify(city)+')');
+  assert.equal(posts.length,1,c.name+city);assert.match(posts[0].lines.at(-1),/^\d{5} /);assert.match(posts[0].source,/^https:\/\//);
+ }
+}
+const barmer=contacts.find(c=>c.name==='BARMER');
+assert.equal(run('contactPosts('+JSON.stringify(barmer)+',"ha")[0].lines.at(-1)'),'42266 Wuppertal');
+assert.equal(run('contactPosts('+JSON.stringify(barmer)+',"os")[0].lines.at(-1)'),'73524 Schwäbisch Gmünd');
+assert.equal(run('contactPosts('+JSON.stringify(barmer)+',"all").length'),2);
+const firmus=contacts.find(c=>c.name==='BKK firmus');assert.equal(firmus.posts[0].lines.at(-1),'28192 Bremen');
+assert.equal(run('contactLines(["A&B","<Adresse>"])'),'A&amp;B<br>&lt;Adresse&gt;');
+console.log('PASS: each city has one complete letter address and a visit source or explicit availability note; BARMER differs by city, firmus has no placeholder, address text is escaped.');
