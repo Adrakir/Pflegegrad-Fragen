@@ -73,3 +73,22 @@ Inhalte in `reassessment.html.inc`; `build.py` fügt sie in Startseite und `pfle
 Quellen: Gesetzestexte, BMG/gesund.bund.de, Land Niedersachsen sowie offizielle Kassenseiten, jeweils auf der Seite verlinkt. Jahresbudget Verhinderung/Kurzzeit und Monatsbudget Tag/Nacht werden jeweils gemeinsam betrachtet. Kein Versand und keine Speicherung persönlicher Abrechnungsdaten durch den neuen Bereich. PDF-Muster sind editierbar, rechnen jedoch nicht automatisch.
 
 Quellen: `abrechnung-template.html`, `abrechnung.js`, `abrechnung.css`, `billing-data.json`; PDF-Generator: `generate-billing-forms.py`; Prüfung: `node verify-billing.cjs`. `python3 build.py` erstellt die Seite und kopiert alle Formulare nach `dist/`.
+
+## Verständlichkeit und Bedienung (26.10.2026)
+
+- Wissensthemen beginnen mit „Was bedeutet das?“, „Was muss ich tun?“ und „Was brauche ich?“; ausführliche Texte bleiben aufklappbar und werden beim Drucken geöffnet.
+- Gemeinsame Begriffshilfe mit Tastatur-bedienbarem Dialog, einheitlicher Schrift-/Kontrasteinstellung, kompakteren mobilen Überschriften und direkten Einstiegen.
+- Rechner startet in der zusätzlichen Ansicht „Eine Frage“. „Ganzes Modul“ bleibt wählbar. Auswahlen, Häufigkeiten und Unsicher-Markierungen bleiben beim Wechsel erhalten. Die Berechnungsregeln und 64 Kriterien bleiben gleich.
+- Tagebuch-Schnelleintrag verwendet dasselbe Formular und dieselben Einträge. Zusätzliche Angaben bleiben auch in der verkürzten Ansicht erhalten; beim Bearbeiten werden alle Felder geöffnet.
+- Mobile Themenauswahl im Fallbeispiel, Gewichtungsgrafik und interaktiver Wegweiser für Erstantrag/Höherstufung/Widerspruch.
+- 30 FAQ einschließlich Abrechnung und Nachbarschaftshilfe. Die Beleganimation startet nur nach Betätigung und berücksichtigt reduzierte Bewegung im Betriebssystem.
+
+Gemeinsame Oberflächen-Dateien: `app-usability.js`, `app-usability.css`. Neue Prüfungen: `node verify-usability.cjs`; Tagebuch-Ansichtswechsel wird zusätzlich in `verify-preparation.cjs` geprüft.
+
+### Visuelle Erklärungen
+
+`care-visuals.js` und `care-visuals.css` ergänzen lokale SVG-Bilder für die sechs Begutachtungsbereiche, Leistungsarten und Fragekategorien. Aufklappbare Illustrationen zeigen ein Gespräch und Nachbarschaftshilfe zwischen getrennten Haushalten. Das Fallbeispiel bietet eine Antwortstruktur aus vier Bildkarten; im Tagebuch kann der Bereich zusätzlich über beschriftete Bildschaltflächen gewählt werden.
+
+Drei bebilderte Abläufe (Erstantrag, Höherstufung, Nachbarschaftshilfe) lassen sich einzeln durchschalten oder auf Wunsch einmal abspielen und pausieren. Automatische Durchläufe enden selbstständig; bei verborgenem Browserfenster werden sie gestoppt. Reduzierte Bewegung wird berücksichtigt. Das Ergebnisdiagramm nutzt eine gemeinsame 100-Punkte-Skala und zählt aus Modul 2/3 ausschließlich den höheren gewichteten Wert. Grafiken und Bilder ersetzen weder den erklärenden Text noch die Begutachtung.
+
+`node verify-visuals.cjs` prüft die zugänglichen SVG-Texte, Ablaufschritte, Einbindung und korrekte gemeinsame Berücksichtigung von Modul 2/3 im Ergebnisbild.

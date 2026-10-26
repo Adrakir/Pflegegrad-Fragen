@@ -27,7 +27,7 @@ print('Pflegegrad-Fragen: 100 Fragen plus Pflegegrade & Leistungen 2026 erstellt
 
 calculator=json.loads((root/'calculator-data.json').read_text())
 assert sum(len(m['items']) for m in calculator['modules'])==64
-calc=(root/'calculator-template.html').read_text().replace('__BASE_CSS__',base_css).replace('__PREPARATION_CSS__',(root/'preparation.css').read_text()).replace('__PREPARATION_HTML__',(root/'preparation.html.inc').read_text()).replace('__CALCULATOR_DATA__',json.dumps(calculator,ensure_ascii=False).replace('</','<\\/')).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
+calc=(root/'calculator-template.html').read_text().replace('__WEIGHTING_HTML__',(root/'weighting.html.inc').read_text()).replace('__BASE_CSS__',base_css).replace('__PREPARATION_CSS__',(root/'preparation.css').read_text()).replace('__PREPARATION_HTML__',(root/'preparation.html.inc').read_text()).replace('__CALCULATOR_DATA__',json.dumps(calculator,ensure_ascii=False).replace('</','<\\/')).replace('__CARE_DATA__',json.dumps(care,ensure_ascii=False))
 for script in ['calculator-engine.js','calculator-session.js','calculator.js','preparation-engine.js','preparation.js']:
  digest=hashlib.sha256((root/script).read_bytes()).hexdigest()[:12]
  calc=calc.replace('src="./'+script+'"','src="./'+script+'?v='+digest+'"')
@@ -49,3 +49,26 @@ for asset in ['abrechnung.css','abrechnung.js']:
 (root/'dist/abrechnung.html').write_text(billing)
 shutil.copytree(root/'formulare',root/'dist/formulare',dirs_exist_ok=True)
 print('Abrechnung Niedersachsen: fünf Leistungsarten, Nachbarschaftshilfe, sechs PDF-Bögen und acht Kassenkontakte erstellt.')
+
+# Shared reading aids are added after the established page-specific handlers.
+for asset in ['app-usability.css','app-usability.js']:
+ shutil.copy2(root/asset,root/'dist'/asset)
+css_hash=hashlib.sha256((root/'app-usability.css').read_bytes()).hexdigest()[:12]
+js_hash=hashlib.sha256((root/'app-usability.js').read_bytes()).hexdigest()[:12]
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+ html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./app-usability.css?v='+css_hash+'"></head>').replace('</body>','<script src="./app-usability.js?v='+js_hash+'"></script></body>')
+ (root/page).write_text(html)
+ (root/'dist'/page).write_text(html)
+print('Leseführung, mobile Bedienung und einheitliche Bedienhilfen eingebunden.')
+
+for asset in ['care-visuals.js','care-visuals.css']:
+ shutil.copy2(root/asset,root/'dist'/asset)
+visual_css=hashlib.sha256((root/'care-visuals.css').read_bytes()).hexdigest()[:12]
+visual_js=hashlib.sha256((root/'care-visuals.js').read_bytes()).hexdigest()[:12]
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+ html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-visuals.css?v='+visual_css+'"></head>')
+ first_script=html.index('<script')
+ html=html[:first_script]+'<script src="./care-visuals.js?v='+visual_js+'"></script>'+html[first_script:]
+ (root/page).write_text(html)
+ (root/'dist'/page).write_text(html)
+print('Bereichsbilder, Gesprächsillustrationen, Bildauswahl, Punktediagramm und startbare Ablaufanimationen eingebunden.')

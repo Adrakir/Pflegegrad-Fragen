@@ -28,6 +28,5 @@ document.querySelectorAll('[data-route]').forEach(b=>b.addEventListener('click',
 $('#routeSteps').addEventListener('click',e=>{const b=e.target.closest('[data-step]');if(b){step=Number(b.dataset.step);renderRoute();}});
 $('#nextRoute').addEventListener('click',()=>{step=(step+1)%4;renderRoute();});
 $('#city').addEventListener('change',renderContacts);$('#contactSearch').addEventListener('input',renderContacts);
-$('#large').addEventListener('click',()=>{const on=document.documentElement.classList.toggle('large');$('#large').setAttribute('aria-pressed',String(on));});
-$('#motion').addEventListener('click',()=>{const on=document.documentElement.classList.toggle('paused');$('#motion').setAttribute('aria-pressed',String(on));$('#motion').textContent=on?'Animationen fortsetzen':'Animationen pausieren';});
+$('#motion').addEventListener('click',()=>{const on=document.documentElement.classList.toggle('motion-running');$('#motion').setAttribute('aria-pressed',String(on));$('#motion').textContent=on?'Animation pausieren':'Animation starten';});
 renderService('vp');renderBudgets();renderRoute();renderContacts();
