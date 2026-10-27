@@ -72,3 +72,18 @@ fields.providerCity.value='all';fields.providerType.value='all';vm.runInContext(
 assert.match(html,/Garten- und Rasenpflege sind als Alltagsangebot ausgeschlossen/);
 assert.match(html,/Keine Doppelerstattung/);assert.match(html,/Krankenkasse/);
 console.log('PASS: household cost examples, ten public case targets, fourteen sourced providers across both cities and all five services, intersecting directory filters and reset.');
+
+// Independent fictional examples must keep helper costs, goods and budgets separate.
+const pictureCases=JSON.parse(fs.readFileSync('everyday-cases.json','utf8')).cases;
+assert.equal(pictureCases.length,6);
+for(const c of pictureCases){
+ assert.equal(Math.round(c.hours*c.rate*100),Math.round(c.covered*100),c.id);
+ assert.equal(run('budget('+c.available+','+c.covered+').remaining'),c.remaining,c.id);
+ assert.ok(records.some(r=>r.url==='./abrechnung.html#bildfall-'+c.id),c.id);
+ assert.ok(fs.existsSync('assets/alltag-'+c.id+'.webp'),c.id);
+ assert.ok(fs.readFileSync('sw.js','utf8').includes('./assets/alltag-'+c.id+'.webp'),c.id);
+}
+assert.equal(pictureCases.find(c=>c.id==='einkauf').cost-pictureCases.find(c=>c.id==='einkauf').covered,28);
+assert.match(pictureCases.find(c=>c.id==='betreuung').boundary,/tatsächliche Ausfall/);
+assert.match(pictureCases.find(c=>c.id==='waesche').boundary,/tatsächlich keine Unterstützung/);
+console.log('PASS: six illustrated public cases, helper/goods split, cent-accurate independent budgets and offline pictures.');

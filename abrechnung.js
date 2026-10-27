@@ -52,3 +52,22 @@ window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#firma-')
 let householdPrintState=[];
 window.addEventListener('beforeprint',()=>{householdPrintState=[...document.querySelectorAll('.household-help details')].map(panel=>[panel,panel.open]);householdPrintState.forEach(([panel])=>panel.open=true);});
 window.addEventListener('afterprint',()=>{householdPrintState.forEach(([panel,open])=>panel.open=open);householdPrintState=[];});
+
+// Progressive enhancement: the image link remains usable without JavaScript.
+const everydayImageDialog=document.getElementById('everydayImageDialog');
+let everydayImageOpener=null;
+document.querySelectorAll('[data-case-picture]').forEach(link=>link.addEventListener('click',event=>{
+ if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||!everydayImageDialog?.showModal)return;
+ event.preventDefault();everydayImageOpener=link;
+ const source=link.querySelector('img'),target=document.getElementById('everydayImage');
+ target.src=link.href;target.alt=source.alt;
+ document.getElementById('everydayImageOriginal').href=link.href;
+ document.getElementById('everydayImageScroll').classList.remove('is-zoomed');
+ const zoom=document.getElementById('everydayImageZoom');zoom.setAttribute('aria-pressed','false');zoom.textContent='Bilddetails vergrößern';
+ document.getElementById('everydayImageTitle').textContent=link.closest('article').querySelector('h3').textContent;
+ everydayImageDialog.showModal();
+}));
+document.getElementById('everydayImageClose')?.addEventListener('click',()=>everydayImageDialog.close());
+everydayImageDialog?.addEventListener('close',()=>{everydayImageOpener?.focus({preventScroll:true});});
+
+document.getElementById('everydayImageZoom')?.addEventListener('click',event=>{const zoomed=document.getElementById('everydayImageScroll').classList.toggle('is-zoomed');event.currentTarget.setAttribute('aria-pressed',String(zoomed));event.currentTarget.textContent=zoomed?'Ganzes Bild anzeigen':'Bilddetails vergrößern';});

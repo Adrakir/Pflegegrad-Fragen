@@ -70,10 +70,11 @@ add('planner','Abrechnung vorbereiten','Leistung, Pflegegrad, Pflegekasse und Za
 # Deep links open the original public examples and provider cards.
 for n in Parse((ROOT/'abrechnung.html').read_text()).root.all():
  id=n.attrs.get('id','')
- if not (id.startswith('haus-fall-') or id.startswith('firma-')):continue
+ if not (id.startswith('haus-fall-') or id.startswith('firma-') or id.startswith('bildfall-')):continue
  head=next(n.all('summary' if id.startswith('haus-fall-') else 'h3'))
- add('local-'+id,clean(head.text()),n.text(),'./abrechnung.html#'+id,'Beispiel' if id.startswith('haus-fall-') else 'Firmen vor Ort',{'waesche':'Wäscherei Textilreinigung Wäsche Abholservice','essen':'Essen auf Rädern Menüservice Mahlzeiten Lieferung','fahrt':'Fahrdienst Taxi Krankenfahrt','fenster':'Fenster Reinigung','garten':'Gartenpflege'}.get(n.attrs.get('data-provider-type'),''))
-release={'version':'2026.10.27.4','date':'27.10.2026','changes':[
+ add('local-'+id,clean(head.text()),n.text(),'./abrechnung.html#'+id,'Firmen vor Ort' if id.startswith('firma-') else 'Beispiel',{'waesche':'Wäscherei Textilreinigung Wäsche Abholservice','essen':'Essen auf Rädern Menüservice Mahlzeiten Lieferung','fahrt':'Fahrdienst Taxi Krankenfahrt','fenster':'Fenster Reinigung','garten':'Gartenpflege'}.get(n.attrs.get('data-provider-type'),''))
+release={'version':'2026.10.27.5','date':'27.10.2026','changes':[
+{'title':'Alltagshilfe mit Bildern','items':['Sechs bebilderte erfundene Fälle zu Haushalt, Wäsche, Pflanzenpflege, Betreuung, Spaziergang und Einkauf.','Bilder vergrößern; konkrete Hilfe, Rechenweg und Leistungsgrenzen aufklappen.','Alle Fälle auch in der öffentlichen Suche und Vorlesefunktion sowie mit ihren Bildern offline verfügbar.']},
 {'title':'Wäsche, Essen und Firmenanfrage','items':['14 konkrete Firmen in fünf Dienstleistungsbereichen; zusätzliche Wäschereien und Mahlzeitenlieferanten für beide Städte.','Zwei weitere erfundene Beispiele: Wäschehilfe und Mahlzeitenlieferung verständlich unterscheiden.','Bildanleitung vor dem Auftrag, Fragen für das erste Gespräch und zurücksetzbare Firmenfilter.']},
 {'title':'Fenster, Garten und Fahrdienste','items':['Eigener Bereich mit niedersächsischen Leistungsgrenzen und acht erfundenen Beispielen.','Fahrdienst, Begleitung und verordnete Krankenfahrt getrennt erklärt.','Zehn konkrete Firmen in Hannover und Osnabrück mit Kontakt, Quellen und getrennten Abrechnungshinweisen.']},
 {'title':'GdB und eigene Vorbereitung','items':['Neuer GdB-Leitfaden für Niedersachsen mit Bildern, startbaren Abläufen, vier erfundenen Fallbeispielen und acht Merkzeichen.','Eigene Aufgaben, selbst eingetragene Termine und Unterlagenübersicht; Speicherung nur auf Wunsch.','Übersicht drucken sowie Sicherungen prüfen und wieder laden.','Stimme und Lesetempo auf Wunsch über Seitenwechsel hinweg merken.','Öffentliches Quellenverzeichnis und automatisierte Qualitäts- und Linkprüfungen.']},

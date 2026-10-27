@@ -1,0 +1,77 @@
+{
+  "checked": "2026-10-27",
+  "cases": [
+    {
+      "id": "kueche", "topic": "Haushalt", "title": "Frau Brandes bekommt Hilfe in der Küche",
+      "alt": "Eine ältere Frau sitzt am Küchentisch und spricht mit einer Helferin, die die Arbeitsfläche abwischt.",
+      "situation": "Frau Brandes hat Pflegegrad 2. Längeres Stehen fällt ihr schwer. Sie entscheidet selbst, was gereinigt werden soll; eine passende anerkannte Alltagshilfe übernimmt die anstrengenden Arbeiten.",
+      "help": "An zwei Terminen werden Geschirr eingeräumt, Arbeitsflächen abgewischt und der Küchenboden gereinigt. Jeder Termin dauert eineinhalb Stunden. Die Unterstützung betrifft Frau Brandes’ eigenen Haushalt.",
+      "route": "Entlastungsbetrag prüfen", "billing": "Im Beispiel umfasst die Anerkennung des Angebots diese Haushaltshilfe. Frau Brandes hat 131 € bestätigtes Guthaben. Bei erfüllten Voraussetzungen können die 90 € daraus erstattet werden.",
+      "hours": 3, "rate": 30, "cost": 90, "covered": 90, "available": 131, "remaining": 41,
+      "equation": "2 × 1,5 Stunden × 30 € = 90 € Hilfe · 41 € Entlastungsguthaben bleiben",
+      "record": "Beispiel: Zwei Termine mit Datum und jeweils 1,5 Stunden; Geschirr, Arbeitsflächen und Küchenboden in der eigenen Wohnung; zusammen 90 €. Rechnung und bei eigener Zahlung Zahlungsnachweis aufbewahren.",
+      "boundary": "Treppenhausreinigung oder Renovierungsarbeiten nicht in diese Haushaltshilfe hineinrechnen. Eine gewöhnliche Reinigungsfirma ist ohne passenden Abrechnungsweg nicht automatisch erstattungsfähig.",
+      "source": "s-haus-land", "sourceLabel": "Landeshinweise, Seite 3; § 45b SGB XI im Quellenbereich"
+    },
+    {
+      "id": "waesche", "topic": "Wäschepflege", "title": "Herr Kramer sortiert die Wäsche mit seinem Nachbarn",
+      "alt": "Zwei erwachsene Männer sitzen neben einem Wäschekorb und legen gemeinsam ein Handtuch zusammen; die Waschmaschine steht im Hintergrund.",
+      "situation": "Herr Kramer hat Pflegegrad 1 und verliert bei mehreren Arbeitsschritten schnell den Überblick. Sein Nachbar hilft ihm in seiner Wohnung beim Sortieren und Zusammenlegen der Wäsche.",
+      "help": "Gemeinsam sortieren sie die Kleidungsstücke. Der Nachbar unterstützt beim Befüllen der Waschmaschine und legt die saubere Wäsche mit Herrn Kramer in den Schrank. Insgesamt werden zwei tatsächlich geleistete Stunden dokumentiert.",
+      "route": "Nachbarschaftshilfe prüfen", "billing": "Im erfundenen Fall erfüllt der Nachbar alle niedersächsischen Voraussetzungen: insbesondere passende Qualifikation, keine ausgeschlossene persönliche Beziehung, kein gemeinsamer Haushalt und nicht selbst Herrn Kramers Pflegeperson. Die erforderliche Bestätigung liegt der Kasse vor. Als Aufwandsentschädigung werden 11,80 € je Stunde vereinbart; die Landesgrenze beachten.",
+      "hours": 2, "rate": 11.8, "cost": 23.6, "covered": 23.6, "available": 131, "remaining": 107.4,
+      "equation": "2 Stunden × 11,80 € = 23,60 € Hilfe · 107,40 € Entlastungsguthaben bleiben",
+      "record": "Beispiel: Datum, zwei Stunden Wäsche sortieren, Waschmaschine befüllen, Wäsche zusammenlegen und einräumen; 23,60 € Aufwandsentschädigung. Bestätigung, Leistungsnachweis und gegebenenfalls Zahlungsbeleg beifügen.",
+      "boundary": "Nicht die gesamte Maschinenlaufzeit als Helferstunden eintragen, wenn in dieser Zeit tatsächlich keine Unterstützung geleistet wird. Die Rechnung einer gewerblichen Wäscherei ist ein anderes Angebot.",
+      "source": "nachbarschaft", "sourceLabel": "Vollständige Voraussetzungen und amtlicher Bogen zur Nachbarschaftshilfe"
+    },
+    {
+      "id": "pflanzen", "topic": "Pflanzenpflege", "title": "Frau Wolter versorgt ihre Balkonblumen",
+      "alt": "Eine Frau sitzt auf ihrem Balkon und zeigt auf einen Blumentopf; eine Helferin gießt die Pflanze mit einer kleinen Gießkanne.",
+      "situation": "Frau Wolter hat Pflegegrad 1. Ihre Balkonblumen sind ihr wichtig, doch die gefüllte Gießkanne ist ihr zu schwer. Sie möchte bei der Pflege ihrer Pflanzen dabeibleiben und mitentscheiden.",
+      "help": "Eine geeignete anerkannte Alltagshilfe gießt die Blumen auf dem Balkon und die Zimmerpflanzen. Frau Wolter zeigt, welche Pflanzen Wasser brauchen. Eine halbe Stunde wird als vereinbarte Hilfe berechnet.",
+      "route": "Entlastungsbetrag prüfen", "billing": "Blumenpflege in der Wohnung und auf dem Balkon kann zum anerkennungsfähigen Leistungsinhalt in Niedersachsen gehören. Im Beispiel ist sie vom konkreten anerkannten Angebot umfasst; 131 € Guthaben stehen bereit.",
+      "hours": 0.5, "rate": 32, "cost": 16, "covered": 16, "available": 131, "remaining": 115,
+      "equation": "0,5 Stunden × 32 € = 16 € Hilfe · 115 € Entlastungsguthaben bleiben",
+      "record": "Beispiel: Datum, 30 Minuten persönliche Unterstützung bei der Blumenpflege in Wohnung und Balkon; 16 €. Tatsächlichen Leistungsort und Inhalt auf dem Nachweis benennen.",
+      "boundary": "Rasenmähen, Gartenbeete pflegen oder Hecken schneiden sind keine anerkannten niedersächsischen Alltagshilfen. Eine reine Urlaubsversorgung fremder Pflanzen begründet ebenfalls keinen Pflegeversicherungsanspruch.",
+      "source": "s-haus-land", "sourceLabel": "Landeshinweise, Seiten 3–4: Balkonblumen, Gartenarbeiten und persönlicher Kontakt"
+    },
+    {
+      "id": "betreuung", "topic": "Betreuung", "title": "Herr Rabe hat Gesellschaft, während seine Pflegeperson weg ist",
+      "alt": "Ein älterer Mann und eine Helferin sitzen gemeinsam am Tisch, sprechen über ein Bilderbuch und spielen ein Brettspiel.",
+      "situation": "Herr Rabe hat Pflegegrad 3. Seine Ehefrau übernimmt sonst die häusliche Pflege und ist an einem Nachmittag für drei Stunden wegen eines eigenen Termins verhindert. Herr Rabe braucht in dieser Zeit persönliche Betreuung.",
+      "help": "Eine geeignete Nachbarin bleibt bei ihm, liest vor, spielt mit ihm und unterstützt ihn im vereinbarten notwendigen Umfang. Im erfundenen Fall ist sie nicht mit ihm verwandt oder verschwägert und lebt in einem anderen Haushalt.",
+      "route": "Verhinderungspflege prüfen", "billing": "Es findet tatsächlich notwendige Ersatzpflege statt. Die Nachbarin berechnet drei Stunden zu vereinbarten 18 €. Das ist ein frei gewählter Beispielpreis für Ersatzpflege, kein Tarif für die ehrenamtliche Nachbarschaftshilfe aus dem Entlastungsbetrag. Aus dem bisher ungenutzten gemeinsamen Jahrestopf von 3.539 € können bei erfüllten Voraussetzungen 54 € übernommen werden.",
+      "hours": 3, "rate": 18, "cost": 54, "covered": 54, "available": 3539, "remaining": 3485,
+      "equation": "3 Stunden × 18 € = 54 € Ersatzpflege · 3.485 € gemeinsamer Jahrestopf bleiben",
+      "record": "Beispiel: Ausfallgrund und Verhinderung der regulären Pflegeperson von 14 bis 17 Uhr, tatsächliche Betreuungszeit und Tätigkeiten, vereinbarte Vergütung 54 €, Beziehung und Haushaltsverhältnisse sowie Zahlungsnachweis dokumentieren.",
+      "boundary": "Für die Stundenregel zählt der tatsächliche Ausfall der regulären Pflegeperson: Hier sind es unter acht Stunden, deshalb bleibt das Pflegegeld ungekürzt. Ohne deren Verhinderung passt dieser Weg nicht. Ein geeignetes anerkanntes Betreuungsangebot über den Entlastungsbetrag wäre dann gesondert zu prüfen; denselben Aufwand niemals doppelt erstatten lassen.",
+      "source": "s-vp", "sourceLabel": "Vollständige Regeln zu Verhinderungspflege und Stundenregel"
+    },
+    {
+      "id": "spaziergang", "topic": "Begleitung", "title": "Frau Feld traut sich mit Begleitung wieder in den Park",
+      "alt": "Eine Frau geht mit ihrem Rollator auf einem ebenen Parkweg spazieren; ein Begleiter geht neben ihr und spricht mit ihr.",
+      "situation": "Frau Feld hat Pflegegrad 2. Mit dem Rollator kann sie kurze Strecken gehen, braucht unterwegs aber Orientierung, Ermutigung und Begleitung. Sie möchte wieder ihre gewohnte Parkrunde machen.",
+      "help": "Ein geeignetes anerkanntes Angebot begleitet sie persönlich. Sie wählen eine passende Strecke, planen eine Pause und gehen gemeinsam zurück. Die Begleitung dauert einschließlich der vereinbarten Unterstützung eineinhalb Stunden.",
+      "route": "Entlastungsbetrag prüfen", "billing": "Persönliche Freizeitbegleitung und Betreuung können zum passenden anerkannten Angebot gehören. Im Beispiel sind diese Tätigkeiten von dessen Anerkennung umfasst. Von 131 € vorhandenem Entlastungsguthaben werden bei erfüllten Voraussetzungen 45 € eingesetzt.",
+      "hours": 1.5, "rate": 30, "cost": 45, "covered": 45, "available": 131, "remaining": 86,
+      "equation": "1,5 Stunden × 30 € = 45 € Begleitung · 86 € Entlastungsguthaben bleiben",
+      "record": "Beispiel: Datum, 1,5 Stunden persönliche Begleitung beim Spaziergang, Orientierung und Unterstützung bei der Alltagsgestaltung; 45 €. Den tatsächlichen Hilfebedarf und die vereinbarte Tätigkeit nachvollziehbar benennen.",
+      "boundary": "Ein gemeinsamer Spaziergang ist keine verordnete Physiotherapie. Wenn Transfers, besondere Sicherung oder körperbezogene Pflege erforderlich sind, vorab klären, wer diese Hilfe fachlich und vertraglich übernehmen kann. Eine zusätzliche Taxifahrt nicht ungeprüft mit abrechnen.",
+      "source": "s-haus-land", "sourceLabel": "Landeshinweise, Seiten 1–2: Betreuung und individuelle Alltagshilfe"
+    },
+    {
+      "id": "einkauf", "topic": "Einkaufen", "title": "Frau Brandt kauft mit Unterstützung selbst ein",
+      "alt": "Eine erwachsene Frau wählt im Lebensmittelgeschäft Äpfel aus; ihr Begleiter hält einen Einkaufskorb und eine Liste.",
+      "situation": "Frau Brandt hat Pflegegrad 2. Sie entscheidet selbst, was sie essen möchte, benötigt beim Planen, Finden der Waren und Tragen aber Unterstützung. Eine passende anerkannte Alltagshilfe begleitet sie.",
+      "help": "Sie besprechen den Bedarf, gehen gemeinsam einkaufen und räumen die Lebensmittel zu Hause ein. Die vereinbarte Hilfe dauert eineinhalb Stunden und kostet 45 €. Die Waren kosten im Beispiel zusätzlich 28 €.",
+      "route": "Helferzeit und Waren trennen", "billing": "Das geeignete anerkannte Angebot stellt die zulässige Unterstützung getrennt vom Warenkauf dar. Bei 131 € vorhandenem Entlastungsguthaben können 45 € Helferkosten übernommen werden. Die 28 € für Lebensmittel bleiben Frau Brandts eigene Ausgaben.",
+      "hours": 1.5, "rate": 30, "cost": 73, "covered": 45, "available": 131, "remaining": 86,
+      "equation": "45 € Hilfe + 28 € Lebensmittel = 73 € Gesamtausgaben · davon 28 € selbst",
+      "record": "Beispiel: Datum und 1,5 Stunden Planung, persönliche Einkaufsbegleitung und Einräumen; 45 € Hilfe. Separater Kassenbon über 28 € Waren. Nach möglicher Erstattung bleiben 86 € Entlastungsguthaben.",
+      "boundary": "Lebensmittel, Einkaufswaren und eine reine Lieferung sind keine Helferstunden. Im Beispiel wird kein Taxi genutzt. Fremde Fahrtkosten oder bereits von einem anderen Kostenträger übernommene Leistungen nicht zusätzlich einsetzen.",
+      "source": "s-haus-land", "sourceLabel": "Landeshinweise, Seiten 2–4: Einkauf, Haushaltsführung und Beförderung"
+    }
+  ]
+}
