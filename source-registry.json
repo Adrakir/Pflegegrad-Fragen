@@ -3,6 +3,30 @@
   "note": "Technische Erreichbarkeit ist keine inhaltliche Freigabe. Prüfdatum bezeichnet die letzte inhaltliche Prüfung.",
   "sources": [
     {
+      "url": "https://asd-dienste.de/impressum.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://fensterreinigung-hannover.de/kontakt/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://fensterreinigung-osnabrueck.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://gesund.bund.de/entlastungsbetrag",
       "pages": [
         "abrechnung.html"
@@ -24,6 +48,30 @@
         "abrechnung.html"
       ],
       "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://hannover-patiententransport.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://jangarden.de/kontakt.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://jangarden.de/ueber-uns.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -67,6 +115,22 @@
         "abrechnung.html"
       ],
       "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/download/184180/Hinweise_zum_Leistungsinhalt.pdf",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/download/194762/Nds._AnerkennungsVO_SGB_XI.pdf",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -142,11 +206,27 @@
       "reviewAfterDays": 90
     },
     {
+      "url": "https://taxi32011.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99106006013000",
       "pages": [
         "abrechnung.html"
       ],
       "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://viamedgo-os.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -392,6 +472,14 @@
       "reviewAfterDays": 90
     },
     {
+      "url": "https://www.g-ba.de/themen/veranlasste-leistungen/krankenbefoerderung/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://www.gesetze-im-internet.de/milov5/__1.html",
       "pages": [
         "abrechnung.html"
@@ -478,7 +566,7 @@
         "index.html",
         "abrechnung.html"
       ],
-      "lastContentReview": "2026-10-26",
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -528,7 +616,7 @@
       "pages": [
         "abrechnung.html"
       ],
-      "lastContentReview": "2026-10-26",
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -573,11 +661,27 @@
       "reviewAfterDays": 90
     },
     {
+      "url": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/richtlinien__vereinbarungen__formulare/empfehlungen_zum_leistungsrecht/2026-04-02_Gemeinsames_Rundschreiben_zu_den_leistungsrechtlichen_Vorschriften_des_SGB_XI.pdf",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://www.gkv-spitzenverband.de/service/krankenkassenliste/krankenkassen.jsp",
       "pages": [
         "abrechnung.html"
       ],
       "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.glasrein24.de/%C3%BCber-uns/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
@@ -678,6 +782,30 @@
         "abrechnung.html"
       ],
       "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.steinhake.de/kontakt/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.taxi-hannover.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.taxi-hannover.de/impressum/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {

@@ -67,7 +67,14 @@ for module in json.loads((ROOT/'calculator-data.json').read_text())['modules']:
   add('criterion-'+item['id'],'Rechner: '+item['label'],item['hint']+' Fiktive Beispiele: '+' '.join(x['text'] for x in item.get('examples',[])),'./pflegegradrechner.html?kriterium='+item['id']+'#rechner','Rechner',module['title'])
 add('calculator','Pflegegradrechner','Unverbindliche Selbsteinschätzung für Erwachsene mit 64 Kriterien in sechs Modulen. Antworten selbst auswählen, Unsicherheiten markieren und persönliche Angaben nur auf Wunsch im Browser speichern. Es wird kein Pflegegrad festgestellt.','./pflegegradrechner.html','Rechner','Punkte berechnen Pflegegrad Test')
 add('planner','Abrechnung vorbereiten','Leistung, Pflegegrad, Pflegekasse und Zahlungsweg wählen. Passende Unterlagen, PDF-Bogen und offizielle Einreichungswege zusammenstellen. Keine Erstattungszusage.','./abrechnung.html#abrechnung-plan','Abrechnung','Checkliste Antrag Belege Formulare')
-release={'version':'2026.10.27.2','date':'27.10.2026','changes':[
+# Deep links open the original public examples and provider cards.
+for n in Parse((ROOT/'abrechnung.html').read_text()).root.all():
+ id=n.attrs.get('id','')
+ if not (id.startswith('haus-fall-') or id.startswith('firma-')):continue
+ head=next(n.all('summary' if id.startswith('haus-fall-') else 'h3'))
+ add('local-'+id,clean(head.text()),n.text(),'./abrechnung.html#'+id,'Beispiel' if id.startswith('haus-fall-') else 'Firmen vor Ort','Fenster Garten Reinigung Fahrdienst Hannover Osnabrück')
+release={'version':'2026.10.27.3','date':'27.10.2026','changes':[
+{'title':'Fenster, Garten und Fahrdienste','items':['Eigener Bereich mit niedersächsischen Leistungsgrenzen und acht erfundenen Beispielen.','Fahrdienst, Begleitung und verordnete Krankenfahrt getrennt erklärt.','Zehn konkrete Firmen in Hannover und Osnabrück mit Kontakt, Quellen und getrennten Abrechnungshinweisen.']},
 {'title':'GdB und eigene Vorbereitung','items':['Neuer GdB-Leitfaden für Niedersachsen mit Bildern, startbaren Abläufen, vier erfundenen Fallbeispielen und acht Merkzeichen.','Eigene Aufgaben, selbst eingetragene Termine und Unterlagenübersicht; Speicherung nur auf Wunsch.','Übersicht drucken sowie Sicherungen prüfen und wieder laden.','Stimme und Lesetempo auf Wunsch über Seitenwechsel hinweg merken.','Öffentliches Quellenverzeichnis und automatisierte Qualitäts- und Linkprüfungen.']},
 {'title':'Vorlesen verbessert','items':['Zusammenhängende Sätze statt Trennung mitten im Satz.','Deutsche Gerätestimmen bevorzugt, Stimmenprobe mit erhaltener Lesestelle.','Pause und Fortsetzen, sichtbare Lesepassage und Vor-/Zurückspringen.','Stimme und Tempo ändern, ohne den ganzen Abschnitt neu beginnen zu müssen.']},
 {'title':'Schneller zum passenden Inhalt','items':['Appweite Suche in Erklärungen, FAQ, 100 fiktiven Fragen und Kassenanträgen.','Feste Navigation für die vier Hauptbereiche auf schmalen Bildschirmen.','Abrechnungsvorbereitung mit Belegliste, PDF-Bogen und Einreichungsweg.']},

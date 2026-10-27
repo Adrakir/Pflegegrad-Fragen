@@ -41,3 +41,13 @@ $('#nextRoute').addEventListener('click',()=>{step=(step+1)%4;renderRoute();});
 $('#city').addEventListener('change',renderContacts);$('#contactSearch').addEventListener('input',renderContacts);
 $('#motion').addEventListener('click',()=>{const on=document.documentElement.classList.toggle('motion-running');$('#motion').setAttribute('aria-pressed',String(on));$('#motion').textContent=on?'Belegbewegung pausieren':'Belegweg in der Grafik zeigen';});
 renderService('vp');renderBudgets();renderRoute();renderContacts();
+
+// Public directory filters only rendered business cards; no user data or network calls.
+function filterLocalProviders(){const city=document.getElementById('providerCity')?.value||'all',type=document.getElementById('providerType')?.value||'all';let count=0;document.querySelectorAll('[data-provider-city]').forEach(card=>{card.hidden=!(city==='all'||card.dataset.providerCity===city)||!(type==='all'||card.dataset.providerType===type);if(!card.hidden)count++;});const status=document.getElementById('providerCount');if(status)status.textContent=count+' von 10 Firmen angezeigt.';}
+for(const id of ['providerCity','providerType'])document.getElementById(id)?.addEventListener('change',filterLocalProviders);
+// Search deep links also reveal a provider currently outside the directory filter.
+window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#firma-')){for(const id of ['providerCity','providerType']){const field=document.getElementById(id);if(field)field.value='all';}filterLocalProviders();}});
+
+let householdPrintState=[];
+window.addEventListener('beforeprint',()=>{householdPrintState=[...document.querySelectorAll('.household-help details')].map(panel=>[panel,panel.open]);householdPrintState.forEach(([panel])=>panel.open=true);});
+window.addEventListener('afterprint',()=>{householdPrintState.forEach(([panel,open])=>panel.open=open);householdPrintState=[];});

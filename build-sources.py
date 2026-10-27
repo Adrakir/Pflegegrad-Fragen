@@ -15,7 +15,8 @@ def add(url,page,checked):
 class Links(HTMLParser):
  def __init__(self,page,date):super().__init__();self.page=page;self.date=date
  def handle_starttag(self,tag,attrs):
-  if tag=='a':add(dict(attrs).get('href'),self.page,self.date)
+  if tag=='a':
+   a=dict(attrs);add(a.get('href'),self.page,a.get('data-reviewed',self.date))
 def walk(value,page,date):
  if isinstance(value,dict):
   for v in value.values():walk(v,page,date)
