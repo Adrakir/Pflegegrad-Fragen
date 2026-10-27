@@ -1,17 +1,258 @@
 {
   "checked": "27.10.2026",
   "checkedISO": "2026-10-27",
-  "note": "Konkrete Reinigungs-, Garten- und Fahrunternehmen. Angebot und Kontakt auf Firmenwebsites geprüft; keine bestätigte AZUA-Anerkennung oder individuelle Kostenzusage.",
+  "note": "Konkrete Reinigungs-, Garten-, Fahr-, Wäsche- und Menüunternehmen. Angebot und Kontakt auf Firmenwebsites geprüft; keine bestätigte AZUA-Anerkennung oder individuelle Kostenzusage.",
   "providers": [
-    {"id":"schroeder","city":"ha","name":"Glasreinigung Holger Schröder","type":"fenster","services":["Fenster und Glasfronten","Wintergärten und Glasdächer","Privat- und Gewerbekunden"],"address":["Klausenerweg 2","30519 Hannover"],"phone":"0511 8444611","url":"https://www.glasrein24.de/%C3%BCber-uns/","funding":"Pflegekassen-Abrechnung nicht bestätigt. Vor Auftrag passende Anerkennung, Leistungsumfang und Preis nachweisen lassen; sonst privat planen."},
-    {"id":"voget","city":"ha","name":"VogetService · Fensterreinigung Hannover","type":"fenster","services":["Fenster- und Glasreinigung"],"address":["Fiedelerstraße 1","30519 Hannover"],"phone":"0511 30092751","url":"https://fensterreinigung-hannover.de/kontakt/","funding":"Pflegekassen-Abrechnung nicht bestätigt. Reinigungsangebot und mögliche Erstattung getrennt klären; sonst privat planen."},
-    {"id":"jangarden","city":"ha","name":"Jan Garden · Jan Kulke Gartenbau","type":"garten","services":["Gartenpflege","Gartengestaltung","Privatgärten in Hannover und Region"],"address":[],"phone":"0511 87651128","url":"https://jangarden.de/ueber-uns.html","contactSource":"https://jangarden.de/kontakt.html","funding":"Garten- und Rasenpflege ist kein anerkanntes niedersächsisches Alltagsangebot. Für diese Arbeiten privat planen."},
-    {"id":"hallotaxi","city":"ha","name":"Hallo Taxi 3811 GmbH","type":"fahrt","services":["Taxifahrten in Hannover und Region","Krankenbeförderung"],"address":["Isernhagener Str. 20","30161 Hannover"],"phone":"0511 3811","url":"https://www.taxi-hannover.de/","contactSource":"https://www.taxi-hannover.de/impressum/","funding":"Privatfahrten privat planen. Krankenfahrten nur bei den Voraussetzungen der Krankenversicherung; Verordnung, gegebenenfalls Genehmigung und Zuzahlung klären. Rollstuhlbedarf vorab angeben."},
-    {"id":"hannopat","city":"ha","name":"Hannopat · Parsa-Taxi UG","type":"fahrt","services":["Sitzende Krankenfahrten","Fahrten zu Chemo- oder Strahlentherapie","Mitnahme faltbarer Rollstühle und Rollatoren laut Anbieter"],"address":["Lister Kirchweg 78","30177 Hannover"],"phone":"0511 27768702","url":"https://hannover-patiententransport.de/","funding":"Anbieter nennt Kassenabrechnung für Krankenfahrten. Individuellen Anspruch und erforderliche Unterlagen mit der Krankenkasse klären; keine bestätigte Abrechnung über den Entlastungsbetrag. Mitnahme eines Faltrollstuhls ist kein Nachweis einer Fahrt im Rollstuhl."},
-    {"id":"herold","city":"os","name":"Thomas Herold Glas- und Fensterreinigung","type":"fenster","services":["Wohnungs- und Hausfenster","Wintergärten und Glasdächer","Osnabrück und laut Anbieter etwa 30 km Umkreis"],"address":["Am Kirchenkamp 15","49078 Osnabrück"],"phone":"0541 3436765","url":"https://fensterreinigung-osnabrueck.de/","funding":"Pflegekassen-Abrechnung nicht bestätigt. Vor Auftrag passende Anerkennung und konkrete Erstattung prüfen; sonst privat planen."},
-    {"id":"asd","city":"os","name":"A.S.D. Dienstleistungen · Kiril Radev","type":"fenster","services":["Glas- und Fensterreinigung","Unterhalts- und Grundreinigung","Hausmeisterservice; weitere Objektarbeiten laut Anbieter"],"address":["Tannenburgstraße 62","49084 Osnabrück"],"phone":"0159 01872706","url":"https://asd-dienste.de/impressum.html","funding":"Pflegekassen-Abrechnung nicht bestätigt. Einzelne Tätigkeiten und Anerkennung prüfen. Objektarbeiten oder Entrümpelungen werden nicht durch eine gemeinsame Reinigungsrechnung erstattungsfähig."},
-    {"id":"steinhake","city":"os","name":"Steinhake · Garten- und Landschaftsbau","type":"garten","services":["Pflege privater Gärten","Garten- und Landschaftsbau"],"address":["Birkenallee 104/106","49076 Osnabrück"],"phone":"0541 58054655","url":"https://www.steinhake.de/kontakt/","funding":"Garten- und Rasenpflege ist kein anerkanntes niedersächsisches Alltagsangebot. Für diese Arbeiten privat planen. Genannte Rufnummer: Bereich Gartenpflege."},
-    {"id":"taxi32011","city":"os","name":"Funk-Taxi-Zentrale Osnabrück · 32011","type":"fahrt","services":["Taxifahrten","Kranken- und Dialysefahrten","Rollstuhltransport laut Anbieter"],"address":["Winkelhausenstraße 9","49090 Osnabrück"],"phone":"0541 32011","url":"https://taxi32011.de/","funding":"Privatfahrt und Krankenfahrt getrennt klären. Für Krankenfahrten gelten die Voraussetzungen der Krankenkasse, keine pauschale Pflegekassen-Zusage. Rollstuhlfahrzeug rechtzeitig ausdrücklich bestellen."},
-    {"id":"viamedgo","city":"os","name":"ViamedGO LK OS GmbH","type":"fahrt","services":["Sitzend-, Rollstuhl- und Tragestuhlfahrten","Liegendfahrten laut Anbieter","Kranken- und Privatfahrten in Stadt und Landkreis Osnabrück"],"address":["Eversburger Str. 32","49090 Osnabrück"],"phone":"0541 50799636","url":"https://viamedgo-os.de/","funding":"Anbieter nennt Kassenabrechnung für geeignete Krankenfahrten und Angebote für Selbstzahler. Medizinische Notwendigkeit, Beförderungsart, Unterlagen und Eigenanteil separat klären. Keine bestätigte Entlastungsbetrag-Abrechnung."}
+    {
+      "id": "schroeder",
+      "city": "ha",
+      "name": "Glasreinigung Holger Schröder",
+      "type": "fenster",
+      "services": [
+        "Fenster und Glasfronten",
+        "Wintergärten und Glasdächer",
+        "Privat- und Gewerbekunden"
+      ],
+      "address": [
+        "Klausenerweg 2",
+        "30519 Hannover"
+      ],
+      "phone": "0511 8444611",
+      "url": "https://www.glasrein24.de/%C3%BCber-uns/",
+      "funding": "Pflegekassen-Abrechnung nicht bestätigt. Vor Auftrag passende Anerkennung, Leistungsumfang und Preis nachweisen lassen; sonst privat planen."
+    },
+    {
+      "id": "voget",
+      "city": "ha",
+      "name": "VogetService · Fensterreinigung Hannover",
+      "type": "fenster",
+      "services": [
+        "Fenster- und Glasreinigung"
+      ],
+      "address": [
+        "Fiedelerstraße 1",
+        "30519 Hannover"
+      ],
+      "phone": "0511 30092751",
+      "url": "https://fensterreinigung-hannover.de/kontakt/",
+      "funding": "Pflegekassen-Abrechnung nicht bestätigt. Reinigungsangebot und mögliche Erstattung getrennt klären; sonst privat planen."
+    },
+    {
+      "id": "jangarden",
+      "city": "ha",
+      "name": "Jan Garden · Jan Kulke Gartenbau",
+      "type": "garten",
+      "services": [
+        "Gartenpflege",
+        "Gartengestaltung",
+        "Privatgärten in Hannover und Region"
+      ],
+      "address": [],
+      "phone": "0511 87651128",
+      "url": "https://jangarden.de/ueber-uns.html",
+      "contactSource": "https://jangarden.de/kontakt.html",
+      "funding": "Garten- und Rasenpflege ist kein anerkanntes niedersächsisches Alltagsangebot. Für diese Arbeiten privat planen."
+    },
+    {
+      "id": "hallotaxi",
+      "city": "ha",
+      "name": "Hallo Taxi 3811 GmbH",
+      "type": "fahrt",
+      "services": [
+        "Taxifahrten in Hannover und Region",
+        "Krankenbeförderung"
+      ],
+      "address": [
+        "Isernhagener Str. 20",
+        "30161 Hannover"
+      ],
+      "phone": "0511 3811",
+      "url": "https://www.taxi-hannover.de/",
+      "contactSource": "https://www.taxi-hannover.de/impressum/",
+      "funding": "Privatfahrten privat planen. Krankenfahrten nur bei den Voraussetzungen der Krankenversicherung; Verordnung, gegebenenfalls Genehmigung und Zuzahlung klären. Rollstuhlbedarf vorab angeben."
+    },
+    {
+      "id": "hannopat",
+      "city": "ha",
+      "name": "Hannopat · Parsa-Taxi UG",
+      "type": "fahrt",
+      "services": [
+        "Sitzende Krankenfahrten",
+        "Fahrten zu Chemo- oder Strahlentherapie",
+        "Mitnahme faltbarer Rollstühle und Rollatoren laut Anbieter"
+      ],
+      "address": [
+        "Lister Kirchweg 78",
+        "30177 Hannover"
+      ],
+      "phone": "0511 27768702",
+      "url": "https://hannover-patiententransport.de/",
+      "funding": "Anbieter nennt Kassenabrechnung für Krankenfahrten. Individuellen Anspruch und erforderliche Unterlagen mit der Krankenkasse klären; keine bestätigte Abrechnung über den Entlastungsbetrag. Mitnahme eines Faltrollstuhls ist kein Nachweis einer Fahrt im Rollstuhl."
+    },
+    {
+      "id": "herold",
+      "city": "os",
+      "name": "Thomas Herold Glas- und Fensterreinigung",
+      "type": "fenster",
+      "services": [
+        "Wohnungs- und Hausfenster",
+        "Wintergärten und Glasdächer",
+        "Osnabrück und laut Anbieter etwa 30 km Umkreis"
+      ],
+      "address": [
+        "Am Kirchenkamp 15",
+        "49078 Osnabrück"
+      ],
+      "phone": "0541 3436765",
+      "url": "https://fensterreinigung-osnabrueck.de/",
+      "funding": "Pflegekassen-Abrechnung nicht bestätigt. Vor Auftrag passende Anerkennung und konkrete Erstattung prüfen; sonst privat planen."
+    },
+    {
+      "id": "asd",
+      "city": "os",
+      "name": "A.S.D. Dienstleistungen · Kiril Radev",
+      "type": "fenster",
+      "services": [
+        "Glas- und Fensterreinigung",
+        "Unterhalts- und Grundreinigung",
+        "Hausmeisterservice; weitere Objektarbeiten laut Anbieter"
+      ],
+      "address": [
+        "Tannenburgstraße 62",
+        "49084 Osnabrück"
+      ],
+      "phone": "0159 01872706",
+      "url": "https://asd-dienste.de/impressum.html",
+      "funding": "Pflegekassen-Abrechnung nicht bestätigt. Einzelne Tätigkeiten und Anerkennung prüfen. Objektarbeiten oder Entrümpelungen werden nicht durch eine gemeinsame Reinigungsrechnung erstattungsfähig."
+    },
+    {
+      "id": "steinhake",
+      "city": "os",
+      "name": "Steinhake · Garten- und Landschaftsbau",
+      "type": "garten",
+      "services": [
+        "Pflege privater Gärten",
+        "Garten- und Landschaftsbau"
+      ],
+      "address": [
+        "Birkenallee 104/106",
+        "49076 Osnabrück"
+      ],
+      "phone": "0541 58054655",
+      "url": "https://www.steinhake.de/kontakt/",
+      "funding": "Garten- und Rasenpflege ist kein anerkanntes niedersächsisches Alltagsangebot. Für diese Arbeiten privat planen. Genannte Rufnummer: Bereich Gartenpflege."
+    },
+    {
+      "id": "taxi32011",
+      "city": "os",
+      "name": "Funk-Taxi-Zentrale Osnabrück · 32011",
+      "type": "fahrt",
+      "services": [
+        "Taxifahrten",
+        "Kranken- und Dialysefahrten",
+        "Rollstuhltransport laut Anbieter"
+      ],
+      "address": [
+        "Winkelhausenstraße 9",
+        "49090 Osnabrück"
+      ],
+      "phone": "0541 32011",
+      "url": "https://taxi32011.de/",
+      "funding": "Privatfahrt und Krankenfahrt getrennt klären. Für Krankenfahrten gelten die Voraussetzungen der Krankenkasse, keine pauschale Pflegekassen-Zusage. Rollstuhlfahrzeug rechtzeitig ausdrücklich bestellen."
+    },
+    {
+      "id": "viamedgo",
+      "city": "os",
+      "name": "ViamedGO LK OS GmbH",
+      "type": "fahrt",
+      "services": [
+        "Sitzend-, Rollstuhl- und Tragestuhlfahrten",
+        "Liegendfahrten laut Anbieter",
+        "Kranken- und Privatfahrten in Stadt und Landkreis Osnabrück"
+      ],
+      "address": [
+        "Eversburger Str. 32",
+        "49090 Osnabrück"
+      ],
+      "phone": "0541 50799636",
+      "url": "https://viamedgo-os.de/",
+      "funding": "Anbieter nennt Kassenabrechnung für geeignete Krankenfahrten und Angebote für Selbstzahler. Medizinische Notwendigkeit, Beförderungsart, Unterlagen und Eigenanteil separat klären. Keine bestätigte Entlastungsbetrag-Abrechnung."
+    },
+    {
+      "id": "rosina",
+      "city": "ha",
+      "name": "Rosina’s Textilpflege Hannover",
+      "type": "waesche",
+      "services": [
+        "Textilreinigung und Wäschepflege für Privatkunden",
+        "Bügeln und Mangelservice",
+        "Bring- und Abholservice bei Bedarf laut Anbieter"
+      ],
+      "address": [
+        "Ferdinand-Wallbrecht-Str. 22",
+        "30163 Hannover"
+      ],
+      "phone": "0511 64680420",
+      "url": "https://textilreinigung-hannover.de/",
+      "contactSource": "https://textilreinigung-hannover.de/impressum",
+      "funding": "Gewerbliche Wäscherei mit eigenem Angebot; keine passende Pflegekassen-Anerkennung bestätigt. Reinigung und Abholung zunächst privat planen. Wäschehilfe zu Hause durch ein geeignetes Alltagsangebot ist gesondert zu prüfen."
+    },
+    {
+      "id": "meyer-hannover",
+      "city": "ha",
+      "name": "Meyer Menü · Standort Hannover",
+      "type": "essen",
+      "services": [
+        "Mahlzeitenlieferung für Privatkunden in Hannover und Region",
+        "Bestellung telefonisch oder online laut Anbieter",
+        "Konkrete Lieferadresse, Liefertage und Menüauswahl vorher klären"
+      ],
+      "address": [
+        "Am Großmarkt 13",
+        "30453 Hannover"
+      ],
+      "phone": "0511 438340",
+      "url": "https://www.meyer-menue.de/standorte/hannover",
+      "funding": "Mahlzeit und reine Lieferung sind nicht automatisch aus dem Entlastungsbetrag erstattungsfähig. Ohne gesondert bestätigten Kostenträger privat planen; keine bestätigte AZUA-Anerkennung."
+    },
+    {
+      "id": "neustadt",
+      "city": "os",
+      "name": "Wäscherei Neustadt",
+      "type": "waesche",
+      "services": [
+        "Reinigung, Wäschepflege, Bügeln und Mangeln",
+        "Hol- und Bringservice für Privatkunden laut Anbieter",
+        "Osnabrück und Umgebung; Abholung an der eigenen Adresse erfragen"
+      ],
+      "address": [
+        "Lerchenstraße 2",
+        "49088 Osnabrück"
+      ],
+      "phone": "0541 572526",
+      "url": "https://waescherei-neustadt.de/privatkunden/",
+      "contactSource": "https://waescherei-neustadt.de/kontakt/",
+      "funding": "Wäscherei-Rechnung und Lieferkosten zunächst privat planen. Keine passende Pflegekassen-Anerkennung bestätigt. Geeignete Wäschehilfe im Haushalt und die reine gewerbliche Textilreinigung sind getrennt einzuordnen."
+    },
+    {
+      "id": "drechsler",
+      "city": "os",
+      "name": "Drechsler Catering GmbH · Menüservice",
+      "type": "essen",
+      "services": [
+        "Mahlzeitenlieferung für zu Hause im Raum Osnabrück",
+        "Firmensitz in Georgsmarienhütte, nicht in der Stadt Osnabrück",
+        "Wochenendmenüs laut Anbieter am Freitag zum späteren Aufwärmen; Adresse und Versorgung vorher klären"
+      ],
+      "address": [
+        "Verings Brink 7",
+        "49124 Georgsmarienhütte"
+      ],
+      "phone": "05401 1687200",
+      "url": "https://drechsler-catering.de/fuer-zuhause/",
+      "contactSource": "https://drechsler-catering.de/impressum/",
+      "funding": "Mahlzeiten und reine Lieferung zunächst privat planen. Pflegegrad allein begründet keine Erstattung aus Entlastungsbetrag oder Verhinderungspflege; keine bestätigte AZUA-Anerkennung.",
+      "cityLabel": "Raum Osnabrück"
+    }
   ]
 }

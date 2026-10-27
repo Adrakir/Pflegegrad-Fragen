@@ -11,6 +11,22 @@
       "reviewAfterDays": 90
     },
     {
+      "url": "https://drechsler-catering.de/fuer-zuhause/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://drechsler-catering.de/impressum/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://fensterreinigung-hannover.de/kontakt/",
       "pages": [
         "abrechnung.html"
@@ -214,6 +230,22 @@
       "reviewAfterDays": 90
     },
     {
+      "url": "https://textilreinigung-hannover.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://textilreinigung-hannover.de/impressum",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
       "url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99106006013000",
       "pages": [
         "abrechnung.html"
@@ -223,6 +255,22 @@
     },
     {
       "url": "https://viamedgo-os.de/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://waescherei-neustadt.de/kontakt/",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://waescherei-neustadt.de/privatkunden/",
       "pages": [
         "abrechnung.html"
       ],
@@ -774,6 +822,14 @@
         "index.html"
       ],
       "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.meyer-menue.de/standorte/hannover",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-27",
       "reviewAfterDays": 90
     },
     {
