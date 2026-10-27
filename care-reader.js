@@ -45,6 +45,10 @@ function germanVoices(list){
  return [...unique.values()].sort((a,b)=>score(b)-score(a)||a.name.localeCompare(b.name,'de'));
 }
 function sentenceStart(text,position){let start=0,offset=0;for(const s of sentences(text)){const found=text.indexOf(s,offset);if(found>position)break;start=found;offset=found+s.length;}return Math.max(0,start);}
+const preferenceKey='pflegegrad-reader-preferences-v1';
+function readPreferences(value){if(!value||typeof value!=='object'||value.remember!==true)return{remember:false,voice:'auto',rate:1};return{remember:true,voice:typeof value.voice==='string'&&value.voice.length<=400?value.voice:'auto',rate:[.8,.9,1,1.1,1.2].includes(value.rate)?value.rate:1};}
+function createPreferences(storage){return{load(){try{return readPreferences(JSON.parse(storage.getItem(preferenceKey)||'null'));}catch{return{remember:false,voice:'auto',rate:1};}},save(value){try{if(value.remember)storage.setItem(preferenceKey,JSON.stringify(readPreferences(value)));else storage.removeItem(preferenceKey);return{ok:true};}catch{return{ok:false};}}};}
+
 function createReader({synth,makeUtterance,onChange=()=>{},setTimer=setTimeout,clearTimer=clearTimeout}){
  let parts=[],index=0,position=0,base=0,mode='idle',token=0,utterance=null,options={},timer=null,resumeTimer=null,nativePause=false,finishedWhilePaused=false,precise=false,snapshot=null,isPreview=false,error='';
  const available=!!synth&&typeof makeUtterance==='function';
@@ -91,5 +95,5 @@ function createReader({synth,makeUtterance,onChange=()=>{},setTimer=setTimeout,c
  function retry(){if(isPreview){invalidate();restorePreview();return;}if(parts.length){const at=sentenceStart(parts[index],position);invalidate();play(at);}}
  return{load,start,pause,resume,stop,seek,changeOptions,preview,retry,state};
 }
-return{spokenText,sentences,speechChunks,germanVoices,voiceKey,sentenceStart,createReader};
+return{spokenText,sentences,speechChunks,germanVoices,voiceKey,sentenceStart,preferenceKey,readPreferences,createPreferences,createReader};
 });

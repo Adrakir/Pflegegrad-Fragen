@@ -1,0 +1,744 @@
+{
+  "schema": 1,
+  "note": "Technische Erreichbarkeit ist keine inhaltliche Freigabe. Prüfdatum bezeichnet die letzte inhaltliche Prüfung.",
+  "sources": [
+    {
+      "url": "https://gesund.bund.de/entlastungsbetrag",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://gesund.bund.de/kurzzeitpflege",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://gesund.bund.de/verhinderungspflege",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://kv365.bkk-firmus.de/index.php/loginpage/default/index",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://md-bund.de/fileadmin/dokumente/Publikationen/SPV/Begutachtungsgrundlagen/261016_MDB_48_002_RICHTLINIE_PFLEGE_2026_16.pdf",
+      "pages": [
+        "index.html",
+        "pflegegradrechner.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://md-bund.de/themen/pflegebeduerftigkeit-und-pflegebegutachtung/begutachtungs-richtlinien.html",
+      "pages": [
+        "fallbeispiel.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://meine.aok.de/",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/download/184112",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/faq/behinderung-und-ausweis-faq-218365.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/das_landesamt/standorte/hannover/unsere-aussenstelle-in-hannover-182494.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/das_landesamt/standorte/osnabruck/unsere-aussenstelle-in-osnabruck-182503.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/antragsformulare-und-merkblatter-109.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/ausweis/ausweis-uber-die-eigenschaft-als-schwerbehinderter-mensch-179.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/feststellungsverfahren/antragstellung-feststellung-116.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/ls_online/ls-online-141.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/nachteilsausgleiche/ubersicht-uber-nachteilsausgleiche-fur-behinderte-menschen-122.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://soziales.niedersachsen.de/startseite/service_kontakt/ortsverzeichnis_deutschland_nach_zustandigen_versorgungsamtern/ortsverzeichnis-deutschland-54.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99106006013000",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.aok.de/pk/formulare-antraege/",
+      "pages": [
+        "billing-data.json",
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.aok.de/pk/formulare-antraege/leistungen-pflegeversicherung/",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.aok.de/pk/kontakt/aok-vor-ort-client-nds/?affiliateId=5897",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.aok.de/pk/niedersachsen/region/osnabrueck/",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.arbeitsagentur.de/menschen-mit-behinderungen/spezielle-hilfe-und-unterstuetzung/gleichstellung",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/hannover-city-1101032",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.barmer.de/unsere-leistungen/leistungen-a-z/online-services/spezialsuchen/filialuebersicht/osnabrueck-1004528",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.barmer.de/unsere-leistungen/pflege/antraege-auf-pflegeleistungen-1003510",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bkk-firmus.de/beratung-und-service/downloads",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bkk-firmus.de/beratung-und-service/online-tools/online-service-web-und-app",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bkk-firmus.de/beratung-und-service/servicestellen",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bkk-firmus.de/beratung-und-service/wir-sind-fuer-sie-da",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bkk-firmus.de/leistungen/lexikon/a-z/pflegeversicherung",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/P/Pflegeversicherung_Leistungsbeitraege/Uebersicht_Leistungsbetraege_2026_VA.pdf",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/pflege-zu-hause",
+      "pages": [
+        "index.html",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/pflege-zu-hause/leistungen-bei-pflegegrad-1",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/pflege-zu-hause/weitere-leistungen-und-angebote-zur-unterstuetzung-im-alltag",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/b/begutachtungsfristen",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/leistungen-der-pflegeversicherung/leistungen-im-ueberblick/soziale-absicherung-fuer-pflegepersonen",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/leistungen-der-pflegeversicherung/teilstationaere-pflege",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/leistungen-der-pflegeversicherung/vollstationaere-pflege-im-heim",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/pflegebeduerftig-was-nun",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/pflegebeduerftig-was-nun/pflegebeduerftigkeit",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflege-erstantrag_28390",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflegeantraege-online-stellen_24168",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.dak.de/dak/ihr-anliegen/pflege/pflegegrad-erhoehen_17184",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.dak.de/dak/servicezentren/hannover-mitte_15762",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.dak.de/dak/servicezentren/osnabrueck_15802",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Familie-und-Kinder/Angehoerige-pflegen",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milov5/__1.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_10/__48.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/SGB_11.pdf",
+      "pages": [
+        "pflegegradrechner.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__14.html",
+      "pages": [
+        "fallbeispiel.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__15.html",
+      "pages": [
+        "index.html",
+        "pflegegradrechner.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__18c.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__33.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__37.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__38.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__39.html",
+      "pages": [
+        "index.html",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__40.html",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__41.html",
+      "pages": [
+        "index.html",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__42.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__42a.html",
+      "pages": [
+        "index.html",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__45a.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__45b.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/anlage_1.html",
+      "pages": [
+        "fallbeispiel.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_9_2018/__152.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_9_2018/__2.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+      "pages": [
+        "gdb.html",
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/versmedv/anlage.html",
+      "pages": [
+        "gdb.html"
+      ],
+      "lastContentReview": "2026-10-27",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.gkv-spitzenverband.de/service/krankenkassenliste/krankenkassen.jsp",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.hkk.de/kontakt/geschaeftsstellen",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.hkk.de/leistungen-und-services/hkk-leistungen/pflege/antraege-pflegeversicherung-verhinderungspflege",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/hannover",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.ikk-classic.de/pk/sp/kontakt/servicecenter-vor-ort/osnabrueck",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.ikk-classic.de/pk/sp/kundenservice/pflegeleistung-beantragen",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.kkh.de/kontakt",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.kkh.de/kontakt/servicestellen",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.kkh.de/kontakt/servicestellen.ergebnis.30159.50",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.kkh.de/leistungen/pflege/antraege-formulare",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.kkh.de/meine-kkh/dokumente-hochladen",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.medizinischerdienst.de/versicherte/pflegebegutachtung",
+      "pages": [
+        "index.html"
+      ],
+      "lastContentReview": "2026-10-24",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.ms.niedersachsen.de/startseite/gesundheit_pflege/pflege/entlastungsbetrag-und-angebote-zur-unterstutzung-im-alltag-nach-dem-sozialgesetzbuch-xi-153311.html",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/hannover",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/service/app/2025434/filiale/detail.app",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/service/form/2077146/pflegeantrag.form",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/angebote-unterstuetzung-alltag-entlastung-pflege/abrechnung-entlastungsleistungen-2008556",
+      "pages": [
+        "billing-data.json",
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/ersatzpflege-verhinderungspflege/abrechnung-verhinderungspflege-ersatzpflege-2120774",
+      "pages": [
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/ersatzpflege-verhinderungspflege/wie-stelle-ich-den-antrag-auf-verhinderungspflege-ersatzpflege-2008606",
+      "pages": [
+        "online-applications.json",
+        "abrechnung.html"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    },
+    {
+      "url": "https://www.tk.de/techniker/pflegeversicherung/ueberblick-pflegeleistungen-pflegegrade/zu-hause-gepflegt/tagespflege-nachtpflege/was-zahlt-tk-pflegeversicherung-fuer-tages-oder-nachtpflege-2008562",
+      "pages": [
+        "billing-data.json"
+      ],
+      "lastContentReview": "2026-10-26",
+      "reviewAfterDays": 90
+    }
+  ]
+}

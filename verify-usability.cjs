@@ -17,7 +17,7 @@ assert.equal(ui.run("answers['5.13'].count"),'2');
 ui.run('questionIndex=15;renderScreen()');ui.q('#nextStep').onclick();assert.equal(ui.run('step'),6);
 ui.run('questionIndex=5;renderScreen()');ui.q('#nextStep').onclick();assert.equal(ui.run('step'),7);
 assert.match(ui.q('#calcScreen').innerHTML,/Kriterien sind offen/);
-for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']){
+for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']){
  const h=fs.readFileSync(page,'utf8');assert.match(h,/app-usability\.css\?v=/);assert.match(h,/app-usability\.js\?v=/);assert.doesNotMatch(h,/__[A-Z_]+__/);
 }
 const faq=fs.readFileSync('faq.html.inc','utf8');assert.match(faq,/Nachbarschaftshilfe in Niedersachsen ab/);assert.match(faq,/data-topic="abrechnung"/);

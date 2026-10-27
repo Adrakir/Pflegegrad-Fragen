@@ -1,0 +1,380 @@
+{
+  "checked": "27.10.2026",
+  "reviewDays": 90,
+  "sources": [
+    {
+      "id": "grundlagen",
+      "title": "GdB und Schwerbehinderung · § 2 SGB IX",
+      "url": "https://www.gesetze-im-internet.de/sgb_9_2018/__2.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "feststellung",
+      "title": "Feststellung und Gesamtbewertung · § 152 SGB IX",
+      "url": "https://www.gesetze-im-internet.de/sgb_9_2018/__152.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "versmedv",
+      "title": "Versorgungsmedizinische Grundsätze · insbesondere Teil A",
+      "url": "https://www.gesetze-im-internet.de/versmedv/anlage.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ni-verfahren",
+      "title": "Niedersachsen · Antragstellung und Feststellung",
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/feststellungsverfahren/antragstellung-feststellung-116.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ni-online",
+      "title": "Niedersachsen · offizielle Online-Anträge mit BundID",
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/ls_online/ls-online-141.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ni-formulare",
+      "title": "Niedersachsen · Antragsformulare und Merkblätter",
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/antragsformulare-und-merkblatter-109.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ni-ausweis",
+      "title": "Niedersachsen · Schwerbehindertenausweis und Merkzeichen",
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/ausweis/ausweis-uber-die-eigenschaft-als-schwerbehinderter-mensch-179.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ni-faq",
+      "title": "Niedersachsen · Fragen zum Verfahren und zum Bescheid",
+      "url": "https://soziales.niedersachsen.de/faq/behinderung-und-ausweis-faq-218365.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "gleichstellung",
+      "title": "Bundesagentur für Arbeit · Gleichstellung und Online-Antrag",
+      "url": "https://www.arbeitsagentur.de/menschen-mit-behinderungen/spezielle-hilfe-und-unterstuetzung/gleichstellung",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "widerspruch",
+      "title": "Form und Frist des Widerspruchs · § 84 SGG",
+      "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "akte",
+      "title": "Akteneinsicht · § 25 SGB X",
+      "url": "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "nachteile",
+      "title": "Niedersachsen · Übersicht der Nachteilsausgleiche",
+      "url": "https://soziales.niedersachsen.de/startseite/menschen_mit_behinderung/behinderung_und_ausweis/nachteilsausgleiche/ubersicht-uber-nachteilsausgleiche-fur-behinderte-menschen-122.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "ortsverzeichnis",
+      "title": "Niedersachsen · zuständige Stelle nach Wohnort suchen",
+      "url": "https://soziales.niedersachsen.de/startseite/service_kontakt/ortsverzeichnis_deutschland_nach_zustandigen_versorgungsamtern/ortsverzeichnis-deutschland-54.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "hannover",
+      "title": "Landesamt · Besuch und Kontakt in Hannover",
+      "url": "https://soziales.niedersachsen.de/startseite/das_landesamt/standorte/hannover/unsere-aussenstelle-in-hannover-182494.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "osnabrueck",
+      "title": "Landesamt · Besuch und Kontakt in Osnabrück",
+      "url": "https://soziales.niedersachsen.de/startseite/das_landesamt/standorte/osnabruck/unsere-aussenstelle-in-osnabruck-182503.html",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "pflege",
+      "title": "BMG · Pflegebedürftigkeit und Pflegegrade",
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/pflegebeduerftig-was-nun/pflegebeduerftigkeit",
+      "checked": "2026-10-27"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "wege",
+      "title": "Unterwegs sein",
+      "icon": "move",
+      "scene": "Eine erfundene Person vermeidet längere Wege und braucht unterwegs Unterstützung.",
+      "gdb": "Welche Wege, Besorgungen und sozialen Aktivitäten sind eingeschränkt? Welche Barrieren und gesundheitlichen Auswirkungen bestehen längerfristig?",
+      "care": "Kann die Person sich im Wohnbereich selbst fortbewegen? Welche persönliche Unterstützung ist bei den bewerteten Alltagstätigkeiten nötig?"
+    },
+    {
+      "id": "struktur",
+      "title": "Den Alltag strukturieren",
+      "icon": "calendar",
+      "scene": "Eine erfundene Person verliert bei Belastung den Überblick über notwendige Aufgaben.",
+      "gdb": "Wie wirken sich die Beschwerden auf Teilhabe, Kontakte und die Gestaltung des Lebens aus? Der Verlauf und die Befunde helfen beim Einordnen.",
+      "care": "Welche Erinnerung, Anleitung oder Übernahme braucht die Person tatsächlich? Was gelingt selbstständig, und wie häufig ist Hilfe nötig?"
+    },
+    {
+      "id": "kommunikation",
+      "title": "Kommunikation",
+      "icon": "chat",
+      "scene": "Eine erfundene Person versteht Gespräche in geräuschvoller Umgebung nur eingeschränkt.",
+      "gdb": "Wie werden Gespräche, Orientierung und soziale Beteiligung beeinträchtigt? Welche Befunde und Hilfsmittel sind relevant?",
+      "care": "Welche Unterstützung braucht die Person beim Verstehen und bei den konkret bewerteten Alltagstätigkeiten?"
+    }
+  ],
+  "overlaps": [
+    {
+      "id": "getrennt",
+      "title": "Verschiedene Lebensbereiche",
+      "a": "Hören",
+      "b": "Beweglichkeit",
+      "explanation": "Fiktiv: Gespräche in Gruppen gelingen nur mit besonderer Unterstützung. Zusätzlich ist das Greifen und Tragen erschwert. Die Auswirkungen betreffen unterschiedliche Tätigkeiten. Für die Gesamtbewertung wird beschrieben, was jeweils hinzukommt."
+    },
+    {
+      "id": "teilweise",
+      "title": "Teilweise Überschneidung",
+      "a": "Schmerz",
+      "b": "Bewegung",
+      "explanation": "Fiktiv: Schmerzen und eingeschränkte Beweglichkeit erschweren beide längeres Gehen. Daneben stören nächtliche Schmerzen den Schlaf. Gemeinsam betroffene und zusätzlich betroffene Lebensbereiche werden getrennt beschrieben."
+    },
+    {
+      "id": "voll",
+      "title": "Gleiche Auswirkungen",
+      "a": "Beschwerde A",
+      "b": "Beschwerde B",
+      "explanation": "Fiktiv: Zwei Befunde erklären dieselbe bereits beschriebene Einschränkung einer Tätigkeit. Dieselbe Auswirkung wird nicht durch das bloße Nennen eines zweiten Befundes zu einer zusätzlichen Einschränkung."
+    },
+    {
+      "id": "verstaerkung",
+      "title": "Gegenseitige Verstärkung",
+      "a": "Orientierung",
+      "b": "Angst",
+      "explanation": "Fiktiv: Orientierungsprobleme verunsichern eine Person unterwegs. Angst verstärkt anschließend das Vermeiden von Wegen und Kontakten. Beschrieben wird die konkrete Wechselwirkung im Alltag. Daraus folgt hier kein berechneter GdB."
+    }
+  ],
+  "marks": [
+    {
+      "id": "G",
+      "title": "Bewegungsfähigkeit im Straßenverkehr",
+      "icon": "move",
+      "text": "Kennzeichnet eine erhebliche Beeinträchtigung der Bewegungsfähigkeit im Straßenverkehr. Entscheidend sind die festgestellten Voraussetzungen.",
+      "next": "Für Mobilität auch die Regeln zu Beiblatt und Wertmarke nachlesen."
+    },
+    {
+      "id": "aG",
+      "title": "Außergewöhnliche Gehbehinderung",
+      "icon": "move",
+      "text": "Steht für eine außergewöhnliche Gehbehinderung. Ein hoher GdB allein beschreibt dieses Merkzeichen noch nicht.",
+      "next": "Parkerleichterungen und einen nötigen Parkausweis gesondert mit der zuständigen Stelle klären."
+    },
+    {
+      "id": "B",
+      "title": "Begleitperson im öffentlichen Verkehr",
+      "icon": "person",
+      "text": "Weist die Berechtigung zur unentgeltlichen Mitnahme einer Begleitperson in öffentlichen Verkehrsmitteln nach.",
+      "next": "Bei der konkreten Fahrt die geltenden Beförderungsregeln prüfen."
+    },
+    {
+      "id": "H",
+      "title": "Hilflosigkeit",
+      "icon": "hand",
+      "text": "Kennzeichnet Hilflosigkeit im rechtlichen Sinn. Benötigte Anleitung oder Überwachung kann relevant sein; die Voraussetzungen werden eigenständig geprüft.",
+      "next": "Pflegegrad und Merkzeichen H in den jeweiligen Verfahren getrennt prüfen lassen."
+    },
+    {
+      "id": "Bl",
+      "title": "Blindheit",
+      "icon": "person",
+      "text": "Kennzeichnet festgestellte Blindheit.",
+      "next": "Geeignete Hilfen und mögliche Nachteilsausgleiche über die offizielle Übersicht erschließen."
+    },
+    {
+      "id": "Gl",
+      "title": "Gehörlosigkeit",
+      "icon": "chat",
+      "text": "Kennzeichnet festgestellte Gehörlosigkeit.",
+      "next": "Kommunikationshilfen und die Regeln zum öffentlichen Verkehr nachlesen."
+    },
+    {
+      "id": "TBl",
+      "title": "Taubblindheit",
+      "icon": "hand",
+      "text": "Kennzeichnet festgestellte Taubblindheit.",
+      "next": "Beratung zu passenden Kommunikations- und Teilhabehilfen nutzen."
+    },
+    {
+      "id": "RF",
+      "title": "Rundfunkbeitrag",
+      "icon": "notes",
+      "text": "Betrifft festgestellte gesundheitliche Voraussetzungen für eine Ermäßigung beim Rundfunkbeitrag.",
+      "next": "Den gesonderten Antrag und seine Voraussetzungen beim zuständigen Beitragsservice prüfen; das Merkzeichen löst keine automatische Zahlung aus."
+    }
+  ],
+  "cases": [
+    {
+      "id": "mobilitaet",
+      "title": "Wenn Wege und Greifen schwerfallen",
+      "icon": "move",
+      "person": "Nora · frei erfunden",
+      "situation": "Nora hat anhaltende Beschwerden an Beinen und Händen. Den kurzen Weg zur Bäckerei geht sie mit mehreren Pausen. Einkaufstaschen kann sie nicht zuverlässig tragen. Kleine Verschlüsse kosten viel Kraft; manches gelingt mit einem Hilfsmittel.",
+      "vague": "Ich habe mehrere Erkrankungen und kann wenig machen.",
+      "concrete": "Auf dem Weg zur Bäckerei muss ich an zwei festen Stellen stehen bleiben. Meine Einkäufe liefert ein Dienst. Kleine Knöpfe schließe ich mit einer Knöpfhilfe; an beschwerdereichen Tagen übernimmt das meine Schwester.",
+      "evidence": [
+        "Aktueller fachärztlicher Bericht zu Funktionen und Verlauf",
+        "Beschreibung von Wegen, Pausen, Hilfsmitteln und verbleibenden Fähigkeiten"
+      ],
+      "lesson": "Eine konkrete Tätigkeit ist aussagekräftiger als eine lange Liste von Diagnosen. Die beschriebenen Beispiele sind keine Vorgabe für Ihre eigenen Angaben."
+    },
+    {
+      "id": "psychisch",
+      "title": "Wenn Belastung und Antrieb den Alltag verändern",
+      "icon": "mood",
+      "person": "Milan · frei erfunden",
+      "situation": "Milan erlebt seit längerer Zeit wiederkehrende Phasen mit starker Erschöpfung und Angst. Manche Kontakte hält er per Nachricht aufrecht. Treffen sagt er häufiger ab. Mit einer vertrauten Person gelingt ein kurzer Termin eher; danach braucht er einen ruhigen Abend.",
+      "vague": "Ich habe immer Angst und alles geht nicht.",
+      "concrete": "In der beschriebenen Woche habe ich zwei Treffen abgesagt. Den vereinbarten Termin habe ich mit Begleitung wahrgenommen. Während der Wartezeit half mir ein ruhiges Gespräch. Am nächsten Tag gelang mir ein Telefonat selbst.",
+      "evidence": [
+        "Behandlungsbericht zu Verlauf und konkreten Auswirkungen",
+        "Eigene, datierte Beispiele für Kontakte, Belastung und gelingende Tätigkeiten"
+      ],
+      "lesson": "Auch psychische Beeinträchtigungen lassen sich konkret beschreiben. Gute und schlechte Phasen gehören zum Gesamtbild; absolute Formulierungen müssen zum tatsächlichen Alltag passen."
+    },
+    {
+      "id": "sinne",
+      "title": "Wenn Gespräche in Gruppen anstrengend sind",
+      "icon": "chat",
+      "person": "Elif · frei erfunden",
+      "situation": "Elif nutzt Hörhilfen. Im ruhigen Einzelgespräch versteht sie vieles. In Gruppen verliert sie den Anschluss, wenn mehrere Menschen gleichzeitig sprechen. Sie bittet um einen ruhigen Platz und schriftliche Informationen.",
+      "vague": "Ich kann wegen des Hörens an nichts teilnehmen.",
+      "concrete": "Im Einzelgespräch in einem ruhigen Raum verstehe ich die meisten Sätze. Beim letzten Gruppentreffen musste eine Person die wichtigsten Punkte einzeln wiederholen. Die schriftliche Zusammenfassung half mir danach.",
+      "evidence": [
+        "Audiologischer Befund und Angaben zu verwendeten Hilfsmitteln",
+        "Konkrete Kommunikationssituationen und hilfreiche Anpassungen"
+      ],
+      "lesson": "Hilfsmittel, Bedingungen und verbliebene Fähigkeiten mitbeschreiben. Das Beispiel erlaubt keine Vorhersage eines Merkzeichens oder GdB."
+    },
+    {
+      "id": "mehrere",
+      "title": "Wenn sich Beschwerden gegenseitig verstärken",
+      "icon": "think",
+      "person": "Paul · frei erfunden",
+      "situation": "Paul hat Orientierungsprobleme und Angst vor unbekannten Wegen. Eine Wegbeschreibung hilft ihm an vertrauten Orten. Bei Änderungen wird er unsicher und meidet anschließend weitere Termine.",
+      "vague": "Zwei Erkrankungen müssen zusammen einen besonders hohen Wert ergeben.",
+      "concrete": "Als die Haltestelle verlegt wurde, konnte ich den Ersatzweg nicht allein finden. Danach habe ich auch einen anderen Termin abgesagt, obwohl der Weg dorthin vertraut war. Mit vorheriger Begleitung habe ich ihn später wieder genutzt.",
+      "evidence": [
+        "Berichte zu den jeweiligen Funktionsbeeinträchtigungen",
+        "Beispiel, das die Wechselwirkung und ihren Verlauf sichtbar macht"
+      ],
+      "lesson": "Das Zusammenspiel erklären und denselben Effekt nicht mehrfach zählen. Die App vergibt auch in diesem Beispiel keinen Gesamt-GdB."
+    }
+  ],
+  "documents": [
+    [
+      "Behandelnde Stellen",
+      "Namen, Fachrichtung und Behandlungszeiträume für den offiziellen Antrag zusammenstellen."
+    ],
+    [
+      "Aussagekräftige Befunde",
+      "Vorhandene aktuelle Berichte zu Funktionen, Verlauf und Behandlung prüfen."
+    ],
+    [
+      "Klinik- oder Rehaberichte",
+      "Relevante Entlassungsberichte auf Vollständigkeit und Aktualität prüfen."
+    ],
+    [
+      "Alltagsbeschreibung",
+      "Eigene Beispiele zu Auswirkungen und verbleibenden Fähigkeiten notieren."
+    ],
+    [
+      "Verlauf und Veränderungen",
+      "Bei einem Änderungsantrag seit wann was anders ist beschreiben."
+    ],
+    [
+      "Vorhandener Bescheid",
+      "Bei laufendem Verfahren Geschäftszeichen und bisherigen Bescheid bereitlegen."
+    ],
+    [
+      "Vertretung",
+      "Erforderliche Vollmacht oder Vertretungsnachweise prüfen."
+    ],
+    [
+      "Kopie und Eingang",
+      "Kopie der tatsächlich eingereichten Unterlagen und Zugangsnachweis behalten."
+    ]
+  ],
+  "formFields": [
+    [
+      "Persönliche Angaben",
+      "Kontakt- und Zuordnungsangaben im amtlichen Antrag sorgfältig prüfen. Persönliche Identifikationsnummern nur im offiziellen Verfahren eingeben."
+    ],
+    [
+      "Anlass des Antrags",
+      "Erstantrag oder Änderung passend auswählen. Bei Änderung den bisherigen Bescheid zuordnen."
+    ],
+    [
+      "Gesundheitsstörungen und Auswirkungen",
+      "Anhaltende Einschränkungen verständlich beschreiben. Eine Diagnose und ihre konkrete Auswirkung unterscheiden."
+    ],
+    [
+      "Behandelnde Stellen und Berichte",
+      "Angeben, wer welche Beschwerden behandelt und welche aussagekräftigen Unterlagen vorhanden sind."
+    ],
+    [
+      "Einwilligungen und Vertretung",
+      "Erläuterungen zur Befundanforderung, Datenübermittlung und Unterschriften im amtlichen Formular lesen. Bei Vertretung den passenden Nachweis ergänzen."
+    ],
+    [
+      "Steuer-ID und Datenübermittlung",
+      "Für Feststellungen ab 2026 verweist das Landesamt bei der Nutzung des Behindertenpauschbetrags auf die erforderliche Datenübermittlung an die Finanzverwaltung. Die aktuellen Hinweise im amtlichen Formular lesen. Die Steuer-ID gehört nicht in die Notizen dieser App."
+    ],
+    [
+      "Abschluss und Nachweis",
+      "Alles prüfen, unterschreiben beziehungsweise das offizielle Online-Verfahren abschließen. Kopie und Eingangsbestätigung aufbewahren."
+    ]
+  ],
+  "faqs": [
+    [
+      "Ist der GdB ein Prozentsatz?",
+      "Der GdB ist eine abgestufte Maßzahl für die Teilhabebeeinträchtigung. Er wird nicht als Prozentangabe verwendet.",
+      "versmedv"
+    ],
+    [
+      "Bedeutet ein Pflegegrad automatisch einen bestimmten GdB?",
+      "Die Verfahren beurteilen unterschiedliche Aspekte. Eine automatische Umrechnung wird hier nicht vorgenommen. Für beide Wege können jeweils passende Unterlagen relevant sein.",
+      "pflege"
+    ],
+    [
+      "Wer entscheidet über meinen GdB?",
+      "In Niedersachsen bearbeitet das Landesamt für Soziales, Jugend und Familie das Feststellungsverfahren. Welche Stelle zuständig ist, richtet sich nach dem Wohnort.",
+      "ni-verfahren"
+    ],
+    [
+      "Sind die Fallbeispiele echte Personen?",
+      "Nein. Alle vier Geschichten sind eigens erfundene Lernbeispiele. Eigene Angaben müssen den tatsächlichen Alltag wiedergeben.",
+      null
+    ],
+    [
+      "Wird mein Antrag von dieser App verschickt?",
+      "Nein. Die offiziellen Anträge öffnen sich auf den Seiten der zuständigen Stelle. Aufgaben und Unterlagenübersichten in dieser App dienen Ihrer Vorbereitung.",
+      null
+    ],
+    [
+      "Kann eine neue Prüfung auch zu einem niedrigeren GdB führen?",
+      "Bei einer erneuten Prüfung wird die aktuelle Situation betrachtet. Eine Änderung kann auch ungünstig ausfallen. Veränderungen gut dokumentieren und bei Unsicherheit vorab Beratung nutzen.",
+      "ni-faq"
+    ],
+    [
+      "Was ist bei Kindern zu beachten?",
+      "Maßgeblich sind die altersbezogenen Besonderheiten der Bewertung. Bei Hilflosigkeit wird der behinderungsbedingte zusätzliche Bedarf gegenüber gleichaltrigen Kindern betrachtet. Der Erwachsenen-Pflegegradrechner der App passt dafür nicht.",
+      "versmedv"
+    ],
+    [
+      "Sind gespeicherte Aufgaben in der Suche oder beim Vorlesen sichtbar?",
+      "Nein. Die gemeinsame Suche und die Vorlesefunktion verwenden nur den festen öffentlichen Inhaltsindex. Eigene Aufgaben und Dokumentnotizen gehören nicht dazu.",
+      null
+    ]
+  ]
+}

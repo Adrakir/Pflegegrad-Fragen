@@ -8,7 +8,7 @@ const ui=boot();assert.equal(ui.run('resultPicture(E.calculate(DATA,{}))'),'');
 ui.run("answers="+JSON.stringify(blank())+";for(let n=1;n<=11;n++)answers['2.'+n]={choice:'3'};for(let n=1;n<=13;n++)answers['3.'+n]={choice:'5'}");
 const picture=ui.run('resultPicture(E.calculate(DATA,answers))');
 const widths=[...picture.matchAll(/style="width:([\d.]+)%/g)].map(m=>Number(m[1]));assert.deepEqual(widths,[0,15,0,0,0,85]);
-for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']){
+for(const page of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']){
  const h=fs.readFileSync(page,'utf8');assert.match(h,/care-visuals\.css\?v=/);assert.match(h,/care-visuals\.js\?v=/);assert.equal(h,fs.readFileSync('dist/'+page,'utf8'));
 }
 console.log('PASS: six module pictures, accessible SVG scenes, finite opt-in flow definitions and result graphic counts modules 2/3 only once.');

@@ -11,13 +11,17 @@ const dictionary={
  'Verhinderungspflege':'Eine andere geeignete Person oder ein Dienst übernimmt notwendige Ersatzpflege, weil die private Pflegeperson vorübergehend verhindert ist. Sie teilt sich einen Jahresbetrag mit der Kurzzeitpflege.',
  'Kurzzeitpflege':'Eine vorübergehende vollstationäre Versorgung, wenn die Pflege zu Hause und teilstationäre Hilfe nicht ausreichen. Pflegekosten und weitere Eigenkosten werden getrennt betrachtet.',
  'Höherstufung':'Eine bereits pflegebedürftige Person beantragt wegen gestiegenen Hilfebedarfs einen höheren Pflegegrad. Die aktuelle Selbstständigkeit wird erneut geprüft.',
- 'Widerspruch':'Sie wenden sich gegen einen Bescheid der gesetzlichen Pflegekasse. Frist und zulässige Form beachten. Ein neuer Antrag ersetzt den fristgerechten Widerspruch nicht.'
+ 'GdB':'Grad der Behinderung: Maß für die längerfristige Beeinträchtigung der Teilhabe. Er wird nicht in Prozent angegeben und ist kein Pflegegrad.',
+ 'Merkzeichen':'Zusätzlich festgestellte gesundheitliche Merkmale im Schwerbehindertenausweis. Sie können für bestimmte Nachteilsausgleiche wichtig sein.',
+ 'Teilhabe':'Am gesellschaftlichen Leben beteiligt sein können, zum Beispiel bei Kommunikation, Mobilität, Arbeit oder sozialen Kontakten.',
+ 'Gleichstellung':'Unter Voraussetzungen können Menschen mit GdB 30 oder 40 im Arbeitsleben schwerbehinderten Menschen gleichgestellt werden. Zuständig ist die Agentur für Arbeit.',
+ 'Widerspruch':'Sie wenden sich gegen einen Bescheid. Beim Pflegegrad ist die Pflegekasse zuständig, beim GdB die Feststellungsbehörde. Frist und zulässige Form beachten.'
 };
 function stored(){try{return JSON.parse(localStorage.getItem(key)||'{}')||{};}catch{return{};}}
 function apply(){const p=stored();root.classList.toggle('large',p.large===true);root.classList.toggle('contrast',p.contrast===true);for(const [id,k]of [['fontSize','large'],['large','large'],['contrast','contrast']])document.getElementById(id)?.setAttribute('aria-pressed',String(p[k]===true));}
 function toggle(k){const p=stored();p[k]=!root.classList.contains(k);try{localStorage.setItem(key,JSON.stringify(p));}catch{root.classList.toggle(k,p[k]);for(const id of k==='large'?['large','fontSize']:['contrast'])document.getElementById(id)?.setAttribute('aria-pressed',String(p[k]));return;}apply();}
 // Existing pages already own their controls. Billing uses the same preference key.
-if(document.body.dataset.billing==='true'){
+if(document.body.dataset.billing==='true'||document.body.dataset.sharedPreferences==='true'){
  document.getElementById('large')?.addEventListener('click',()=>toggle('large'));
  document.getElementById('contrast')?.addEventListener('click',()=>toggle('contrast'));
 }
@@ -33,7 +37,7 @@ function matchTerm(text,term){const re=new RegExp('(^|[^\\p{L}])('+term+')(?=$|[
 const aliases={'Sachleistungen':['Sachleistungen','Sachleistung','Pflegesachleistungen'],'Eigenanteil':['Eigenanteil','Eigenanteile'],'teilstationär':['teilstationär','teilstationäre','teilstationären']};
 function annotate(region){for(const term of Object.keys(dictionary)){if(region.querySelector('[data-glossary-term="'+term+'"]'))continue;
  const walker=document.createTreeWalker(region,NodeFilter.SHOW_TEXT);let node,match;
- while(walker.nextNode()){const candidate=walker.currentNode;if(candidate.parentElement.closest('a,button,label,summary,h1,h2,h3,h4,script,style,textarea,select,svg,dialog,output,code,pre,[role="status"],[aria-live]'))continue;
+ while(walker.nextNode()){const candidate=walker.currentNode;if(candidate.parentElement.closest('a,button,label,summary,h1,h2,h3,h4,script,style,textarea,select,svg,dialog,output,code,pre,[role="status"],[aria-live],[data-private]'))continue;
   for(const name of aliases[term]||[term]){match=matchTerm(candidate.textContent,name);if(match){node=candidate;break;}}if(node)break;
  }
  if(!node)continue;const fragment=document.createDocumentFragment(),b=document.createElement('button');b.type='button';b.className='term-button';b.dataset.glossaryTerm=term;b.textContent=match.text;b.setAttribute('aria-label',match.text+' erklären');b.setAttribute('aria-haspopup','dialog');b.addEventListener('click',()=>show(term,b));fragment.append(document.createTextNode(node.textContent.slice(0,match.index)),b,document.createTextNode(node.textContent.slice(match.index+match.text.length)));node.replaceWith(fragment);

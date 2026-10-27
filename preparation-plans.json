@@ -1,0 +1,77 @@
+[
+  {
+    "id": "gdb",
+    "title": "GdB-Antrag vorbereiten",
+    "tasks": [
+      "Anlass und zuständige Stelle klären",
+      "Behandelnde Stellen und Berichte zusammentragen",
+      "Eigene Alltagsbeispiele formulieren",
+      "Amtlichen Antrag vollständig prüfen",
+      "Tatsächlich eingereichte Unterlagen und Eingang dokumentieren"
+    ],
+    "documents": [
+      "Behandelnde Stellen",
+      "Aussagekräftige Befunde",
+      "Klinik- oder Rehaberichte",
+      "Alltagsbeschreibung",
+      "Verlauf und Veränderungen",
+      "Vorhandener Bescheid",
+      "Vertretung",
+      "Kopie und Eingang"
+    ]
+  },
+  {
+    "id": "pflege",
+    "title": "Pflegegrad-Antrag vorbereiten",
+    "tasks": [
+      "Antrag bei der eigenen Pflegekasse anstoßen",
+      "Alltag und tatsächlich benötigte Hilfe notieren",
+      "Unterlagen für die Begutachtung bereitlegen",
+      "Fragen und mögliche Begleitung abstimmen",
+      "Bescheid und Gutachten nach Erhalt prüfen"
+    ],
+    "documents": [
+      "Aktuelle Befunde und Berichte",
+      "Medikamentenübersicht",
+      "Alltagsnotizen oder Pflegetagebuch",
+      "Vorhandener Pflegegradbescheid",
+      "Vertretungsnachweis, falls erforderlich"
+    ]
+  },
+  {
+    "id": "abrechnung",
+    "title": "Pflegeleistung abrechnen",
+    "tasks": [
+      "Passende Leistung und verfügbares Budget mit der Pflegekasse klären",
+      "Anbieter und Zahlungsweg abstimmen",
+      "Leistungsnachweise und Rechnung prüfen",
+      "Unterlagen beim passenden Kassenweg einreichen",
+      "Kopie und Eingang behalten; Erstattung abgleichen"
+    ],
+    "documents": [
+      "Rechnung oder Abrechnungsbogen",
+      "Leistungsnachweis mit tatsächlichen Einsätzen",
+      "Zahlungsnachweis, falls erforderlich",
+      "Anerkennungs- oder Qualifikationsnachweis, falls erforderlich",
+      "Abtretung, falls vereinbart"
+    ]
+  },
+  {
+    "id": "bescheid",
+    "title": "Bescheid nachvollziehen und prüfen",
+    "tasks": [
+      "Originalbescheid und Rechtsbehelfsbelehrung lesen",
+      "Bekanntgabe und maßgebliche Frist selbst prüfen beziehungsweise beraten lassen",
+      "Berücksichtigte Unterlagen mit eigener Übersicht vergleichen",
+      "Offene Punkte konkret notieren; bei Bedarf Akteneinsicht anfragen",
+      "Passenden nächsten Schritt rechtzeitig in zulässiger Form veranlassen"
+    ],
+    "documents": [
+      "Vollständiger Originalbescheid",
+      "Eigene Kopie des Antrags",
+      "Eingereichte Berichte und Anlagen",
+      "Zustellungs- oder Zugangsinformationen",
+      "Nachweis eines tatsächlich eingelegten Rechtsbehelfs, falls vorhanden"
+    ]
+  }
+]

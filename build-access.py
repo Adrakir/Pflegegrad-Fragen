@@ -13,7 +13,8 @@ class Node:
     if tag is None or n.tag==tag: yield n
     yield from n.all(tag)
  def text(self):
-  if self.tag in {'script','style','form','input','textarea','select','button','nav','footer','noscript'}: return ''
+  if 'data-private' in self.attrs:return ''
+  if self.tag in {'svg','script','style','form','input','textarea','select','button','nav','footer','noscript'}: return ''
   return ' '.join(n.text() if isinstance(n,Node) else n for n in self.children)
 class Parse(HTMLParser):
  def __init__(self,text):
@@ -32,12 +33,21 @@ def node_json(code):return json.loads(subprocess.check_output(['node','-e',code]
 records=[]
 def add(id,title,text,url,group,tags=''):
  records.append(dict(id=id,title=title,text=clean(text),url=url,group=group,tags=tags))
-for page,group in [('index.html','Pflegewissen'),('abrechnung.html','Abrechnung')]:
+for page,group in [('index.html','Pflegewissen'),('abrechnung.html','Abrechnung'),('gdb.html','GdB')]:
  tree=Parse((ROOT/page).read_text()).root
  for n in tree.all('section'):
   id=n.attrs.get('id');heads=list(n.all('h2'))
   if not id or not heads or id in {'faq','quellen'}:continue
   add(page+'-'+id,clean(heads[0].text()),n.text(),('./' if page=='index.html' else './'+page)+'#'+id,group,'')
+gdb=json.loads((ROOT/'gdb-data.json').read_text())
+for row in gdb['comparisons']:add('gdb-compare-'+row['id'],'GdB und Pflegegrad: '+row['title'],' '.join([row['scene'],row['gdb'],row['care']]),'./gdb.html#gdb-vergleich-'+row['id'],'GdB')
+for row in gdb['overlaps']:add('gdb-overlap-'+row['id'],'Gesamt-GdB: '+row['title'],row['explanation'],'./gdb.html#gdb-zusammenspiel-'+row['id'],'GdB')
+for row in gdb['cases']:add('gdb-case-'+row['id'],'GdB-Beispiel: '+row['title'],' '.join([row['person'],row['situation'],'Zu allgemein: '+row['vague'],'Konkretes erfundenes Beispiel: '+row['concrete'],*row['evidence'],row['lesson']]),'./gdb.html#gdb-fall-'+row['id'],'GdB')
+for row in gdb['marks']:add('gdb-mark-'+row['id'],'Merkzeichen '+row['id']+': '+row['title'],row['text']+' '+row['next'],'./gdb.html#gdb-merkzeichen-'+row['id'],'GdB')
+for i,row in enumerate(gdb['faqs'],1):add('gdb-faq-'+str(i),row[0],row[1],'./gdb.html#gdb-faq-'+str(i),'GdB')
+workspace=Parse((ROOT/'meine-vorbereitung.html').read_text()).root
+public_guide=next(n for n in workspace.all('section') if n.attrs.get('id')=='workspace-guide')
+add('workspace-guide','Meine Vorbereitung: Aufgaben und Unterlagen',public_guide.text(),'./meine-vorbereitung.html#workspace-guide','Vorbereitung')
 for i,n in enumerate((n for n in Parse((ROOT/'faq.html.inc').read_text()).root.all('details')),1):
  title=next(n.all('summary')).text();add('faq-'+str(i),title,n.text(),'./#faq-q-'+str(i),'FAQ')
 questions=json.loads((ROOT/'questions.json').read_text())
@@ -57,7 +67,8 @@ for module in json.loads((ROOT/'calculator-data.json').read_text())['modules']:
   add('criterion-'+item['id'],'Rechner: '+item['label'],item['hint']+' Fiktive Beispiele: '+' '.join(x['text'] for x in item.get('examples',[])),'./pflegegradrechner.html?kriterium='+item['id']+'#rechner','Rechner',module['title'])
 add('calculator','Pflegegradrechner','Unverbindliche Selbsteinschätzung für Erwachsene mit 64 Kriterien in sechs Modulen. Antworten selbst auswählen, Unsicherheiten markieren und persönliche Angaben nur auf Wunsch im Browser speichern. Es wird kein Pflegegrad festgestellt.','./pflegegradrechner.html','Rechner','Punkte berechnen Pflegegrad Test')
 add('planner','Abrechnung vorbereiten','Leistung, Pflegegrad, Pflegekasse und Zahlungsweg wählen. Passende Unterlagen, PDF-Bogen und offizielle Einreichungswege zusammenstellen. Keine Erstattungszusage.','./abrechnung.html#abrechnung-plan','Abrechnung','Checkliste Antrag Belege Formulare')
-release={'version':'2026.10.27.1','date':'27.10.2026','changes':[
+release={'version':'2026.10.27.2','date':'27.10.2026','changes':[
+{'title':'GdB und eigene Vorbereitung','items':['Neuer GdB-Leitfaden für Niedersachsen mit Bildern, startbaren Abläufen, vier erfundenen Fallbeispielen und acht Merkzeichen.','Eigene Aufgaben, selbst eingetragene Termine und Unterlagenübersicht; Speicherung nur auf Wunsch.','Übersicht drucken sowie Sicherungen prüfen und wieder laden.','Stimme und Lesetempo auf Wunsch über Seitenwechsel hinweg merken.','Öffentliches Quellenverzeichnis und automatisierte Qualitäts- und Linkprüfungen.']},
 {'title':'Vorlesen verbessert','items':['Zusammenhängende Sätze statt Trennung mitten im Satz.','Deutsche Gerätestimmen bevorzugt, Stimmenprobe mit erhaltener Lesestelle.','Pause und Fortsetzen, sichtbare Lesepassage und Vor-/Zurückspringen.','Stimme und Tempo ändern, ohne den ganzen Abschnitt neu beginnen zu müssen.']},
 {'title':'Schneller zum passenden Inhalt','items':['Appweite Suche in Erklärungen, FAQ, 100 fiktiven Fragen und Kassenanträgen.','Feste Navigation für die vier Hauptbereiche auf schmalen Bildschirmen.','Abrechnungsvorbereitung mit Belegliste, PDF-Bogen und Einreichungsweg.']},
 {'title':'Lesen und Hören','items':['Vorlesen öffentlicher Abschnitte mit Stimmenprobe, Geschwindigkeit, Pause und Stopp.','Eigene Antworten und Tagebucheinträge werden nicht für Suche oder Vorlesen verwendet.']},
@@ -69,15 +80,15 @@ for size in [192,512]:
  im=Image.open(ROOT/'assets/weidenherz-logo.png').convert('RGB');im.thumbnail((size-24,size-24));canvas=Image.new('RGB',(size,size),'#f7f6f1');canvas.paste(im,((size-im.width)//2,(size-im.height)//2));canvas.save(ROOT/f'assets/app-icon-{size}.png')
 manifest={'id':'./','name':'Pflegegrad-Fragen · Andreas und Ricarda','short_name':'Pflegegrad','lang':'de','start_url':'./','scope':'./','display':'standalone','background_color':'#f7f6f1','theme_color':'#504260','icons':[{'src':f'./assets/app-icon-{s}.png','sizes':f'{s}x{s}','type':'image/png','purpose':'any'} for s in [192,512]]}
 (ROOT/'manifest.webmanifest').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-for asset in ['care-reader.js','app-access.js','app-access.css','app-public.json','manifest.webmanifest','assets/app-icon-192.png','assets/app-icon-512.png']:
+for asset in ['care-reader.js','app-access.js','app-access.css','app-public.json','source-registry.json','manifest.webmanifest','assets/app-icon-192.png','assets/app-icon-512.png']:
  shutil.copy2(ROOT/asset,ROOT/'dist'/asset)
 reader_js=hashlib.sha256((ROOT/'care-reader.js').read_bytes()).hexdigest()[:12]
 js=hashlib.sha256((ROOT/'app-access.js').read_bytes()).hexdigest()[:12];css=hashlib.sha256((ROOT/'app-access.css').read_bytes()).hexdigest()[:12]
-for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']:
  html=(ROOT/page).read_text().replace('</head>',f'<link rel="stylesheet" href="./app-access.css?v={css}"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./assets/app-icon-192.png"></head>').replace('</body>',f'<script src="./care-reader.js?v={reader_js}"></script><script src="./app-access.js?v={js}"></script></body>')
  (ROOT/page).write_text(html);(ROOT/'dist'/page).write_text(html)
 # Cache only an explicit public allowlist; never cache arbitrary requests or runtime form state.
-pages=['./','./index.html','./pflegewissen.html','./fallbeispiel.html','./pflegegradrechner.html','./abrechnung.html']
+pages=['./','./index.html','./pflegewissen.html','./fallbeispiel.html','./pflegegradrechner.html','./abrechnung.html','./gdb.html','./meine-vorbereitung.html']
 assets=set(['./app-public.json','./manifest.webmanifest','./assets/app-icon-192.png','./assets/app-icon-512.png'])
 for page in pages[1:]:
  for url in re.findall(r'(?:src|href)="(\./[^"#]+)"',(ROOT/page[2:]).read_text()):

@@ -1,4 +1,5 @@
 import json
+import runpy
 import hashlib
 import shutil
 from html import escape
@@ -59,12 +60,14 @@ for asset in ['abrechnung.css','abrechnung.js']:
 shutil.copytree(root/'formulare',root/'dist/formulare',dirs_exist_ok=True)
 print('Abrechnung Niedersachsen: fünf Leistungsarten, Nachbarschaftshilfe, sechs PDF-Bögen und acht Kassenkontakte erstellt.')
 
+runpy.run_path(str(root/'build-gdb.py'))
+
 # Shared reading aids are added after the established page-specific handlers.
 for asset in ['app-usability.css','app-usability.js']:
  shutil.copy2(root/asset,root/'dist'/asset)
 css_hash=hashlib.sha256((root/'app-usability.css').read_bytes()).hexdigest()[:12]
 js_hash=hashlib.sha256((root/'app-usability.js').read_bytes()).hexdigest()[:12]
-for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']:
  html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./app-usability.css?v='+css_hash+'"></head>').replace('</body>','<script src="./app-usability.js?v='+js_hash+'"></script></body>')
  (root/page).write_text(html)
  (root/'dist'/page).write_text(html)
@@ -74,7 +77,7 @@ for asset in ['care-visuals.js','care-visuals.css']:
  shutil.copy2(root/asset,root/'dist'/asset)
 visual_css=hashlib.sha256((root/'care-visuals.css').read_bytes()).hexdigest()[:12]
 visual_js=hashlib.sha256((root/'care-visuals.js').read_bytes()).hexdigest()[:12]
-for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']:
  html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-visuals.css?v='+visual_css+'"></head>')
  first_script=html.index('<script')
  html=html[:first_script]+'<script src="./care-visuals.js?v='+visual_js+'"></script>'+html[first_script:]
@@ -87,7 +90,7 @@ for asset in ['care-learning.js','care-learning.css']:
  shutil.copy2(root/asset,root/'dist'/asset)
 learning_js=hashlib.sha256((root/'care-learning.js').read_bytes()).hexdigest()[:12]
 learning_css=hashlib.sha256((root/'care-learning.css').read_bytes()).hexdigest()[:12]
-for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']:
  html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-learning.css?v='+learning_css+'"></head>')
  first_script=html.index('<script')
  html=html[:first_script]+'<script src="./care-learning.js?v='+learning_js+'"></script>'+html[first_script:]
@@ -100,7 +103,7 @@ for asset in ['care-explain.js','care-explain.css']:
  shutil.copy2(root/asset,root/'dist'/asset)
 explain_js=hashlib.sha256((root/'care-explain.js').read_bytes()).hexdigest()[:12]
 explain_css=hashlib.sha256((root/'care-explain.css').read_bytes()).hexdigest()[:12]
-for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']:
  html=(root/page).read_text().replace('</head>','<link rel="stylesheet" href="./care-explain.css?v='+explain_css+'"></head>')
  first_script=html.index('<script')
  html=html[:first_script]+'<script src="./care-explain.js?v='+explain_js+'"></script>'+html[first_script:]
@@ -108,6 +111,15 @@ for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrec
  (root/'dist'/page).write_text(html)
 print('Gekoppelte Balken, Zeitstrahlen, Guthabenkalender, Tagesform, Antwortvergleiche und Antragsrollen eingebunden.')
 
+# Keep navigation consistent while preserving the established page templates.
+for page in ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']:
+ html=(root/page).read_text()
+ import re
+ html=re.sub(r'(<nav class="section-nav"[^>]*>)(.*?)(</nav>)',lambda m:m[1]+m[2]+'<a class="subtle" href="./gdb.html">GdB &amp; Ausweis</a><a class="subtle" href="./meine-vorbereitung.html">Meine Vorbereitung</a>'+m[3],html,count=1,flags=re.S)
+ if page in ['index.html','pflegewissen.html']:
+  html=html.replace('<nav class="care-jump"','<aside class="shared-next"><strong>Auch gut vorbereitet?</strong><p><a href="./gdb.html">GdB &amp; Schwerbehindertenausweis verstehen</a> · <a href="./meine-vorbereitung.html">Eigene Aufgaben und Unterlagen ordnen</a></p></aside><nav class="care-jump"',1)
+ (root/page).write_text(html);(root/'dist'/page).write_text(html)
+
 # Shared public index, application comfort controls, and optional offline bundle.
-import runpy
+runpy.run_path(str(root/'build-sources.py'))
 runpy.run_path(str(root/'build-access.py'))

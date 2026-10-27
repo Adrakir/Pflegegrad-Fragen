@@ -1,0 +1,44 @@
+name: Qualität und öffentliche Quellen
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Bildabhängigkeit installieren
+        run: python -m pip install Pillow==12.3.0
+      - name: App vollständig bauen
+        run: python build.py
+      - name: Fachliche und technische Funktionen prüfen
+        run: |
+          set -e
+          for test in verify.cjs verify-calculator.cjs verify-care.cjs verify-billing.cjs verify-improvements.cjs verify-preparation.cjs verify-usability.cjs verify-visuals.cjs verify-learning.cjs verify-explain.cjs verify-access.cjs verify-reader.cjs verify-gdb.cjs verify-workspace.cjs; do
+            node "$test"
+          done
+          python check-sources.py
+      - name: Öffentliche Quellen technisch prüfen
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python check-sources.py --network
+      - name: Quellenbericht sichern
+        if: always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: oeffentliche-quellenpruefung
+          path: tmp/source-link-report.json
+          if-no-files-found: warn
+          retention-days: 30

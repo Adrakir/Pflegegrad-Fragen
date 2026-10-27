@@ -11,5 +11,5 @@ assert.equal(X.reliefLedger('late')[17].balance,67200);assert.match(X.calendarMo
 assert.equal(X.week.length,7);for(const d of X.week){assert.ok(d.self);assert.ok(d.help);assert.ok(d.context);}
 assert.equal(X.comparisons.length,3);assert.equal(X.roles.length,3);assert.match(X.roles[2].text,/keine allgemeine Vollmacht/);
 const code=fs.readFileSync('care-explain.js','utf8');assert.doesNotMatch(code,/localStorage|sessionStorage|setInterval|setTimeout|fetch\(|XMLHttpRequest/);assert.match(code,/serviceUsed/);assert.match(code,/cashRemaining/);
-for(const p of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html']){const s=fs.readFileSync(p,'utf8');assert.match(s,/care-explain\.js\?v=/);assert.equal(s,fs.readFileSync('dist/'+p,'utf8'));}
+for(const p of ['index.html','pflegewissen.html','fallbeispiel.html','pflegegradrechner.html','abrechnung.html','gdb.html','meine-vorbereitung.html']){const s=fs.readFileSync(p,'utf8');assert.match(s,/care-explain\.js\?v=/);assert.equal(s,fs.readFileSync('dist/'+p,'utf8'));}
 console.log('PASS: 8-hour boundary examples, shared clock scale, 19-month cent-accurate 2026-only ledger, June/July boundary, seven separate diary examples, comparison/role content, no storage or autonomous animation.');
